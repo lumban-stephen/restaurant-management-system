@@ -33,3 +33,9 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+//user profile
+Route::get('/profile',[App\Http\Controllers\ProfileController::class,'userProfile'])->name('/profile');
+
+// ------------------------ profile update ------------------------ //
+Route::post('/update_profile',[App\Http\Controllers\ProfileController::class,'userUpdate']);
