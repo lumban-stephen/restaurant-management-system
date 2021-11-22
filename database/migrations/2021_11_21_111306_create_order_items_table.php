@@ -33,5 +33,7 @@ class CreateOrderItemsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('order_items');
+        $table->dropForeign('order_dish_id_foreign');
+        $table->dropForeign('order_order_id_foreign');
     }
 }

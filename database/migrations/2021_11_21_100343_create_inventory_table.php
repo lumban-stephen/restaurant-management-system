@@ -18,6 +18,7 @@ class CreateInventoryTable extends Migration
             $table->string('food_name');
             $table->enum('unit', array('ml', 'g'));
             $table->integer('quantity');
+            $table->float('portion_size');
             $table->date('restocked_date');
             $table->date('expiry_date');
             $table->unsignedBigInteger('dish_id');
