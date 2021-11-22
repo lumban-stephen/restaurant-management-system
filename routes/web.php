@@ -33,3 +33,16 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+//dish
+Route::get('/dish',[App\Http\Controllers\DishController::class,'show'])->name('/dish');
+//creat new dish
+Route::get('/create_new_dish',[App\Http\Controllers\DishController::class,'new_dish'])->name('/create_new_dish');
+//add data to dish table
+Route::post('/add_new_dish',[App\Http\Controllers\DishController::class,'store']);
+//delete dish
+Route::get('/delete_dish/{id}',[App\Http\Controllers\DishController::class,'destroy']);
+//Update dish
+Route::get('/update_dish_page/{id}',[App\Http\Controllers\DishController::class,'update_view']);
+//Update database in dish
+Route::post('/update_dish/{id}',[App\Http\Controllers\DishController::class,'update']);
