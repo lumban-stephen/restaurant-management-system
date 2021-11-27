@@ -33,3 +33,19 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::get('/inventory', function () {
+    return view('inventory');
+});
+
+Route::get('/dish', function () {
+    return view('dishmanagement');
+});
+
+Route::get('/orders', function () {
+    return view('ordermanagement');
+});
+
+Route::get('/pos', function () {
+    return view('ordermanagement');
+});
