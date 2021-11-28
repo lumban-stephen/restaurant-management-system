@@ -15,6 +15,12 @@ class CreateInventoryModelsTable extends Migration
     {
         Schema::create('inventory_models', function (Blueprint $table) {
             $table->id();
+            $table->string("Ingredient");
+            $table->int("Quantity");
+            $table->enum('Unit',['pcs', 'liter', 'ml', 'grams', 'pack']);
+            $table->date("Restocked")->useCurrent = true;
+            $table->date("Expiry")->default($table->date("Restocked"));
+            $table->enum('Status', ['Good', 'Near Expiry', 'Expired']);
             $table->timestamps();
         });
     }
