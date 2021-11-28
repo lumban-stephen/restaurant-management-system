@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Carbon\Carbon;
 
 class CreateInventoryModelsTable extends Migration
 {
@@ -11,15 +12,18 @@ class CreateInventoryModelsTable extends Migration
      *
      * @return void
      */
+
     public function up()
     {
+        
         Schema::create('inventory_models', function (Blueprint $table) {
+            $dt = new Carbon();
             $table->id();
             $table->string("Ingredient");
             $table->int("Quantity");
             $table->enum('Unit',['pcs', 'liter', 'ml', 'grams', 'pack']);
-            $table->date("Restocked")->useCurrent = true;
-            $table->date("Expiry")->default($table->date("Restocked"));
+            $table->date("Restocked")->$dt;
+            $table->date("Expiry")->default($table->$dt->addDays(7));
             $table->enum('Status', ['Good', 'Near Expiry', 'Expired']);
             $table->timestamps();
         });
