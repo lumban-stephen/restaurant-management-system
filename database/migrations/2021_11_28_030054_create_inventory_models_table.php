@@ -23,7 +23,7 @@ class CreateInventoryModelsTable extends Migration
             $table->int("Quantity");
             $table->enum('Unit',['pcs', 'liter', 'ml', 'grams', 'pack']);
             $table->date("Restocked")->$dt;
-            $table->date("Expiry")->default($table->$dt->addDays(7));
+            $table->date("Expiry")->default($dt->addDays(7));
             $table->enum('Status', ['Good', 'Near Expiry', 'Expired']);
             $table->timestamps();
         });
