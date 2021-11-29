@@ -17,23 +17,7 @@
         <select name="unit" id="unit">
             <option value="ml">ml</option>
             <option value="g">g</option>
-        </select>
-
-        <div class="form-group">
-        <label for="psize"><strong>Portion Size:</strong></label>
-        <input type="number" class="form-control" id ="psize" name="psize">
-        
-        <div class="form-group">
-        <label for="eday"><strong>Expiry Date:</strong></label>
-        <input type="date" class="form-control" id ="eday" name="eday">        
-        </div>
-
-        <div class="form-group">
-        <label for="dish"><strong>Dish:</strong></label>
-        <select name="dish" id="dish">
-            @foreach ($dish as $dish)
-            <option value="{{ $dish->dish_id }}">{{ $dish->dish_name }}</option>
-            @endforeach
+            <option value="pcs">pcs</option>
         </select>
 
         <br>

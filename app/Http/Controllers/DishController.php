@@ -12,6 +12,17 @@ class DishController extends Controller
     public function store(Request $request)
     {
         DB::insert('insert into dish (dish_name, price) values (?, ?)', [$request->input('name'), $request->input('price')]);
+        
+        //$dish_id=implode(',',$request->input('food'));
+        $dish_id = $request->input('food');
+        $inventory_id = $request->input('inventory');
+
+       
+        
+        foreach (array_combine($inventory_id, $dish_id) as $inventory_id => $dish_id) {
+            DB::update('update inventory set dish_id=?  where inventory_id =?',[ $dish_id, $inventory_id]);
+        }
+        
         return redirect()->back()->with('status','Dish Updated Successfully');
     }
 
@@ -25,7 +36,8 @@ class DishController extends Controller
 
     public function new_dish()
     {
-        return view('dish.create_dish');
+        $inventory = DB::select('select * from inventory');
+        return view('dish.create_dish',['inventory'=>$inventory]);
     }
 
     public function update_view($id)

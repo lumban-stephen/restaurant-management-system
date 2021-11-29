@@ -13,28 +13,30 @@ class InventoryController extends Controller
     public function new_inventory()
     {
         $dish = DB::select('select * from dish');
+        
         return view('inventory.create_inventory',['dish'=>$dish]);
     }
 
     public function store(Request $request)
     {
         $date = Carbon::now();
-        if($request->input('qty')){
-            DB::insert('insert into inventory (food_name, unit, quantity, portion_size, restocked_date, expiry_date, dish_id) values (?, ?, ?, ?, ?, ?, ?)', [$request->input('name'), $request->input('unit'), $request->input('qty'), $request->input('psize'), $date->toDateString(),$request->input('eday'), $request->input('dish')]);
-        }
+        $expire = Carbon::now()->addDays(7);
+    
+        DB::insert('insert into ingredient (food_name) values (?)', [$request->input('name')]);
+        $id = DB::getPdo()->lastInsertId();
         
+        DB::insert('insert into inventory (unit, quantity, restocked_date, expiry_date,ingredient_id) values (?, ?, ?, ?, ?)', [$request->input('unit'), $request->input('qty'), $date->toDateString(),$expire->toDateString(),$id]);
+
         return redirect()->back()->with('status','Inventory Updated Successfully');
     }
 
     public function show()
     {
-        $inventory = DB::table('inventory')
-            ->join('dish', 'dish.dish_id', '=', 'inventory.dish_id')
-            ->select('inventory.*', 'dish.*')
-            ->get();
+        $inventory = DB::table('inventory')->join('ingredient','inventory.ingredient_id','=','ingredient.ingredient_id')->select('inventory.*','ingredient.*')->get();
 
-
-        return view('inventory.inventory',['inventory'=>$inventory]);
+        $date = Carbon::now();
+        $today=$date->toDateString();
+        return view('inventory.inventory',['inventory'=>$inventory,'today'=>$today]);
     }
 
     public function update_view($id)
