@@ -1,29 +1,64 @@
-import React from 'react';
-import Authenticated from '@/Layouts/Authenticated';
-import { Head } from '@inertiajs/inertia-react';
+import {useState,useEffect} from "react";
 
-export default function AccountSetting(props) {
-    return (
-        <Authenticated
-            auth={props.auth}
-            errors={props.errors}
-            header={<h2 className="font-semibold text-xl text-gray-800 leading-tight">Dashboard</h2>}
-        >
-            <Head title="AccountSetting" />
+const FetchData = () =>{
+    const [count,setcount]=useState(0);
+    const [text, setText] = useState(0);
+    const [fare,setfare]=useState(0);
+    const [items, setItems]=useState([])
+    const [Person, setPerson]=useState([])
+    const [Samboan, setSamboan]=useState([])
+    const [Danao, setDanao]=useState([])
+    let a="";
 
-            <div className="py-12">
-                <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                        <div className="p-6 bg-white border-b border-gray-200">
+      const[users, setUsers]=useState(0);
+      useEffect(()=>{
+        fetch('/userinfo')
+        .then(response=>response.json())
+        .then(response=>{
+          //console.log(response)
+          setUsers(response)
+        })
+      },[])
+    
+      const handleSubmit=(e)=>{
+          e.preventDefault();
+          addData(text);
+          //console.log(text);
+        
+      /*  
+        e.preventDefault();
+        addItem(text,count);
+        console.log(text);
+      */
+      }
 
-                                <h1>input data here</h1>
 
 
+    return(
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </Authenticated>
-    );
+      <header>
+        
+        <form onSubmit={handleSubmit}>
+            <p>input id 1 ~ 6:</p>
+            <input value={text} onChange={(e)=>{setText(e.target.value)}} type="number" required />
+            <input type="submit" value="Submit" />
+        </form>
+
+        {
+        (users!==0)?
+            <h1>{users[text].login}{text}</h1>
+      
+            
+          :null
+
+        }
+
+      </header>
+
+    )
+
+
 }
+
+
+export default FetchData;

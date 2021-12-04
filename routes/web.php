@@ -36,6 +36,10 @@ Route::get('/account', function () {
     return Inertia::render('AccountSetting');
 })->name('account');
 
+Route::get('/employee', function () {
+    return Inertia::render('EmployeeManagement');
+})->name('employee');
+
 require __DIR__.'/auth.php';
 
 Route::get('/inventory', function () {
