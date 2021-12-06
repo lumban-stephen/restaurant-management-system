@@ -42,9 +42,7 @@ Route::get('/employee', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/inventory', function () {
-    return view('inventory');
-});
+Route::get('/inventory',[App\Http\Controllers\InventoryController::class,'inventoryIndex']);
 
 Route::get('/dish', function () {
     return view('dishmanagement');
