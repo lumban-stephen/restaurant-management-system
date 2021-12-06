@@ -18,5 +18,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//return logged in user info
-Route::get('/userinfo',[App\Http\Controllers\ProfileController::class,'userProfile']);
+

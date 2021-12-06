@@ -1,17 +1,28 @@
 import {useState,useEffect} from "react";
 import { Table,Button, Modal } from 'react-bootstrap';
-import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Employee = () =>{
+  //fetching data from database. Data is stored in "users" as array
+  const[users, setUsers]=useState([]);
+  useEffect(()=>{
+    fetch('/empinfo')
+    .then(response=>response.json())
+    .then(response=>{
+      console.log(response);
+      setUsers(response)  
+    })
+    
+  },[])
     
     const [view, setView] = useState(false);//see details
     const [update, setUpdate] = useState(false);//update
     const [del, setDel] = useState(false);//delete
-    const [addem, setAdd] = useState(false);//add new ? 
+    const [addem, setAdd] = useState({});//add new ? 
     const [selectedData, setSelectedData] = useState({});//data in selected cell
-  
+    const [text, setText] = useState(0);
+    const [data, setData] = useState(users);
 
     const viewClose = () => setView(false);
    // const viewShow = () => setView(true);
@@ -25,25 +36,7 @@ const Employee = () =>{
     const addClose = () => setAdd(false);
     const addShow = () => setAdd(true);
 
-     /*dummy data*/
-    const data = [
-      {
-        id: 1001,
-        firstname: "Mark",
-        lastname: "Otto",
-        age: 34,
-        location: "London",
-        address: "10 Downing Street"
-      },
-      {
-        id: 1002,
-        firstname: "Jacob",
-        lastname: "Jacob",
-        age: 34,
-        location: "India",
-        address: "#110 broad Street"
-      }
-    ];
+  
 
   // when you click the button, data in the cell will be stored in setSelectedData   
   const hanldeClick1 = (selectedRec) => {
@@ -61,6 +54,23 @@ const Employee = () =>{
     setDel(true);
   };
 
+  //data is updated on front end
+  const handleUpdate = () => {
+    console.log(selectedData);
+    const name = document.getElementById("name-update");
+   
+    selectedData.name = name.value;
+    
+    console.log(selectedData);
+    console.log(name.value);
+    data.map((d)=>{
+      d.id === selectedData.id
+      ? { ...d, selectedData }
+      : d
+      
+    })
+    updateClose();
+  }
 
   return (
     <>
@@ -76,11 +86,11 @@ const Employee = () =>{
     </tr>
   </thead>
   <tbody>
-    {data.map((v) => (
+    {users.map((v) => (
             <tr>
               <td>{v.id}</td>
-              <td>{v.firstname}</td>
-              <td>@{v.location}</td>
+              <td>{v.name}</td>
+              <td>@{v.role}</td>
               <td><Button variant="success" onClick={() => hanldeClick1(v)}>View</Button>
       <Button variant="warning" onClick={() => hanldeClick2(v)}>Update</Button>
       <Button variant="danger" onClick={() => hanldeClick3(v)}>Delete</Button>
@@ -107,8 +117,8 @@ const Employee = () =>{
               </tr>
               <tr>
                 <td>{selectedData?.id}</td>
-                <td>{selectedData?.firstname}</td>
-                <td>{selectedData?.location}</td>
+                <td>{selectedData?.name}</td>
+                <td>{selectedData?.role}</td>
               </tr>
           </table>
 
@@ -141,8 +151,9 @@ const Employee = () =>{
               </tr>
               <tr>
                 <td>{selectedData?.id}</td>
-                <td>{selectedData?.firstname}</td>
-                <td>{selectedData?.location}</td>
+                <input type="text" id ="name-update" defaultValue={selectedData?.name} name="email"/>
+                
+                <td>{selectedData?.role}</td>
               </tr>
           </table>
         </Modal.Body>
@@ -150,7 +161,7 @@ const Employee = () =>{
           <Button variant="secondary" onClick={updateClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={updateClose}>
+          <Button variant="primary" onClick={handleUpdate}>
             Save Changes
           </Button>
         </Modal.Footer>
@@ -173,8 +184,8 @@ const Employee = () =>{
               </tr>
               <tr>
                 <td>{selectedData?.id}</td>
-                <td>{selectedData?.firstname}</td>
-                <td>{selectedData?.location}</td>
+                <td>{selectedData?.name}</td>
+                <td>{selectedData?.role}</td>
               </tr>
           </table>
         </Modal.Body>
@@ -197,8 +208,17 @@ const Employee = () =>{
           <Modal.Title>Add new employee</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          
-        
+        <tr>
+                <th scope="col">Id</th>
+                <th scope="col">First</th>
+                <th scope="col">Role</th>
+              </tr>
+        <tr>
+                <td>{selectedData?.id}</td>
+                <input type="text" id ="name-add"   name="email"/>
+                
+                <td>{selectedData?.role}</td>
+              </tr>
 
 
         </Modal.Body>

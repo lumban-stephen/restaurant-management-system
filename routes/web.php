@@ -57,3 +57,9 @@ Route::get('/orders', function () {
 Route::get('/pos', function () {
     return view('ordermanagement');
 });
+
+//return logged in user info
+Route::get('/userinfo',[App\Http\Controllers\ProfileController::class,'userProfile']);
+
+//return all users info
+Route::get('/empinfo',[App\Http\Controllers\EmployeeController::class,'empInfo']);
