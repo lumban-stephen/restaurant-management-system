@@ -9,7 +9,6 @@ class EmployeeController extends Controller
 {
     public function empInfo(){
         $users = DB::table('users')->get();
-        //$users = DB::select('select * from users');
         return $users;
     }
 

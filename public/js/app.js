@@ -7054,13 +7054,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Table.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Modal.js");
-/* harmony import */ var reactjs_popup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactjs-popup */ "./node_modules/reactjs-popup/dist/reactjs-popup.esm.js");
-/* harmony import */ var reactjs_popup_dist_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactjs-popup/dist/index.css */ "./node_modules/reactjs-popup/dist/index.css");
-/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Table.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Modal.js");
+/* harmony import */ var reactjs_popup_dist_index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactjs-popup/dist/index.css */ "./node_modules/reactjs-popup/dist/index.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -7081,37 +7086,61 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-
 var Employee = function Employee() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+  //fetching data from database. Data is stored in "users" as array
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
       _useState2 = _slicedToArray(_useState, 2),
-      view = _useState2[0],
-      setView = _useState2[1]; //see details
+      users = _useState2[0],
+      setUsers = _useState2[1];
 
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    fetch('/empinfo').then(function (response) {
+      return response.json();
+    }).then(function (response) {
+      console.log(response);
+      setUsers(response);
+    });
+  }, []);
 
   var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
       _useState4 = _slicedToArray(_useState3, 2),
-      update = _useState4[0],
-      setUpdate = _useState4[1]; //update
+      view = _useState4[0],
+      setView = _useState4[1]; //see details
 
 
   var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
       _useState6 = _slicedToArray(_useState5, 2),
-      del = _useState6[0],
-      setDel = _useState6[1]; //delete
+      update = _useState6[0],
+      setUpdate = _useState6[1]; //update
 
 
   var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
       _useState8 = _slicedToArray(_useState7, 2),
-      addem = _useState8[0],
-      setAdd = _useState8[1]; //add new ? 
+      del = _useState8[0],
+      setDel = _useState8[1]; //delete
 
 
   var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
       _useState10 = _slicedToArray(_useState9, 2),
-      selectedData = _useState10[0],
-      setSelectedData = _useState10[1]; //data in selected cell
+      addem = _useState10[0],
+      setAdd = _useState10[1]; //add new ? 
 
+
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+      _useState12 = _slicedToArray(_useState11, 2),
+      selectedData = _useState12[0],
+      setSelectedData = _useState12[1]; //data in selected cell
+
+
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
+      _useState14 = _slicedToArray(_useState13, 2),
+      text = _useState14[0],
+      setText = _useState14[1];
+
+  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(users),
+      _useState16 = _slicedToArray(_useState15, 2),
+      data = _useState16[0],
+      setData = _useState16[1];
 
   var viewClose = function viewClose() {
     return setView(false);
@@ -7134,25 +7163,8 @@ var Employee = function Employee() {
 
   var addShow = function addShow() {
     return setAdd(true);
-  };
-  /*dummy data*/
+  }; // when you click the button, data in the cell will be stored in setSelectedData   
 
-
-  var data = [{
-    id: 1001,
-    firstname: "Mark",
-    lastname: "Otto",
-    age: 34,
-    location: "London",
-    address: "10 Downing Street"
-  }, {
-    id: 1002,
-    firstname: "Jacob",
-    lastname: "Jacob",
-    age: 34,
-    location: "India",
-    address: "#110 broad Street"
-  }]; // when you click the button, data in the cell will be stored in setSelectedData   
 
   var hanldeClick1 = function hanldeClick1(selectedRec) {
     setSelectedData(selectedRec);
@@ -7167,53 +7179,68 @@ var Employee = function Employee() {
   var hanldeClick3 = function hanldeClick3(selectedRec) {
     setSelectedData(selectedRec);
     setDel(true);
+  }; //data is updated on front end
+
+
+  var handleUpdate = function handleUpdate() {
+    console.log(selectedData);
+    var name = document.getElementById("name-update");
+    selectedData.name = name.value;
+    console.log(selectedData);
+    console.log(name.value);
+    data.map(function (d) {
+      d.id === selectedData.id ? _objectSpread(_objectSpread({}, d), {}, {
+        selectedData: selectedData
+      }) : d;
+    });
+    updateClose();
   };
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
       variant: "primary",
       onClick: addShow,
       children: "Add New Employee"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
         striped: true,
         bordered: true,
         hover: true,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("thead", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
               children: "#"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
               children: "Name"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
               children: "Role"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
               children: "Action"
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("tbody", {
-          children: data.map(function (v) {
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tbody", {
+          children: users.map(function (v) {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                 children: v.id
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: v.firstname
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                children: ["@", v.location]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: v.name
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
+                children: ["@", v.role]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
                   variant: "success",
                   onClick: function onClick() {
                     return hanldeClick1(v);
                   },
                   children: "View"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
                   variant: "warning",
                   onClick: function onClick() {
                     return hanldeClick2(v);
                   },
                   children: "Update"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
                   variant: "danger",
                   onClick: function onClick() {
                     return hanldeClick3(v);
@@ -7225,156 +7252,182 @@ var Employee = function Employee() {
           })
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
         show: view,
         onHide: viewClose,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Header, {
           closeButton: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
             children: "See Details"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("table", {
             "class": "table",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
                 scope: "col",
                 children: "Id"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
                 scope: "col",
                 children: "First"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
                 scope: "col",
                 children: "Role"
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                 children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.firstname
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.location
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.name
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.role
               })]
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Footer, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
             variant: "secondary",
             onClick: viewClose,
             children: "Close"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
             variant: "primary",
             onClick: viewClose,
             children: "Save Changes"
           })]
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
         show: update,
         onHide: updateClose,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Header, {
           closeButton: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
             children: "Update"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("table", {
             "class": "table",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
                 scope: "col",
                 children: "Id"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
                 scope: "col",
                 children: "First"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
                 scope: "col",
                 children: "Role"
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                 children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.firstname
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.location
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                type: "text",
+                id: "name-update",
+                defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.name,
+                name: "email"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.role
               })]
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Footer, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
             variant: "secondary",
             onClick: updateClose,
             children: "Close"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
             variant: "primary",
-            onClick: updateClose,
+            onClick: handleUpdate,
             children: "Save Changes"
           })]
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
         show: del,
         onHide: delClose,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Header, {
           closeButton: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
             children: "Delete"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("table", {
             "class": "table",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
                 scope: "col",
                 children: "Id"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
                 scope: "col",
                 children: "First"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
                 scope: "col",
                 children: "Role"
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                 children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.firstname
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.location
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.name
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.role
               })]
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Footer, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
             variant: "secondary",
             onClick: delClose,
             children: "Close"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
             variant: "primary",
             onClick: delClose,
             children: "Save Changes"
           })]
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
         show: addem,
         onHide: addClose,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Header, {
           closeButton: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
             children: "Add new employee"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+              scope: "col",
+              children: "Id"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+              scope: "col",
+              children: "First"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+              scope: "col",
+              children: "Role"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+              children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+              type: "text",
+              id: "name-add",
+              name: "email"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+              children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.role
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Footer, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
             variant: "secondary",
             onClick: addClose,
             children: "Close"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
             variant: "primary",
             onClick: addClose,
             children: "Save Changes"
@@ -7402,16 +7455,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
 
 var Inputprofile = function Inputprofile() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+      _useState2 = _slicedToArray(_useState, 2),
+      users = _useState2[0],
+      setUsers = _useState2[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    fetch('/userinfo').then(function (response) {
+      return response.json();
+    }).then(function (response) {
+      console.log(response.name);
+      setUsers(response);
+    });
+  }, []);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("form", {
     action: "#",
     method: "POST",
     enctype: "multipart/form-data",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
       "for": "picture",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
         children: "Picture:"
@@ -7425,8 +7503,8 @@ var Inputprofile = function Inputprofile() {
       id: "picture"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
       "for": "name",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
-        children: "Name:"
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("strong", {
+        children: ["Name: ", users.name, " "]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
       type: "text",
@@ -62240,654 +62318,6 @@ if (false) {} else {
 if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/react-jsx-runtime.development.js */ "./node_modules/react/cjs/react-jsx-runtime.development.js");
 }
-
-
-/***/ }),
-
-/***/ "./node_modules/reactjs-popup/dist/reactjs-popup.esm.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/reactjs-popup/dist/reactjs-popup.esm.js ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "Popup": () => (/* binding */ Popup)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-
-
-
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-var useOnEscape = function useOnEscape(handler, active) {
-  if (active === void 0) {
-    active = true;
-  }
-
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    if (!active) return;
-
-    var listener = function listener(event) {
-      // check if key is an Escape
-      if (event.key === 'Escape') handler(event);
-    };
-
-    document.addEventListener('keyup', listener);
-    return function () {
-      if (!active) return;
-      document.removeEventListener('keyup', listener);
-    };
-  }, [handler, active]);
-};
-var useRepositionOnResize = function useRepositionOnResize(handler, active) {
-  if (active === void 0) {
-    active = true;
-  }
-
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    if (!active) return;
-
-    var listener = function listener() {
-      handler();
-    };
-
-    window.addEventListener('resize', listener);
-    return function () {
-      if (!active) return;
-      window.removeEventListener('resize', listener);
-    };
-  }, [handler, active]);
-};
-var useOnClickOutside = function useOnClickOutside(ref, handler, active) {
-  if (active === void 0) {
-    active = true;
-  }
-
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    if (!active) return;
-
-    var listener = function listener(event) {
-      // Do nothing if clicking ref's element or descendent elements
-      var refs = Array.isArray(ref) ? ref : [ref];
-      var contains = false;
-      refs.forEach(function (r) {
-        if (!r.current || r.current.contains(event.target)) {
-          contains = true;
-          return;
-        }
-      });
-      event.stopPropagation();
-      if (!contains) handler(event);
-    };
-
-    document.addEventListener('mousedown', listener);
-    document.addEventListener('touchstart', listener);
-    return function () {
-      if (!active) return;
-      document.removeEventListener('mousedown', listener);
-      document.removeEventListener('touchstart', listener);
-    };
-  }, [ref, handler, active]);
-}; // Make sure that user is not able TAB out of the Modal content on Open
-
-var useTabbing = function useTabbing(contentRef, active) {
-  if (active === void 0) {
-    active = true;
-  }
-
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    if (!active) return;
-
-    var listener = function listener(event) {
-      // check if key is an Tab
-      if (event.keyCode === 9) {
-        var _contentRef$current;
-
-        var els = contentRef === null || contentRef === void 0 ? void 0 : (_contentRef$current = contentRef.current) === null || _contentRef$current === void 0 ? void 0 : _contentRef$current.querySelectorAll('a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), [tabindex="0"]');
-        var focusableEls = Array.prototype.slice.call(els);
-
-        if (focusableEls.length === 1) {
-          event.preventDefault();
-          return;
-        }
-
-        var firstFocusableEl = focusableEls[0];
-        var lastFocusableEl = focusableEls[focusableEls.length - 1];
-
-        if (event.shiftKey && document.activeElement === firstFocusableEl) {
-          event.preventDefault();
-          lastFocusableEl.focus();
-        } else if (document.activeElement === lastFocusableEl) {
-          event.preventDefault();
-          firstFocusableEl.focus();
-        }
-      }
-    };
-
-    document.addEventListener('keydown', listener);
-    return function () {
-      if (!active) return;
-      document.removeEventListener('keydown', listener);
-    };
-  }, [contentRef, active]);
-};
-var useIsomorphicLayoutEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect : react__WEBPACK_IMPORTED_MODULE_0__.useEffect;
-
-var Style = {
-  popupContent: {
-    tooltip: {
-      position: 'absolute',
-      zIndex: 999
-    },
-    modal: {
-      position: 'relative',
-      margin: 'auto'
-    }
-  },
-  popupArrow: {
-    height: '8px',
-    width: '16px',
-    position: 'absolute',
-    background: 'transparent',
-    color: '#FFF',
-    zIndex: -1
-  },
-  overlay: {
-    tooltip: {
-      position: 'fixed',
-      top: '0',
-      bottom: '0',
-      left: '0',
-      right: '0',
-      zIndex: 999
-    },
-    modal: {
-      position: 'fixed',
-      top: '0',
-      bottom: '0',
-      left: '0',
-      right: '0',
-      display: 'flex',
-      zIndex: 999
-    }
-  }
-};
-
-var POSITION_TYPES = ['top left', 'top center', 'top right', 'right top', 'right center', 'right bottom', 'bottom left', 'bottom center', 'bottom right', 'left top', 'left center', 'left bottom'];
-
-var getCoordinatesForPosition = function getCoordinatesForPosition(triggerBounding, ContentBounding, position, //PopupPosition | PopupPosition[],
-arrow, _ref) {
-  var offsetX = _ref.offsetX,
-      offsetY = _ref.offsetY;
-  var margin = arrow ? 8 : 0;
-  var args = position.split(' '); // the step N 1 : center the popup content => ok
-
-  var CenterTop = triggerBounding.top + triggerBounding.height / 2;
-  var CenterLeft = triggerBounding.left + triggerBounding.width / 2;
-  var height = ContentBounding.height,
-      width = ContentBounding.width;
-  var top = CenterTop - height / 2;
-  var left = CenterLeft - width / 2;
-  var transform = '';
-  var arrowTop = '0%';
-  var arrowLeft = '0%'; // the  step N 2 : => ok
-
-  switch (args[0]) {
-    case 'top':
-      top -= height / 2 + triggerBounding.height / 2 + margin;
-      transform = "rotate(180deg)  translateX(50%)";
-      arrowTop = '100%';
-      arrowLeft = '50%';
-      break;
-
-    case 'bottom':
-      top += height / 2 + triggerBounding.height / 2 + margin;
-      transform = "rotate(0deg) translateY(-100%) translateX(-50%)";
-      arrowLeft = '50%';
-      break;
-
-    case 'left':
-      left -= width / 2 + triggerBounding.width / 2 + margin;
-      transform = " rotate(90deg)  translateY(50%) translateX(-25%)";
-      arrowLeft = '100%';
-      arrowTop = '50%';
-      break;
-
-    case 'right':
-      left += width / 2 + triggerBounding.width / 2 + margin;
-      transform = "rotate(-90deg)  translateY(-150%) translateX(25%)";
-      arrowTop = '50%';
-      break;
-  }
-
-  switch (args[1]) {
-    case 'top':
-      top = triggerBounding.top;
-      arrowTop = triggerBounding.height / 2 + "px";
-      break;
-
-    case 'bottom':
-      top = triggerBounding.top - height + triggerBounding.height;
-      arrowTop = height - triggerBounding.height / 2 + "px";
-      break;
-
-    case 'left':
-      left = triggerBounding.left;
-      arrowLeft = triggerBounding.width / 2 + "px";
-      break;
-
-    case 'right':
-      left = triggerBounding.left - width + triggerBounding.width;
-      arrowLeft = width - triggerBounding.width / 2 + "px";
-      break;
-  }
-
-  top = args[0] === 'top' ? top - offsetY : top + offsetY;
-  left = args[0] === 'left' ? left - offsetX : left + offsetX;
-  return {
-    top: top,
-    left: left,
-    transform: transform,
-    arrowLeft: arrowLeft,
-    arrowTop: arrowTop
-  };
-};
-
-var getTooltipBoundary = function getTooltipBoundary(keepTooltipInside) {
-  // add viewport
-  var boundingBox = {
-    top: 0,
-    left: 0,
-
-    /* eslint-disable-next-line no-undef */
-    width: window.innerWidth,
-
-    /* eslint-disable-next-line no-undef */
-    height: window.innerHeight
-  };
-
-  if (typeof keepTooltipInside === 'string') {
-    /* eslint-disable-next-line no-undef */
-    var selector = document.querySelector(keepTooltipInside);
-
-    if (true) {
-      if (selector === null) throw new Error(keepTooltipInside + " selector does not exist : keepTooltipInside must be a valid html selector 'class' or 'Id'  or a boolean value");
-    }
-
-    if (selector !== null) boundingBox = selector.getBoundingClientRect();
-  }
-
-  return boundingBox;
-};
-
-var calculatePosition = function calculatePosition(triggerBounding, ContentBounding, position, arrow, _ref2, keepTooltipInside) {
-  var offsetX = _ref2.offsetX,
-      offsetY = _ref2.offsetY;
-  var bestCoords = {
-    arrowLeft: '0%',
-    arrowTop: '0%',
-    left: 0,
-    top: 0,
-    transform: 'rotate(135deg)'
-  };
-  var i = 0;
-  var wrapperBox = getTooltipBoundary(keepTooltipInside);
-  var positions = Array.isArray(position) ? position : [position]; // keepTooltipInside would be activated if the  keepTooltipInside exist or the position is Array
-
-  if (keepTooltipInside || Array.isArray(position)) positions = [].concat(positions, POSITION_TYPES); // add viewPort for WarpperBox
-  // wrapperBox.top = wrapperBox.top + window.scrollY;
-  // wrapperBox.left = wrapperBox.left + window.scrollX;
-
-  while (i < positions.length) {
-    bestCoords = getCoordinatesForPosition(triggerBounding, ContentBounding, positions[i], arrow, {
-      offsetX: offsetX,
-      offsetY: offsetY
-    });
-    var contentBox = {
-      top: bestCoords.top,
-      left: bestCoords.left,
-      width: ContentBounding.width,
-      height: ContentBounding.height
-    };
-
-    if (contentBox.top <= wrapperBox.top || contentBox.left <= wrapperBox.left || contentBox.top + contentBox.height >= wrapperBox.top + wrapperBox.height || contentBox.left + contentBox.width >= wrapperBox.left + wrapperBox.width) {
-      i++;
-    } else {
-      break;
-    }
-  }
-
-  return bestCoords;
-};
-
-var popupIdCounter = 0;
-
-var getRootPopup = function getRootPopup() {
-  var PopupRoot = document.getElementById('popup-root');
-
-  if (PopupRoot === null) {
-    PopupRoot = document.createElement('div');
-    PopupRoot.setAttribute('id', 'popup-root');
-    document.body.appendChild(PopupRoot);
-  }
-
-  return PopupRoot;
-};
-
-var Popup = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function (_ref, ref) {
-  var _ref$trigger = _ref.trigger,
-      trigger = _ref$trigger === void 0 ? null : _ref$trigger,
-      _ref$onOpen = _ref.onOpen,
-      onOpen = _ref$onOpen === void 0 ? function () {} : _ref$onOpen,
-      _ref$onClose = _ref.onClose,
-      onClose = _ref$onClose === void 0 ? function () {} : _ref$onClose,
-      _ref$defaultOpen = _ref.defaultOpen,
-      defaultOpen = _ref$defaultOpen === void 0 ? false : _ref$defaultOpen,
-      _ref$open = _ref.open,
-      open = _ref$open === void 0 ? undefined : _ref$open,
-      _ref$disabled = _ref.disabled,
-      disabled = _ref$disabled === void 0 ? false : _ref$disabled,
-      _ref$nested = _ref.nested,
-      nested = _ref$nested === void 0 ? false : _ref$nested,
-      _ref$closeOnDocumentC = _ref.closeOnDocumentClick,
-      closeOnDocumentClick = _ref$closeOnDocumentC === void 0 ? true : _ref$closeOnDocumentC,
-      _ref$repositionOnResi = _ref.repositionOnResize,
-      repositionOnResize = _ref$repositionOnResi === void 0 ? true : _ref$repositionOnResi,
-      _ref$closeOnEscape = _ref.closeOnEscape,
-      closeOnEscape = _ref$closeOnEscape === void 0 ? true : _ref$closeOnEscape,
-      _ref$on = _ref.on,
-      on = _ref$on === void 0 ? ['click'] : _ref$on,
-      _ref$contentStyle = _ref.contentStyle,
-      contentStyle = _ref$contentStyle === void 0 ? {} : _ref$contentStyle,
-      _ref$arrowStyle = _ref.arrowStyle,
-      arrowStyle = _ref$arrowStyle === void 0 ? {} : _ref$arrowStyle,
-      _ref$overlayStyle = _ref.overlayStyle,
-      overlayStyle = _ref$overlayStyle === void 0 ? {} : _ref$overlayStyle,
-      _ref$className = _ref.className,
-      className = _ref$className === void 0 ? '' : _ref$className,
-      _ref$position = _ref.position,
-      position = _ref$position === void 0 ? 'bottom center' : _ref$position,
-      _ref$modal = _ref.modal,
-      modal = _ref$modal === void 0 ? false : _ref$modal,
-      _ref$lockScroll = _ref.lockScroll,
-      lockScroll = _ref$lockScroll === void 0 ? false : _ref$lockScroll,
-      _ref$arrow = _ref.arrow,
-      arrow = _ref$arrow === void 0 ? true : _ref$arrow,
-      _ref$offsetX = _ref.offsetX,
-      offsetX = _ref$offsetX === void 0 ? 0 : _ref$offsetX,
-      _ref$offsetY = _ref.offsetY,
-      offsetY = _ref$offsetY === void 0 ? 0 : _ref$offsetY,
-      _ref$mouseEnterDelay = _ref.mouseEnterDelay,
-      mouseEnterDelay = _ref$mouseEnterDelay === void 0 ? 100 : _ref$mouseEnterDelay,
-      _ref$mouseLeaveDelay = _ref.mouseLeaveDelay,
-      mouseLeaveDelay = _ref$mouseLeaveDelay === void 0 ? 100 : _ref$mouseLeaveDelay,
-      _ref$keepTooltipInsid = _ref.keepTooltipInside,
-      keepTooltipInside = _ref$keepTooltipInsid === void 0 ? false : _ref$keepTooltipInsid,
-      children = _ref.children;
-
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(open || defaultOpen),
-      isOpen = _useState[0],
-      setIsOpen = _useState[1];
-
-  var triggerRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
-  var contentRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
-  var arrowRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
-  var focusedElBeforeOpen = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
-  var popupId = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)("popup-" + ++popupIdCounter);
-  var isModal = modal ? true : !trigger;
-  var timeOut = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(0);
-  useIsomorphicLayoutEffect(function () {
-    if (isOpen) {
-      focusedElBeforeOpen.current = document.activeElement;
-      setPosition();
-      focusContentOnOpen(); // for accessibility
-
-      lockScrolll();
-    } else {
-      resetScroll();
-    }
-
-    return function () {
-      clearTimeout(timeOut.current);
-    };
-  }, [isOpen]); // for uncontrolled popup we need to sync isOpen with open prop
-
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    if (typeof open === 'boolean') {
-      if (open) openPopup();else closePopup();
-    }
-  }, [open, disabled]);
-
-  var openPopup = function openPopup(event) {
-    if (isOpen || disabled) return;
-    setIsOpen(true);
-    setTimeout(function () {
-      return onOpen(event);
-    }, 0);
-  };
-
-  var closePopup = function closePopup(event) {
-    var _focusedElBeforeOpen$;
-
-    if (!isOpen || disabled) return;
-    setIsOpen(false);
-    if (isModal) (_focusedElBeforeOpen$ = focusedElBeforeOpen.current) === null || _focusedElBeforeOpen$ === void 0 ? void 0 : _focusedElBeforeOpen$.focus();
-    setTimeout(function () {
-      return onClose(event);
-    }, 0);
-  };
-
-  var togglePopup = function togglePopup(event) {
-    event === null || event === void 0 ? void 0 : event.stopPropagation();
-    if (!isOpen) openPopup(event);else closePopup(event);
-  };
-
-  var onMouseEnter = function onMouseEnter(event) {
-    clearTimeout(timeOut.current);
-    timeOut.current = setTimeout(function () {
-      return openPopup(event);
-    }, mouseEnterDelay);
-  };
-
-  var onContextMenu = function onContextMenu(event) {
-    event === null || event === void 0 ? void 0 : event.preventDefault();
-    togglePopup();
-  };
-
-  var onMouseLeave = function onMouseLeave(event) {
-    clearTimeout(timeOut.current);
-    timeOut.current = setTimeout(function () {
-      return closePopup(event);
-    }, mouseLeaveDelay);
-  };
-
-  var lockScrolll = function lockScrolll() {
-    if (isModal && lockScroll) document.getElementsByTagName('body')[0].style.overflow = 'hidden'; // migrate to document.body
-  };
-
-  var resetScroll = function resetScroll() {
-    if (isModal && lockScroll) document.getElementsByTagName('body')[0].style.overflow = 'auto';
-  };
-
-  var focusContentOnOpen = function focusContentOnOpen() {
-    var _contentRef$current;
-
-    var focusableEls = contentRef === null || contentRef === void 0 ? void 0 : (_contentRef$current = contentRef.current) === null || _contentRef$current === void 0 ? void 0 : _contentRef$current.querySelectorAll('a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), [tabindex="0"]');
-    var firstEl = Array.prototype.slice.call(focusableEls)[0];
-    firstEl === null || firstEl === void 0 ? void 0 : firstEl.focus();
-  };
-
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useImperativeHandle)(ref, function () {
-    return {
-      open: function open() {
-        openPopup();
-      },
-      close: function close() {
-        closePopup();
-      },
-      toggle: function toggle() {
-        togglePopup();
-      }
-    };
-  }); // set Position
-
-  var setPosition = function setPosition() {
-    if (isModal || !isOpen) return;
-    if (!(triggerRef === null || triggerRef === void 0 ? void 0 : triggerRef.current) || !(triggerRef === null || triggerRef === void 0 ? void 0 : triggerRef.current) || !(contentRef === null || contentRef === void 0 ? void 0 : contentRef.current)) return; /// show error as one of ref is undefined
-
-    var trigger = triggerRef.current.getBoundingClientRect();
-    var content = contentRef.current.getBoundingClientRect();
-    var cords = calculatePosition(trigger, content, position, arrow, {
-      offsetX: offsetX,
-      offsetY: offsetY
-    }, keepTooltipInside);
-    contentRef.current.style.top = cords.top + window.scrollY + "px";
-    contentRef.current.style.left = cords.left + window.scrollX + "px";
-
-    if (arrow && !!arrowRef.current) {
-      var _arrowStyle$top, _arrowStyle$left;
-
-      arrowRef.current.style.transform = cords.transform;
-      arrowRef.current.style.setProperty('-ms-transform', cords.transform);
-      arrowRef.current.style.setProperty('-webkit-transform', cords.transform);
-      arrowRef.current.style.top = ((_arrowStyle$top = arrowStyle.top) === null || _arrowStyle$top === void 0 ? void 0 : _arrowStyle$top.toString()) || cords.arrowTop;
-      arrowRef.current.style.left = ((_arrowStyle$left = arrowStyle.left) === null || _arrowStyle$left === void 0 ? void 0 : _arrowStyle$left.toString()) || cords.arrowLeft;
-    }
-  }; // hooks
-
-
-  useOnEscape(closePopup, closeOnEscape); // can be optimized if we disabled for hover
-
-  useTabbing(contentRef, isOpen && isModal);
-  useRepositionOnResize(setPosition, repositionOnResize);
-  useOnClickOutside(!!trigger ? [contentRef, triggerRef] : [contentRef], closePopup, closeOnDocumentClick && !nested); // we need to add a ne
-  // render the trigger element and add events
-
-  var renderTrigger = function renderTrigger() {
-    var triggerProps = {
-      key: 'T',
-      ref: triggerRef,
-      'aria-describedby': popupId.current
-    };
-    var onAsArray = Array.isArray(on) ? on : [on];
-
-    for (var i = 0, len = onAsArray.length; i < len; i++) {
-      switch (onAsArray[i]) {
-        case 'click':
-          triggerProps.onClick = togglePopup;
-          break;
-
-        case 'right-click':
-          triggerProps.onContextMenu = onContextMenu;
-          break;
-
-        case 'hover':
-          triggerProps.onMouseEnter = onMouseEnter;
-          triggerProps.onMouseLeave = onMouseLeave;
-          break;
-
-        case 'focus':
-          triggerProps.onFocus = onMouseEnter;
-          triggerProps.onBlur = onMouseLeave;
-          break;
-      }
-    }
-
-    if (typeof trigger === 'function') {
-      var comp = trigger(isOpen);
-      return !!trigger && react__WEBPACK_IMPORTED_MODULE_0__.cloneElement(comp, triggerProps);
-    }
-
-    return !!trigger && react__WEBPACK_IMPORTED_MODULE_0__.cloneElement(trigger, triggerProps);
-  };
-
-  var addWarperAction = function addWarperAction() {
-    var popupContentStyle = isModal ? Style.popupContent.modal : Style.popupContent.tooltip;
-    var childrenElementProps = {
-      className: "popup-content " + (className !== '' ? className.split(' ').map(function (c) {
-        return c + "-content";
-      }).join(' ') : ''),
-      style: _extends({}, popupContentStyle, contentStyle, {
-        pointerEvents: 'auto'
-      }),
-      ref: contentRef,
-      onClick: function onClick(e) {
-        e.stopPropagation();
-      }
-    };
-
-    if (!modal && on.indexOf('hover') >= 0) {
-      childrenElementProps.onMouseEnter = onMouseEnter;
-      childrenElementProps.onMouseLeave = onMouseLeave;
-    }
-
-    return childrenElementProps;
-  };
-
-  var renderContent = function renderContent() {
-    return react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", Object.assign({}, addWarperAction(), {
-      key: "C",
-      role: isModal ? 'dialog' : 'tooltip',
-      id: popupId.current
-    }), arrow && !isModal && react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      ref: arrowRef,
-      style: Style.popupArrow
-    }, react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", {
-      "data-testid": "arrow",
-      className: "popup-arrow " + (className !== '' ? className.split(' ').map(function (c) {
-        return c + "-arrow";
-      }).join(' ') : ''),
-      viewBox: "0 0 32 16",
-      style: _extends({
-        position: 'absolute'
-      }, arrowStyle)
-    }, react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
-      d: "M16 0l16 16H0z",
-      fill: "currentcolor"
-    }))), children && typeof children === 'function' ? children(closePopup, isOpen) : children);
-  };
-
-  var overlay = !(on.indexOf('hover') >= 0);
-  var ovStyle = isModal ? Style.overlay.modal : Style.overlay.tooltip;
-  var content = [overlay && react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    key: "O",
-    "data-testid": "overlay",
-    "data-popup": isModal ? 'modal' : 'tooltip',
-    className: "popup-overlay " + (className !== '' ? className.split(' ').map(function (c) {
-      return c + "-overlay";
-    }).join(' ') : ''),
-    style: _extends({}, ovStyle, overlayStyle, {
-      pointerEvents: closeOnDocumentClick && nested || isModal ? 'auto' : 'none'
-    }),
-    onClick: closeOnDocumentClick && nested ? closePopup : undefined,
-    tabIndex: -1
-  }, isModal && renderContent()), !isModal && renderContent()];
-  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, renderTrigger(), isOpen && react_dom__WEBPACK_IMPORTED_MODULE_1__.createPortal(content, getRootPopup()));
-});
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Popup);
-
-//# sourceMappingURL=reactjs-popup.esm.js.map
 
 
 /***/ }),
