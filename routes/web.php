@@ -32,11 +32,21 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/account', function () {
+    return Inertia::render('AccountSetting');
+})->name('account');
+
+Route::get('/employee', function () {
+    return Inertia::render('EmployeeManagement');
+})->name('employee');
+
+Route::get('/inventorymanagement', function () {
+    return Inertia::render('Inventory');
+})->name('inventorymanagement');
+
 require __DIR__.'/auth.php';
 
-Route::get('/inventory', function () {
-    return view('inventory');
-});
+Route::get('/inventory',[App\Http\Controllers\InventoryController::class,'inventoryIndex']);
 
 Route::get('/dish', function () {
     return view('dishmanagement');
@@ -49,3 +59,9 @@ Route::get('/orders', function () {
 Route::get('/pos', function () {
     return view('ordermanagement');
 });
+
+//return logged in user info
+Route::get('/userinfo',[App\Http\Controllers\ProfileController::class,'userProfile']);
+
+//return all users info
+Route::get('/empinfo',[App\Http\Controllers\EmployeeController::class,'empInfo']);

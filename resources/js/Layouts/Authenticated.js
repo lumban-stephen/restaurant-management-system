@@ -24,6 +24,21 @@ export default function Authenticated({ auth, header, children }) {
                                 <NavLink href={route('dashboard')} active={route().current('dashboard')}>
                                     Dashboard
                                 </NavLink>
+                                <NavLink href={route('inventorymanagement')} active={route().current('inventorymanagement')}>
+                                    Inventory
+                                </NavLink>
+                                <NavLink href={route('account')} active={route().current('account')}>
+                                    Dish
+                                </NavLink>
+                                <NavLink href={route('account')} active={route().current('account')}>
+                                    Order Management
+                                </NavLink>
+                                <NavLink href={route('account')} active={route().current('account')}>
+                                    Account
+                                </NavLink>
+                                <NavLink href={route('employee')} active={route().current('employee')}>
+                                    Employee Management
+                                </NavLink>
                             </div>
                         </div>
 
@@ -57,6 +72,9 @@ export default function Authenticated({ auth, header, children }) {
                                     <Dropdown.Content>
                                         <Dropdown.Link href={route('logout')} method="post" as="button">
                                             Log Out
+                                        </Dropdown.Link>
+                                        <Dropdown.Link href={route('account')} method="get"as="button">
+                                            account
                                         </Dropdown.Link>
                                     </Dropdown.Content>
                                 </Dropdown>
