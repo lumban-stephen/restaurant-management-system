@@ -40,6 +40,10 @@ Route::get('/employee', function () {
     return Inertia::render('EmployeeManagement');
 })->name('employee');
 
+Route::get('/inventorymanagement', function () {
+    return Inertia::render('Inventory');
+})->name('inventorymanagement');
+
 require __DIR__.'/auth.php';
 
 Route::get('/inventory',[App\Http\Controllers\InventoryController::class,'inventoryIndex']);
