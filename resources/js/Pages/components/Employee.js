@@ -58,8 +58,14 @@ const Employee = () =>{
   const handleUpdate = () => {
     console.log(selectedData);
     const name = document.getElementById("name-update");
+    const role = document.getElementById("role-update");
+    const mail = document.getElementById("mail-update");
+    const salary = document.getElementById("salary-update");
    
     selectedData.name = name.value;
+    selectedData.role = role.value;
+    selectedData.mail = mail.value;
+    selectedData.salary = salary.value;
     
     console.log(selectedData);
     console.log(name.value);
@@ -109,20 +115,15 @@ const Employee = () =>{
           <Modal.Title>See Details</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        <table class="table">
-              <tr>
-                <th scope="col">Id</th>
-                <th scope="col">First</th>
-                <th scope="col">Role</th>
-              </tr>
-              <tr>
-                <td>{selectedData?.id}</td>
-                <td>{selectedData?.name}</td>
-                <td>{selectedData?.role}</td>
-              </tr>
-          </table>
-
-
+        <strong>Id:  {selectedData?.id}</strong>
+        <br />
+        <strong>Name:  {selectedData?.name}</strong>
+        <br />
+        <strong>Role:  {selectedData?.role}</strong>
+        <br />
+        <strong>Email:  {selectedData?.email}</strong>
+        <br />
+        <strong>Salary:  {selectedData?.salary}</strong>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={viewClose}>
@@ -143,19 +144,23 @@ const Employee = () =>{
           <Modal.Title>Update</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        <table class="table">
-              <tr>
-                <th scope="col">Id</th>
-                <th scope="col">First</th>
-                <th scope="col">Role</th>
-              </tr>
-              <tr>
-                <td>{selectedData?.id}</td>
-                <input type="text" id ="name-update" defaultValue={selectedData?.name} name="email"/>
-                
-                <td>{selectedData?.role}</td>
-              </tr>
-          </table>
+          <strong>Id:  {selectedData?.id}</strong>
+          <br />
+          <strong>Name:  </strong>
+          <input type="text" id ="name-update" defaultValue={selectedData?.name} name="name"/>
+          <br />
+          <strong>Role:  {selectedData?.role}</strong>
+          <select defaultValue={selectedData?.role} name="role" id ="role-update">
+          <option>Open this select menu</option>
+          <option value="emplpyee">emplpyee</option>
+          <option value="admin">admin</option>
+          </select>
+          <br />
+          <strong>Email:  </strong>
+          <input type="text" class="form-control" id ="email-update" defaultValue={selectedData?.email} name="email" />
+          <br />
+          <strong>Salary:  </strong>
+          <input type="number" class="form-control" id ="salary-update" defaultValue={selectedData?.salary} name="salary" />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={updateClose}>

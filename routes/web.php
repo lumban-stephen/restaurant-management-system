@@ -65,3 +65,6 @@ Route::get('/userinfo',[App\Http\Controllers\ProfileController::class,'userProfi
 
 //return all users info
 Route::get('/empinfo',[App\Http\Controllers\EmployeeController::class,'empInfo']);
+
+//update user info
+Route::post('/updateAccount',[App\Http\Controllers\ProfileController::class,'userUpdate']);
