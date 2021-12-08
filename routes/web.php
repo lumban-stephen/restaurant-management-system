@@ -57,8 +57,8 @@ Route::get('/orders', function () {
 });
 
 Route::get('/pos', function () {
-    return view('ordermanagement');
-});
+    return Inertia::render('Pos');
+})->name('posmanagement');
 
 //return logged in user info
 Route::get('/userinfo',[App\Http\Controllers\ProfileController::class,'userProfile']);
