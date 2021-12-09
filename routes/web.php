@@ -46,11 +46,9 @@ Route::get('/inventorymanagement', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/inventory',[App\Http\Controllers\InventoryController::class,'inventoryIndex']);
-
 Route::get('/dish', function () {
     return view('dishmanagement');
-});
+})->name('dish');
 
 Route::get('/orders', function () {
     return view('ordermanagement');
@@ -60,8 +58,17 @@ Route::get('/pos', function () {
     return view('ordermanagement');
 });
 
+//return inventory info
+Route::get('/inventory',[App\Http\Controllers\InventoryController::class,'inventoryIndex']);
+
 //return logged in user info
 Route::get('/userinfo',[App\Http\Controllers\ProfileController::class,'userProfile']);
 
 //return all users info
 Route::get('/empinfo',[App\Http\Controllers\EmployeeController::class,'empInfo']);
+
+//return all dish table info
+Route::get('/dishindex',[App\Http\Controllers\DishController::class,'dishIndex']);
+
+//return all dish ingredients info
+Route::get('/dishingredientindex',[App\Http\Controllers\DishIngredientController::class,'dishIngredientIndex']);
