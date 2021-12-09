@@ -60,8 +60,8 @@ const Dishes = () =>{
     const addClose = () => setaddDish(false);
     const addShow = () => setAddDish(true);
 
-    const addIngredientShow = () => setaddDi(false);
-    const addIngredientClose = () => setaddDi(true);
+    const addIngredientShow = () => setaddDi(true);
+    const addIngredientClose = () => setaddDi(false);
 
   
 

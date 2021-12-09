@@ -44,14 +44,14 @@ Route::get('/inventorymanagement', function () {
     return Inertia::render('Inventory');
 })->name('inventorymanagement');
 
-require __DIR__.'/auth.php';
-
 Route::get('/dish', function () {
-    return view('dishmanagement');
+    return Inertia::render('DishManagement');
 })->name('dish');
 
+require __DIR__.'/auth.php';
+
 Route::get('/orders', function () {
-    return view('ordermanagement');
+    return view('Ordermanagement');
 });
 
 Route::get('/pos', function () {

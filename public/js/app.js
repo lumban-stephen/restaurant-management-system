@@ -7300,11 +7300,11 @@ var Dishes = function Dishes() {
   };
 
   var addIngredientShow = function addIngredientShow() {
-    return setaddDi(false);
+    return setaddDi(true);
   };
 
   var addIngredientClose = function addIngredientClose() {
-    return setaddDi(true);
+    return setaddDi(false);
   }; // when you click the button, data in the cell will be stored in setSelectedData   
 
 
@@ -8136,7 +8136,7 @@ var Ingredients = function Ingredients() {
   };
 
   var addShow = function addShow() {
-    return setAdd(false);
+    return setAdd(true);
   }; // when you click the button, data in the cell will be stored in setSelectedData   
 
 
