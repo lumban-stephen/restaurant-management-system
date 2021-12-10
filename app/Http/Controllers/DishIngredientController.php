@@ -13,4 +13,5 @@ class DishIngredientController extends Controller
 
         return $dishIngredient;
     }
+
 }
