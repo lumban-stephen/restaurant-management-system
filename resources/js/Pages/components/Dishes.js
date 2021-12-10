@@ -63,7 +63,29 @@ const Dishes = () =>{
     const addIngredientShow = () => setaddDi(true);
     const addIngredientClose = () => setaddDi(false);
 
+      //add new ingredients and send it to database
+      const addNew = async (e) => {
+        e.preventDefault();
+        console.log(addem);
+        const res = await axios.post('/dishsave',addem).then(res => console.log(res.data));
+    
+      }
   
+        //when you click save changes, it is sent to database
+    const saveUpdate = async (e) => {
+      e.preventDefault();
+      console.log(selectedData);
+      const res = await axios.post('/dishupdate',selectedData).then(res => console.log(res.data));
+  
+    }
+  
+        //when you click save changes, it is sent to database
+    const deleteDish = async (e) => {
+      e.preventDefault();
+      console.log(selectedData);
+      const res = await axios.post('/dishdel',selectedData).then(res => console.log(res.data));
+  
+    }
 
   // when you click the button, data in the cell will be stored in setSelectedData   
   const hanldeClick1 = (selectedRec) => {
@@ -121,9 +143,9 @@ const Dishes = () =>{
                         <td> { v.price } </td>
                         <td> <Button variant="warning" onClick={() => showIngredients(v.id)}>...</Button> </td>
                         <td>  
-                            <Button variant="success" onClick={() => hanldeClick1(v)}>View</Button>
-                            <Button variant="warning" onClick={() => hanldeClick2(v)}>Update</Button>
-                            <Button variant="danger" onClick={() => hanldeClick3(v)}>Delete</Button>
+                            <Button variant="success" onClick={() => addNew(v)}>View</Button>
+                            <Button variant="warning" onClick={() => saveUpdate(v)}>Update</Button>
+                            <Button variant="danger" onClick={() => deleteDish(v)}>Delete</Button>
                         </td>
                         </tr>
                     ))}
