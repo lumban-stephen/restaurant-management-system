@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 
 
-const Inputprofile = () =>{
+const KitchenDisplay = () =>{
   let state1 = {
     id : 0,
     name : "users.name",
@@ -63,4 +63,4 @@ const Inputprofile = () =>{
 }
 
 
-export default Inputprofile;
+export default KitchenDisplay;
