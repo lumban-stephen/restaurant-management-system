@@ -8273,7 +8273,7 @@ var Ingredients = function Ingredients() {
   };
 
   var addShow = function addShow() {
-    return setShowadd(false);
+    return setShowadd(true);
   }; // when you click the button, data in the cell will be stored in setSelectedData   
 
 
@@ -8324,7 +8324,7 @@ var Ingredients = function Ingredients() {
               e.preventDefault();
               console.log(addem);
               _context.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/dishsave', addem).then(function (res) {
+              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/add path', addem).then(function (res) {
                 return console.log(res.data);
               });
 
@@ -8355,7 +8355,7 @@ var Ingredients = function Ingredients() {
               e.preventDefault();
               console.log(selectedData);
               _context2.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/dishupdate', selectedData).then(function (res) {
+              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/add path', selectedData).then(function (res) {
                 return console.log(res.data);
               });
 
@@ -8386,7 +8386,7 @@ var Ingredients = function Ingredients() {
               e.preventDefault();
               console.log(selectedData);
               _context3.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/dishdel', selectedData).then(function (res) {
+              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/add path', selectedData).then(function (res) {
                 return console.log(res.data);
               });
 
