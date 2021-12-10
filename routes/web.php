@@ -68,3 +68,10 @@ Route::get('/empinfo',[App\Http\Controllers\EmployeeController::class,'empInfo']
 
 //update user info
 Route::post('/updateAccount',[App\Http\Controllers\ProfileController::class,'userUpdate']);
+
+//update employee info
+Route::post('/updateEmp',[App\Http\Controllers\EmployeeController::class,'updateEmp']);
+//delete employee info
+Route::post('/deleteEmp',[App\Http\Controllers\EmployeeController::class,'deleteEmp']);
+//add new employee info
+Route::post('/addNewEmp',[App\Http\Controllers\EmployeeController::class,'store']);

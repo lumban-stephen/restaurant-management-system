@@ -32,7 +32,7 @@ const Inputprofile = () =>{
       setState({...state, [nm]: e.target.value});
     }
 
-    //when you input data, it is changed
+    //when you click save changes, it is sent to database
     const saveStudent = async (e) => {
       e.preventDefault();
       console.log(state);
