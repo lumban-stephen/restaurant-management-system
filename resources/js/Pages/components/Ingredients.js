@@ -62,11 +62,13 @@ const Ingredients = () =>{
     const quantity = document.getElementById("qty-update");    
     const rdate = document.getElementById("restock-update");
     const edate = document.getElementById("expiry-update");
+    const unit = document.getElementById("unit-update");
    
     selectedData.food_name = name.value;
     selectedData.quantity = quantity.value;
     selectedData.restocked_date = rdate.value;
     selectedData.expiry_date = edate.value;
+    selectedData.unit = unit.value;
     
     data.map((d)=>{
       d.inventory_id === selectedData.inventory_id
@@ -84,6 +86,14 @@ const Ingredients = () =>{
       const res = await axios.post('/add path',addem).then(res => console.log(res.data));
   
     }
+
+      //when you click save changes, it is sent to database
+  const saveUpdate = async (e) => {
+    e.preventDefault();
+    console.log(selectedData);
+    const res = await axios.post('/add path',selectedData).then(res => console.log(res.data));
+
+  }
 
       //when you click save changes, it is sent to database
   const deleteIng = async (e) => {
@@ -197,27 +207,36 @@ const Ingredients = () =>{
         <Modal.Header closeButton>
           <Modal.Title>Update</Modal.Title>
         </Modal.Header>
+        <form onSubmit={saveUpdate} >
         <Modal.Body>
-        <table class="table">
-              <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Ingredient</th>
-                <th scope="col">Unit</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Restock Date</th>
-                <th scope="col">Expiry Date</th>
-              </tr>
-              <tr>
-                <td>{selectedData?.food_name}</td>
-                <input type="text" id ="name-update" defaultValue={selectedData?.food_name} name="ingredient"/>
-                <td>{selectedData?.quantity}</td>
-                <input type="text" id ="qty-update" defaultValue={selectedData?.quantity} name="qty"/>
-                <td>{selectedData?.restocked_date}</td>
-                <input type="date" id ="restock-update" defaultValue={selectedData?.restocked_date} name="r-date"/>
-                <td>{selectedData?.expiry_date}</td>
-                <input type="date" id ="expiry-update" defaultValue={selectedData?.expiry_date} name="x-date"/>
-              </tr>
-          </table>
+        <strong>Id:  {selectedData?.id}</strong>
+        <br />
+        
+        <strong>Ingredient:  </strong>
+        <input type="text" id ="name-update" defaultValue={selectedData?.food_name} name="food_name"/>
+        <br />
+
+        <strong>Unit:  </strong>
+        <select defaultValue={selectedData?.role} name="unit" id ="unit-update">
+        <option>Open this select menu</option>
+          <option value="grams">grams</option>
+          <option value="kg">kg</option>
+          <option value="pcs">pcs</option>
+          <option value="l">l</option>
+        </select>
+        <br />
+
+        <strong>Quantity:  </strong>
+        <input type="text" id ="qty-update" defaultValue={selectedData?.quantity} name="quantity"/>
+
+        <br />
+        <strong>Restock Date:  {selectedData?.restocked_date}</strong>
+        <input type="date" id ="restock-update" defaultValue={selectedData?.restocked_date} name="restocked_date"/>
+
+        <br />
+        <strong>Expiry Date:  {selectedData?.expiry_date}</strong>
+        <input type="date" id ="expiry-update" defaultValue={selectedData?.expiry_date} name="expiry_date"/>
+
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={updateClose}>
@@ -227,6 +246,7 @@ const Ingredients = () =>{
             Save Changes
           </Button>
         </Modal.Footer>
+        </form>
       </Modal>
       </div>
       {/*  pop up modal for Update ends here */} 

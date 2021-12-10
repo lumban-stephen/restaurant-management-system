@@ -8195,10 +8195,12 @@ var Ingredients = function Ingredients() {
     var quantity = document.getElementById("qty-update");
     var rdate = document.getElementById("restock-update");
     var edate = document.getElementById("expiry-update");
+    var unit = document.getElementById("unit-update");
     selectedData.food_name = name.value;
     selectedData.quantity = quantity.value;
     selectedData.restocked_date = rdate.value;
     selectedData.expiry_date = edate.value;
+    selectedData.unit = unit.value;
     data.map(function (d) {
       d.inventory_id === selectedData.inventory_id ? _objectSpread(_objectSpread({}, d), {}, {
         selectedData: selectedData
@@ -8239,7 +8241,7 @@ var Ingredients = function Ingredients() {
   }(); //when you click save changes, it is sent to database
 
 
-  var deleteIng = /*#__PURE__*/function () {
+  var saveUpdate = /*#__PURE__*/function () {
     var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2(e) {
       var res;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
@@ -8264,8 +8266,39 @@ var Ingredients = function Ingredients() {
       }, _callee2);
     }));
 
-    return function deleteIng(_x2) {
+    return function saveUpdate(_x2) {
       return _ref2.apply(this, arguments);
+    };
+  }(); //when you click save changes, it is sent to database
+
+
+  var deleteIng = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3(e) {
+      var res;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
+        while (1) {
+          switch (_context3.prev = _context3.next) {
+            case 0:
+              e.preventDefault();
+              console.log(selectedData);
+              _context3.next = 4;
+              return axios.post('/add path', selectedData).then(function (res) {
+                return console.log(res.data);
+              });
+
+            case 4:
+              res = _context3.sent;
+
+            case 5:
+            case "end":
+              return _context3.stop();
+          }
+        }
+      }, _callee3);
+    }));
+
+    return function deleteIng(_x3) {
+      return _ref3.apply(this, arguments);
     };
   }(); //data is deleted on front end
 
@@ -8426,70 +8459,71 @@ var Ingredients = function Ingredients() {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
             children: "Update"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
-            "class": "table",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-                scope: "col",
-                children: "Id"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-                scope: "col",
-                children: "Ingredient"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-                scope: "col",
-                children: "Unit"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-                scope: "col",
-                children: "Quantity"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-                scope: "col",
-                children: "Restock Date"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-                scope: "col",
-                children: "Expiry Date"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+          onSubmit: saveUpdate,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("strong", {
+              children: ["Id:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.id]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Ingredient:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "text",
+              id: "name-update",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.food_name,
+              name: "food_name"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Unit:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.role,
+              name: "unit",
+              id: "unit-update",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                children: "Open this select menu"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                value: "grams",
+                children: "grams"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                value: "kg",
+                children: "kg"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                value: "pcs",
+                children: "pcs"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                value: "l",
+                children: "l"
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.food_name
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "text",
-                id: "name-update",
-                defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.food_name,
-                name: "ingredient"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.quantity
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "text",
-                id: "qty-update",
-                defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.quantity,
-                name: "qty"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.restocked_date
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "date",
-                id: "restock-update",
-                defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.restocked_date,
-                name: "r-date"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.expiry_date
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "date",
-                id: "expiry-update",
-                defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.expiry_date,
-                name: "x-date"
-              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Quantity:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "text",
+              id: "qty-update",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.quantity,
+              name: "quantity"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("strong", {
+              children: ["Restock Date:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.restocked_date]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "date",
+              id: "restock-update",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.restocked_date,
+              name: "restocked_date"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("strong", {
+              children: ["Expiry Date:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.expiry_date]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "date",
+              id: "expiry-update",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.expiry_date,
+              name: "expiry_date"
             })]
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            variant: "secondary",
-            onClick: updateClose,
-            children: "Close"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            variant: "primary",
-            onClick: handleUpdate,
-            children: "Save Changes"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "secondary",
+              onClick: updateClose,
+              children: "Close"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "primary",
+              onClick: handleUpdate,
+              children: "Save Changes"
+            })]
           })]
         })]
       })
