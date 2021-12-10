@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Table,Button, Modal } from 'react-bootstrap';
 import 'reactjs-popup/dist/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
+
 
 const Ingredients = () =>{
   //fetching data from database. Data is stored in "users" as array
