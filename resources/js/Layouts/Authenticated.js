@@ -30,7 +30,7 @@ export default function Authenticated({ auth, header, children }) {
                                 <NavLink href={route('account')} active={route().current('account')}>
                                     Dish
                                 </NavLink>
-                                <NavLink href={route('account')} active={route().current('account')}>
+                                <NavLink href={route('ordermanagement')} active={route().current('ordermanagement')}>
                                     Order Management
                                 </NavLink>
                                 <NavLink href={route('account')} active={route().current('account')}>
