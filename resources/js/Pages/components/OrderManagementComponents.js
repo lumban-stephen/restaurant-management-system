@@ -21,12 +21,14 @@ const OrderManagementComponents = () =>{
     const [update, setUpdate] = useState(false);//pop up for update
     const [del, setDel] = useState(false);//pop up for delete
     const [selectedData, setSelectedData] = useState({});//data in selected cell
+    const [addem, setAdd] = useState({});//add new  
+    const [showAdd, setShowadd] = useState(false);//delete
 
     const viewClose = () => setView(false);
-
     const updateClose = () => setUpdate(false);
-
     const delClose = () => setDel(false);
+    const addClose = () => setShowadd(false);
+    const addShow = () => setShowadd(true);
 
   // when you click the button, data in the cell will be stored in setSelectedData 
   //view  
@@ -61,6 +63,14 @@ const OrderManagementComponents = () =>{
 
   }
 
+  //when you click save changes, it is sent to database
+  const addNew = async (e) => {
+    e.preventDefault();
+    console.log(addem);
+    const res = await axios.post('/addNewEmp',addem).then(res => console.log(res.data));
+
+  }  
+
   //data is updated on front end
   const handleUpdate = () => {
     console.log(selectedData);
@@ -94,8 +104,22 @@ const OrderManagementComponents = () =>{
     delClose();
   }
 
+  const addNewEmp=()=>{
+    setUsers([...users,
+    addem])
+  }
+
+  //input data in add new employee
+  const handleInput = (e) => {
+    e.persist();
+    const nm = e.target.name;
+    console.log(nm)
+    setAdd({...addem, [nm]: e.target.value});
+  }
+
   return (
     <>
+    <Button variant="primary" onClick={addShow}>Add New Order</Button>
     <div>
     <Table striped bordered hover>
   <thead>
@@ -222,6 +246,50 @@ const OrderManagementComponents = () =>{
       </Modal>
       </div>
       {/*  pop up modal for Delete ends here */} 
+
+      {/*  pop up modal for add starts here */} 
+      <div>
+      <Modal show={showAdd} onHide={addClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Add new employee</Modal.Title>
+        </Modal.Header>
+
+        <form onSubmit={addNew} >
+        <Modal.Body>
+        <br /><label for="name"><strong>Name: </strong></label>
+        <input type="text" id ="name" name="name" onChange={handleInput}/>
+        <br />
+        <label for="email"><strong>Email: </strong></label>
+        <input type="text" id ="email" name="email" onChange={handleInput}/>
+        <br />
+        <strong>Salary:  </strong>
+        <input type="text" id ="salary" name="salary" onChange={handleInput}/>
+        <br />
+        <strong>Role: </strong>
+        <select  name="role" id ="role" onChange={handleInput}>
+          <option>Open this select menu</option>
+          <option value="employee">employee</option>
+          <option value="admin">admin</option>
+        </select>
+        <br /> 
+        <strong>Password:  </strong>
+        <input type="password" id ="password" name="password" onChange={handleInput} placeholder="more than 8 characters"/>
+
+
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={addClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={addNewEmp}  type="submit">
+            Save Changes
+          </Button>
+        </Modal.Footer>
+        </form>
+      </Modal>
+      </div>
+      {/*  pop up modal for add ends here */} 
+
 
 
     </>
