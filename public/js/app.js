@@ -8202,7 +8202,7 @@ var Ingredients = function Ingredients() {
     selectedData.expiry_date = edate.value;
     selectedData.unit = unit.value;
     data.map(function (d) {
-      d.inventory_id === selectedData.inventory_id ? _objectSpread(_objectSpread({}, d), {}, {
+      d.id === selectedData.id ? _objectSpread(_objectSpread({}, d), {}, {
         selectedData: selectedData
       }) : d;
     });
@@ -8354,7 +8354,7 @@ var Ingredients = function Ingredients() {
           children: ingredients.map(function (v) {
             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                children: [" ", v.inventory_id, " "]
+                children: [" ", v.id, " "]
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
                 children: [" ", v.food_name, " "]
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
@@ -8424,7 +8424,7 @@ var Ingredients = function Ingredients() {
               })]
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.inventory_id
+                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
                 children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.food_name
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
@@ -8438,16 +8438,12 @@ var Ingredients = function Ingredients() {
               })]
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
             variant: "secondary",
             onClick: viewClose,
             children: "Close"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            variant: "primary",
-            onClick: viewClose,
-            children: "Save Changes"
-          })]
+          })
         })]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
@@ -8551,7 +8547,7 @@ var Ingredients = function Ingredients() {
                 })]
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                  children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.inventory_id
+                  children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
                   children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.food_name
                 })]

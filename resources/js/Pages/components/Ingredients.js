@@ -71,7 +71,7 @@ const Ingredients = () =>{
     selectedData.unit = unit.value;
     
     data.map((d)=>{
-      d.inventory_id === selectedData.inventory_id
+      d.id === selectedData.id
       ? { ...d, selectedData }
       : d
       
@@ -144,7 +144,7 @@ const Ingredients = () =>{
   <tbody>
     {ingredients.map((v) => (
             <tr>
-              <td> { v.inventory_id } </td>
+              <td> { v.id } </td>
               <td> { v.food_name } </td>
               <td> { v.unit } </td>
               <td> { v.quantity } </td>
@@ -178,7 +178,7 @@ const Ingredients = () =>{
                 <th scope="col">Expiry Date</th>
               </tr>
               <tr>
-                <td>{selectedData?.inventory_id}</td>
+                <td>{selectedData?.id}</td>
                 <td>{selectedData?.food_name}</td>
                 <td>{selectedData?.unit}</td>
                 <td>{selectedData?.quantity}</td>
@@ -192,9 +192,6 @@ const Ingredients = () =>{
         <Modal.Footer>
           <Button variant="secondary" onClick={viewClose}>
             Close
-          </Button>
-          <Button variant="primary" onClick={viewClose}>
-            Save Changes
           </Button>
         </Modal.Footer>
       </Modal>
@@ -265,7 +262,7 @@ const Ingredients = () =>{
                 <th scope="col">Ingredient</th>
               </tr>
               <tr>
-                <td>{selectedData?.inventory_id}</td>
+                <td>{selectedData?.id}</td>
                 <td>{selectedData?.food_name}</td>
                 
               </tr>
