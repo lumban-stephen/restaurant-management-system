@@ -23,6 +23,7 @@ const Ingredients = () =>{
     const [selectedData, setSelectedData] = useState({});//data in selected cell
     const [text, setText] = useState(0);
     const [data, setData] = useState(ingredients);
+    const [showAdd, setShowadd] = useState(false);//delete
 
     const viewClose = () => setView(false);
    // const viewShow = () => setView(true);
@@ -33,8 +34,8 @@ const Ingredients = () =>{
     const delClose = () => setDel(false);
   //  const delShow = () => setDel(true);
 
-    const addClose = () => setAdd(false);
-    const addShow = () => setAdd(true);
+    const addClose = () => setShowadd(false);
+    const addShow = () => setShowadd(true);
 
   
 
@@ -74,6 +75,45 @@ const Ingredients = () =>{
       
     })
     updateClose();
+  }
+
+    //add new ingredients and send it to database
+    const addNew = async (e) => {
+      e.preventDefault();
+      console.log(addem);
+      const res = await axios.post('/add path',addem).then(res => console.log(res.data));
+  
+    }
+
+      //when you click save changes, it is sent to database
+  const deleteIng = async (e) => {
+    e.preventDefault();
+    console.log(selectedData);
+    const res = await axios.post('/add path',selectedData).then(res => console.log(res.data));
+
+  }
+
+  //data is deleted on front end
+  const handleDelete = (id) => {
+    const newList = ingredients.filter((item) => item.id !== id);
+
+    setingredients(newList);
+
+    delClose();
+  }
+
+    //add new ingredients to an array ( front end)
+    const addNewIng=()=>{
+      setingredients([...ingredients,
+      addem])
+    }
+
+    //input data in add new ingredient (object)
+    const handleInput = (e) => {
+    e.persist();
+    const nm = e.target.name;
+    console.log(nm)
+    setAdd({...addem, [nm]: e.target.value});
   }
 
   return (
@@ -197,6 +237,7 @@ const Ingredients = () =>{
         <Modal.Header closeButton>
           <Modal.Title>Delete</Modal.Title>
         </Modal.Header>
+        <form onSubmit={deleteIng} >
         <Modal.Body>
         <table class="table">
               <tr>
@@ -214,42 +255,50 @@ const Ingredients = () =>{
           <Button variant="secondary" onClick={delClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={delClose}>
-            Save Changes
+          <Button variant="primary" onClick={() => handleDelete(selectedData.id)} type="submit">
+            Delete
           </Button>
         </Modal.Footer>
+        </form>
       </Modal>
       </div>
       {/*  pop up modal for Delete ends here */} 
 
-      {/*  pop up modal for add employee starts here */} 
+      {/*  pop up modal for add ingredients starts here */} 
       <div>
-      <Modal show={addem} onHide={addClose}>
+      <Modal show={showAdd} onHide={addClose}>
         <Modal.Header closeButton>
           <Modal.Title>Add new Ingredient</Modal.Title>
         </Modal.Header>
+        <form onSubmit={addNew} >
         <Modal.Body>
-        <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Ingredient</th>
-            <th scope="col">Unit</th>
-            <th scope="col">Quantity</th>
-        </tr>
-        <tr>
-            <td>{selectedData?.food_name}</td>
-            <input type="text" id ="name-add" defaultValue={selectedData?.food_name} name="ingredient"/>
-            <td>{selectedData?.quantity}</td>
-            <input type="text" id ="qty-add" defaultValue={selectedData?.quantity} name="qty"/>
-        </tr>
+        <strong>Ingredient:  </strong>
+        <input type="text" id ="name-add" defaultValue={selectedData?.food_name} name="food_name"  onChange={handleInput}/>
+        <br />
+
+        <strong>Unit:  </strong>
+        <select  name="unit" id ="unit" onChange={handleInput}>
+          <option>Open this select menu</option>
+          <option value="grams">grams</option>
+          <option value="kg">kg</option>
+          <option value="pcs">pcs</option>
+          <option value="l">l</option>
+          </select>
+        <br />
+
+        <strong>Quantity:  </strong>
+        <input type="text" id ="qty-add" defaultValue={selectedData?.quantity} name="quantity"  onChange={handleInput}/>
+        
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={addClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={addClose}>
+          <Button variant="primary" onClick={addNewIng}>
             Save Changes
           </Button>
         </Modal.Footer>
+        </form>
       </Modal>
       </div>
       {/*  pop up modal for add employee ends here */} 
