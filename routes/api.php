@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\API\StudentController;
+use App\Http\Controllers\API\DishController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +20,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('students', [StudentController::class, 'index']);
-Route::post('/add-student', [StudentController::class, 'store']);
-Route::get('/edit-student/{id}', [StudentController::class, 'edit']);
-Route::put('update-student/{id}', [StudentController::class, 'update']);
-Route::delete('delete-student/{id}', [StudentController::class, 'destroy']);
+Route::get('dish', [DishController::class, 'index']);
+Route::post('/add-dish', [DishController::class, 'store']);
+Route::get('/edit-dish/{id}', [DishController::class, 'edit']);
+Route::put('update-dish/{id}', [DishController::class, 'update']);
+Route::delete('delete-dish/{id}', [DishController::class, 'destroy']);
 

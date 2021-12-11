@@ -66,15 +66,9 @@ Route::get('/userinfo',[App\Http\Controllers\ProfileController::class,'userProfi
 
 //return all users info
 Route::get('/empinfo',[App\Http\Controllers\EmployeeController::class,'empInfo']);
-<<<<<<< Updated upstream
-
-// //return all dish table info
-// Route::get('/dishindex',[App\Http\Controllers\DishController::class,'dishIndex']);
-=======
 /*
 //return all dish table info
 Route::get('/dishindex',[App\Http\Controllers\DishController::class,'dishIndex']);
->>>>>>> Stashed changes
 
 // //return all dish ingredients info
 // Route::get('/dishingredientindex',[App\Http\Controllers\DishIngredientController::class,'dishIngredientIndex']);
@@ -102,7 +96,3 @@ Route::post('/deleteIngredients',[App\Http\Controllers\InventoryController::clas
 >>>>>>> Stashed changes
 =======
 */
-
-
-Route::resource('dish', 'DishController');
->>>>>>> Stashed changes
