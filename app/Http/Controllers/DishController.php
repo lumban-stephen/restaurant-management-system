@@ -1,33 +1,41 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Http\Controllers\Dish;
+use App\Models\Dish as ModelsDish;
+use App\Models\Inventory;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+
 
 class DishController extends Controller
 {
     //
     public function index() {
-        
-        $dishes = DB::table('dishes')->get();
 
-        return $dishes;
+        return ModelsDish::all();
+    }
+
+    public function show($id) {
+        return ModelsDish::find($id);
     }
 
     public function store(Request $request) {
-        DB::table('dishes')->insert([
-            'dish_name' => $request->input('dish_name'),
-            'price' => $request->input('price')
-        ]);
+        return ModelsDish::create($request->all());
     }
 
-    public function update(Request $request)
+    public function update(Request $request, $id)
     {
-        
-        $dish_name = $request->input('dish_name');
-        $price = $request->input('price');
+        $dish = ModelsDish::findOrFail($id);
+        $dish->update($request->all());
+        return $dish;
+    }
 
-        DB::update('update users set dish_name = ?,price=?',[$dish_name,$price]);
-        return redirect()->back()->with('status','Dish Updated Successfully');
+    public function delete( Request $request, $id)
+    {
+        $dish = ModelsDish::findOrFail($id);
+        $dish->delete();
+        return 204;
     }
 }

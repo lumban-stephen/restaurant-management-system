@@ -18,4 +18,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get('dish', 'App\Http\Controllers\DishController@index');
+Route::get('dish/{id}', 'App\Http\Controllers\DishController@show');
+Route::post('dish', 'App\Http\Controllers\DishController@store');
+Route::put('dish/{id}', 'App\Http\Controllers\DishController@store');
+Route::delete('dish/{id}', 'App\Http\Controllers\DishController@store');
 
