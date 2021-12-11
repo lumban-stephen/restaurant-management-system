@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class DishIngredientController extends Controller
 {
     //
-    public function dishIngredientIndex() {
+    public function index() {
         
         $dishIngredient = DB::table('dish_ingredients')->get();
 

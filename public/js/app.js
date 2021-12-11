@@ -7164,12 +7164,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Table.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Modal.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var reactjs_popup_dist_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactjs-popup/dist/index.css */ "./node_modules/reactjs-popup/dist/index.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
@@ -7178,12 +7178,6 @@ function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (O
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -7201,465 +7195,473 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+ // const Dishes = () =>{
+//   //fetching data from database. Data is stored in "users" as array
+//   const[dishes, setDishes]=useState([]);
+//   useEffect(()=>{
+//     fetch('/dishindex')
+//     .then(response=>response.json())
+//     .then(response=>{
+//       console.log(response);
+//       setDishes(response)  
+//     })
+//   },[])
+//     //fetching data from database. Data is stored in "users" as array
+//     const[dishIng, setDishIng]=useState([]);
+//     useEffect(()=>{
+//       fetch('/dishingredientsindex')
+//       .then(response=>response.json())
+//       .then(response=>{
+//         console.log(response);
+//         setDishIng(response)  
+//       })
+//     },[])
+//     const[ingredient, setIngredient]=useState([]);
+//     useEffect(()=>{
+//       fetch('/inventory')
+//       .then(response=>response.json())
+//       .then(response=>{
+//         console.log(response);
+//         setIngredient(response)  
+//       })
+//     },[])
+//     const [view, setView] = useState(false);//see details
+//     const [update, setUpdate] = useState(false);//update
+//     const [del, setDel] = useState(false);//delete
+//     const [addDish, setaddDish] = useState({});//add new dish 
+//     const [addDi, setaddDi] = useState({});//add new dish ingredient
+//     const [selectedData, setSelectedData] = useState({});//data in selected cell
+//     const [text, setText] = useState(0);
+//     const [data, setData] = useState(dishes);
+//     const viewClose = () => setView(false);
+//    // const viewShow = () => setView(true);
+//     const updateClose = () => setUpdate(false);
+//   //  const updateShow = () => setUpdate(true);
+//     const delClose = () => setDel(false);
+//   //  const delShow = () => setDel(true);
+//     const addClose = () => setaddDish(false);
+//     const addShow = () => setAddDish(true);
+//     const addIngredientShow = () => setaddDi(true);
+//     const addIngredientClose = () => setaddDi(false);
+//   // when you click the button, data in the cell will be stored in setSelectedData   
+//   const hanldeClick1 = (selectedRec) => {
+//     setSelectedData(selectedRec);
+//     setView(true);
+//   };
+//   const hanldeClick2 = (selectedRec) => {
+//     setSelectedData(selectedRec);
+//     setUpdate(true);
+//   };
+//   const hanldeClick3 = (selectedRec) => {
+//     setSelectedData(selectedRec);
+//     setDel(true);
+//   };
+//   //data is updated on front end
+//   const handleUpdate = () => {
+//     console.log(selectedData);
+//     const dish_name = document.getElementById("dish_name-update");
+//     const price = document.getElementById("price-update");    
+//     selectedData.dish_name = dish_name.value;
+//     selectedData.price = price.value;
+//     data.map((d)=>{
+//       d.dish_id === selectedData.id
+//       ? { ...d, selectedData }
+//       : d
+//     })
+//     updateClose();
+//   }
+
 
 
 
 
 var Dishes = function Dishes() {
-  //fetching data from database. Data is stored in "users" as array
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
-      _useState2 = _slicedToArray(_useState, 2),
-      dishes = _useState2[0],
-      setDishes = _useState2[1];
+  function AddDish() {
+    var history = useHistory();
 
-  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
-    fetch('/dishindex').then(function (response) {
-      return response.json();
-    }).then(function (response) {
-      console.log(response);
-      setDishes(response);
-    });
-  }, []); //fetching data from database. Data is stored in "users" as array
+    var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      dish_name: '',
+      price: '',
+      error_list: []
+    }),
+        _useState2 = _slicedToArray(_useState, 2),
+        dishInput = _useState2[0],
+        setDish = _useState2[1];
 
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
-      _useState4 = _slicedToArray(_useState3, 2),
-      dishIng = _useState4[0],
-      setDishIng = _useState4[1];
-
-  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
-    fetch('/dishingredientsindex').then(function (response) {
-      return response.json();
-    }).then(function (response) {
-      console.log(response);
-      setDishIng(response);
-    });
-  }, []);
-
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
-      _useState6 = _slicedToArray(_useState5, 2),
-      ingredient = _useState6[0],
-      setIngredient = _useState6[1];
-
-  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
-    fetch('/inventory').then(function (response) {
-      return response.json();
-    }).then(function (response) {
-      console.log(response);
-      setIngredient(response);
-    });
-  }, []);
-
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
-      _useState8 = _slicedToArray(_useState7, 2),
-      view = _useState8[0],
-      setView = _useState8[1]; //see details
-
-
-  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
-      _useState10 = _slicedToArray(_useState9, 2),
-      update = _useState10[0],
-      setUpdate = _useState10[1]; //update
-
-
-  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
-      _useState12 = _slicedToArray(_useState11, 2),
-      del = _useState12[0],
-      setDel = _useState12[1]; //delete
-
-
-  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
-      _useState14 = _slicedToArray(_useState13, 2),
-      addDish = _useState14[0],
-      setaddDish = _useState14[1]; //add new dish 
-
-
-  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
-      _useState16 = _slicedToArray(_useState15, 2),
-      addDi = _useState16[0],
-      setaddDi = _useState16[1]; //add new dish ingredient
-
-
-  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
-      _useState18 = _slicedToArray(_useState17, 2),
-      selectedData = _useState18[0],
-      setSelectedData = _useState18[1]; //data in selected cell
-
-
-  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0),
-      _useState20 = _slicedToArray(_useState19, 2),
-      text = _useState20[0],
-      setText = _useState20[1];
-
-  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(dishes),
-      _useState22 = _slicedToArray(_useState21, 2),
-      data = _useState22[0],
-      setData = _useState22[1];
-
-  var viewClose = function viewClose() {
-    return setView(false);
-  }; // const viewShow = () => setView(true);
-
-
-  var updateClose = function updateClose() {
-    return setUpdate(false);
-  }; //  const updateShow = () => setUpdate(true);
-
-
-  var delClose = function delClose() {
-    return setDel(false);
-  }; //  const delShow = () => setDel(true);
-
-
-  var addClose = function addClose() {
-    return setaddDish(false);
-  };
-
-  var addShow = function addShow() {
-    return setAddDish(true);
-  };
-
-  var addIngredientShow = function addIngredientShow() {
-    return setaddDi(true);
-  };
-
-  var addIngredientClose = function addIngredientClose() {
-    return setaddDi(false);
-  }; //add new ingredients and send it to database
-
-
-  var addNew = /*#__PURE__*/function () {
-    var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(e) {
-      var res;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              e.preventDefault();
-              console.log(addem);
-              _context.next = 4;
-              return axios.post('/dishsave', addem).then(function (res) {
-                return console.log(res.data);
-              });
-
-            case 4:
-              res = _context.sent;
-
-            case 5:
-            case "end":
-              return _context.stop();
-          }
-        }
-      }, _callee);
-    }));
-
-    return function addNew(_x) {
-      return _ref.apply(this, arguments);
+    var handleInput = function handleInput(e) {
+      e.persist();
+      setDish(_objectSpread(_objectSpread({}, dishInput), {}, _defineProperty({}, e.target.dish_name, e.target.value)));
     };
-  }(); //when you click save changes, it is sent to database
 
-
-  var saveUpdate = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2(e) {
-      var res;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
-        while (1) {
-          switch (_context2.prev = _context2.next) {
-            case 0:
-              e.preventDefault();
-              console.log(selectedData);
-              _context2.next = 4;
-              return axios.post('/dishupdate', selectedData).then(function (res) {
-                return console.log(res.data);
-              });
-
-            case 4:
-              res = _context2.sent;
-
-            case 5:
-            case "end":
-              return _context2.stop();
-          }
+    var saveDish = function saveDish(e) {
+      e.preventDefault();
+      var data = {
+        dish_name: dishInput.dish_name,
+        price: dishInput.price
+      };
+      axios__WEBPACK_IMPORTED_MODULE_1___default().post("/api/add-dish", data).then(function (res) {
+        if (res.data.status === 200) {
+          //swal("Success!",res.data.message,"success");
+          setDish({
+            dish_name: '',
+            price: '',
+            error_list: []
+          });
+          history.push('/dish');
+        } else if (res.data.status === 422) {
+          setDish(_objectSpread(_objectSpread({}, dishInput), {}, {
+            error_list: res.data.validate_err
+          }));
         }
-      }, _callee2);
-    }));
-
-    return function saveUpdate(_x2) {
-      return _ref2.apply(this, arguments);
+      });
     };
-  }(); //when you click save changes, it is sent to database
+  }
 
+  function ViewStudent() {
+    var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+        _useState4 = _slicedToArray(_useState3, 2),
+        dishes = _useState4[0],
+        setDishes = _useState4[1];
 
-  var deleteDish = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3(e) {
-      var res;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
-        while (1) {
-          switch (_context3.prev = _context3.next) {
-            case 0:
-              e.preventDefault();
-              console.log(selectedData);
-              _context3.next = 4;
-              return axios.post('/dishdel', selectedData).then(function (res) {
-                return console.log(res.data);
-              });
-
-            case 4:
-              res = _context3.sent;
-
-            case 5:
-            case "end":
-              return _context3.stop();
-          }
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+      axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/dish").then(function (res) {
+        if (res.status === 200) {
+          setDishes(res.data.dishes);
         }
-      }, _callee3);
-    }));
+      });
+    }, []);
 
-    return function deleteDish(_x3) {
-      return _ref3.apply(this, arguments);
+    var deleteDish = function deleteDish(e, id) {
+      e.preventDefault();
+      var thisClicked = e.currentTarget;
+      thisClicked.innerText = "Deleting";
+      axios__WEBPACK_IMPORTED_MODULE_1___default()["delete"]("/api/delete-dish/".concat(id)).then(function (res) {
+        if (res.data.status === 200) {
+          console.log("Deleted!"); //swal("Deleted!",res.data.message,"success");
+          //thisClicked.closest("tr").remove();
+        } else if (res.data.status === 404) {
+          console.log("error"); //swal("Error",res.data.message,"error");
+          //thisClicked.innerText = "Delete";
+        }
+      });
     };
-  }(); // when you click the button, data in the cell will be stored in setSelectedData   
+  }
 
+  function EditDish(props) {
+    var _selectedData, _selectedData2, _selectedData4, _selectedData5, _selectedData6, _selectedData7, _selectedData8;
 
-  var hanldeClick1 = function hanldeClick1(selectedRec) {
-    setSelectedData(selectedRec);
-    setView(true);
-  };
+    var history = useHistory();
 
-  var hanldeClick2 = function hanldeClick2(selectedRec) {
-    setSelectedData(selectedRec);
-    setUpdate(true);
-  };
+    var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+        _useState6 = _slicedToArray(_useState5, 2),
+        errorInput = _useState6[0],
+        setError = _useState6[1];
 
-  var hanldeClick3 = function hanldeClick3(selectedRec) {
-    setSelectedData(selectedRec);
-    setDel(true);
-  }; //data is updated on front end
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+      var dish_id = props.match.params.id;
+      axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/edit-dish/".concat(dish_id)).then(function (res) {
+        if (res.data.status === 200) {
+          setStudent(res.data.dish);
+          setLoading(false);
+        } else if (res.data.status === 404) {
+          swal("Error", res.data.message, "error");
+          history.push('/dish');
+        }
+      });
+    }, [history]);
 
+    var updateDishes = function updateDishes(e) {
+      e.preventDefault();
+      var dish_id = props.match.params.id; // const data = dishInput;
 
-  var handleUpdate = function handleUpdate() {
-    console.log(selectedData);
-    var name = document.getElementById("name-update");
-    var price = document.getElementById("price-update");
-    selectedData.dish_name = name.value;
-    selectedData.price = price.value;
-    data.map(function (d) {
-      d.dish_id === selectedData.id ? _objectSpread(_objectSpread({}, d), {}, {
-        selectedData: selectedData
-      }) : d;
-    });
-    updateClose();
-  };
+      var data = {
+        dish_name: dishInput.dish_name,
+        price: dishInput.price
+      };
+      axios__WEBPACK_IMPORTED_MODULE_1___default().put("/api/update-dish/".concat(dish_id), data).then(function (res) {
+        if (res.data.status === 200) {
+          //swal("Success",res.data.message,"success");
+          setError([]);
+          history.push('/dish');
+        } else if (res.data.status === 422) {
+          //swal("All fields are mandetory","","error");
+          setError(res.data.validationErrors);
+        } else if (res.data.status === 404) {
+          //swal("Error",res.data.message,"error");
+          history.push('/dish');
+        }
+      });
+    };
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      variant: "primary",
-      onClick: addShow,
-      children: "Add New Dish"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        striped: true,
-        bordered: true,
-        hover: true,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-              children: "#"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-              children: "Dish Name"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-              children: "Price"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-              children: "Ingredients"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-              colSpan: "3",
-              children: "Actions"
-            })]
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("tbody", {
-          children: dishes.map(function (v) {
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                children: [" ", v.id, " "]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                children: [" ", v.dish_name, " "]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                children: [" ", v.price, " "]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                  variant: "warning",
-                  onClick: function onClick() {
-                    return showIngredients(v.id);
-                  },
-                  children: "..."
-                }), " "]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                  variant: "success",
-                  onClick: function onClick() {
-                    return addNew(v);
-                  },
-                  children: "View"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                  variant: "warning",
-                  onClick: function onClick() {
-                    return saveUpdate(v);
-                  },
-                  children: "Update"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                  variant: "danger",
-                  onClick: function onClick() {
-                    return deleteDish(v);
-                  },
-                  children: "Delete"
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        variant: "primary",
+        onClick: addShow,
+        children: "Add New Dish"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          striped: true,
+          bordered: true,
+          hover: true,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                children: "#"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                children: "Dish Name"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                children: "Price"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                children: "Ingredients"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                colSpan: "3",
+                children: "Actions"
+              })]
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("tbody", {
+            children: dishes.map(function (item, index) {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                  children: [" ", item.id, " "]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                  children: [" ", item.dish_name, " "]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                  children: [" ", item.price, " "]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                  children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                    variant: "warning",
+                    onClick: function onClick() {
+                      return showIngredients(item.id);
+                    },
+                    children: "..."
+                  }), " "]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                    variant: "success",
+                    onClick: function onClick() {
+                      return hanldeClick1(item);
+                    },
+                    children: "View"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                    variant: "warning",
+                    onClick: function onClick() {
+                      return hanldeClick2(item);
+                    },
+                    children: "Update"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                    variant: "danger",
+                    onClick: function onClick(e) {
+                      return deleteDish(e, item.id);
+                    },
+                    children: "Delete"
+                  })]
+                })]
+              }, index);
+            })
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          show: view,
+          onHide: viewClose,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+            closeButton: true,
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+              children: "Dish Details"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("article", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
+                children: ["Dish Name: ", (_selectedData = selectedData) === null || _selectedData === void 0 ? void 0 : _selectedData.dish_name]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
+                children: ["Dish Price: ", (_selectedData2 = selectedData) === null || _selectedData2 === void 0 ? void 0 : _selectedData2.price, " "]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                children: "Dish Ingredients: "
+              }), dishIng.filter(function () {
+                var _selectedData3;
+
+                if (((_selectedData3 = selectedData) === null || _selectedData3 === void 0 ? void 0 : _selectedData3.id) === dishIng.dish_id) {
+                  return selectedData;
+                } else {
+                  return;
+                }
+              }).map(function (ingredient) {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
+                  children: [" ", ingredient, " "]
+                });
+              })]
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "primary",
+              onClick: viewClose,
+              children: "Close"
+            })
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          show: update,
+          onHide: updateClose,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+            closeButton: true,
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+              children: "Update Dish"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+              "class": "table",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                  children: "Dish Name"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                  children: "Price"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                  children: "Ingredients"
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  children: (_selectedData4 = selectedData) === null || _selectedData4 === void 0 ? void 0 : _selectedData4.dish_name
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                  type: "text",
+                  id: "dish_name-update",
+                  defaultValue: (_selectedData5 = selectedData) === null || _selectedData5 === void 0 ? void 0 : _selectedData5.dish_name,
+                  dish_name: "dishname"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  children: (_selectedData6 = selectedData) === null || _selectedData6 === void 0 ? void 0 : _selectedData6.price
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                  type: "text",
+                  id: "price-update",
+                  defaultValue: (_selectedData7 = selectedData) === null || _selectedData7 === void 0 ? void 0 : _selectedData7.price,
+                  dish_name: "price"
                 })]
               })]
-            });
-          })
-        })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        show: view,
-        onHide: viewClose,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
-          closeButton: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
-            children: "Dish Details"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("article", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
-              children: ["Dish Name: ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.dish_name]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
-              children: ["Dish Price: ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.price, " "]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
-              children: "Dish Ingredients: "
-            }), dishIng.filter(function () {
-              if ((selectedData === null || selectedData === void 0 ? void 0 : selectedData.id) === dishIng.dish_id) {
-                return selectedData;
-              } else {
-                return;
-              }
-            }).map(function (ingredient) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
-                children: [" ", ingredient, " "]
-              });
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "secondary",
+              onClick: updateClose,
+              children: "Close"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "primary",
+              onClick: handleUpdate,
+              children: "Save Changes"
+            })]
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          show: del,
+          onHide: delClose,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+            closeButton: true,
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+              children: "Delete Dish"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("article", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
+                children: ["Are you sure you want to delete ", (_selectedData8 = selectedData) === null || _selectedData8 === void 0 ? void 0 : _selectedData8.dish_name, "?"]
+              })
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "secondary",
+              onClick: delClose,
+              children: "Cancel"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "primary",
+              onClick: function onClick(e) {
+                return deleteStudent(e, item.id);
+              },
+              children: "Delete"
+            })]
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("form", {
+          onSubmit: saveDish,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+            show: addDish,
+            onHide: addClose,
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+              closeButton: true,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+                children: "Add new dish"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                children: "Dish Name: "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                type: "text",
+                id: "dish_name-add",
+                dish_name: "dish_name",
+                onChange: handleInput
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                children: "Dish Price: "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                type: "text",
+                id: "price-add",
+                dish_name: "price",
+                onChange: handleInput
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                children: "Select Ingredients: "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                variant: "warning",
+                onClick: addIngredientShow,
+                children: "ADD INGREDIENTS"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                variant: "secondary",
+                onClick: addClose,
+                children: "Cancel"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                type: "submit",
+                variant: "primary",
+                onClick: addClose,
+                children: "Add"
+              })]
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            variant: "primary",
-            onClick: viewClose,
-            children: "Close"
-          })
-        })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        show: update,
-        onHide: updateClose,
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        show: addDi,
+        onHide: addIngredientClose,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
           closeButton: true,
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
-            children: "Update Dish"
+            children: "Ingredients for new dish"
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
             "class": "table",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-                children: "Dish Name"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-                children: "Price"
+                children: "Checkbox"
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
                 children: "Ingredients"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                children: "Ingredient Qty"
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.dish_name
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "text",
-                id: "name-update",
-                defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.dish_name,
-                name: "dishname"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.price
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "text",
-                id: "price-update",
-                defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.price,
-                name: "price"
-              })]
+            }), ingredient.map(function (i) {
+              /*#__PURE__*/
+              (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                    type: "checkbox"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  children: i.food_name
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                    type: "text",
+                    placeholder: "Enter Quantity"
+                  })
+                })]
+              });
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            variant: "secondary",
-            onClick: updateClose,
-            children: "Close"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            variant: "primary",
-            onClick: handleUpdate,
-            children: "Save Changes"
-          })]
-        })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        show: del,
-        onHide: delClose,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
-          closeButton: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
-            children: "Delete Dish"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("article", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
-              children: ["Are you sure you want to delete ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.dish_name, "?"]
-            })
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            variant: "secondary",
-            onClick: delClose,
-            children: "Cancel"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            variant: "primary",
-            onClick: delClose,
-            children: "Delete"
-          })]
-        })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        show: addDish,
-        onHide: addClose,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
-          closeButton: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
-            children: "Add new dish"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-            children: "Dish Name: "
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-            type: "text",
-            id: "name-add",
-            name: "dish"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-            children: "Dish Price: "
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-            type: "text",
-            id: "price-add",
-            name: "price"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-            children: "Select Ingredients: "
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            variant: "warning",
-            onClick: addIngredientShow,
-            children: "ADD INGREDIENTS"
-          })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
             variant: "secondary",
@@ -7671,57 +7673,9 @@ var Dishes = function Dishes() {
             children: "Add"
           })]
         })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      show: addDi,
-      onHide: addIngredientClose,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
-        closeButton: true,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
-          children: "Ingredients for new dish"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
-          "class": "table",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-              children: "Checkbox"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-              children: "Ingredients"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
-              children: "Ingredient Qty"
-            })]
-          }), ingredient.map(function (i) {
-            /*#__PURE__*/
-            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                  type: "checkbox"
-                })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: i.food_name
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                  type: "text",
-                  placeholder: "Enter Quantity"
-                })
-              })]
-            });
-          })]
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          variant: "secondary",
-          onClick: addClose,
-          children: "Cancel"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          variant: "primary",
-          onClick: addClose,
-          children: "Add"
-        })]
       })]
-    })]
-  });
+    });
+  }
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Dishes);
