@@ -1,8 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
+<<<<<<< Updated upstream
 
 use App\Models\Dish;
+=======
+use App\Http\Controllers\Dish;
+use Illuminate\Support\Facades\DB;
+>>>>>>> Stashed changes
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -154,7 +159,11 @@ class DishController extends Controller
         $dish = $request->input('dish_name');
         $price = $request->input('price');
 
-        DB::update("INSERT INTO `DISHES` (dish_name, price) VALUES ($dish, $price)",[$dish,$price,auth()->user()->id]);
+        DB::table('dishes')->insert([
+            'dish_name' => $dish,
+            'price' => $price
+        ]);
+
         return redirect()->back()->with('status','Dish Added Successfully');
     }
 
@@ -163,7 +172,7 @@ class DishController extends Controller
         $dish = $request->input('dish_name');
         $price = $request->input('price');
 
-        DB::update("UPDATE `DISHES` SET dish_name = $dish, price = $price WHERE id = $request->input('id');",[$dish,$price,auth()->user()->id]);
+        DB::update("UPDATE `DISHES` SET dish_name = ?, price = ? WHERE id = $request->input('id');",[$dish,$price,auth()->user()->id]);
         return redirect()->back()->with('status','Dish Updated Successfully');
     }
 
@@ -172,7 +181,7 @@ class DishController extends Controller
         $dish = $request->input('dish_name');
         $price = $request->input('price');
 
-        DB::update("DELETE FROM `DISHES` WHERE id = $request->input('id');",[$dish,$price,auth()->user()->id]);
-        return redirect()->back()->with('status','Dish Added Successfully');
+        DB::update("DELETE FROM `DISHES` WHERE id = ?;",[auth()->user()->id]);
+        return redirect()->back()->with('status','Dish deleted Successfully');
     }
 }

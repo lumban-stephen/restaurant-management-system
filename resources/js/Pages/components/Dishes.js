@@ -416,6 +416,7 @@ const Dishes = () => {
   
         {/*  pop up modal for add dish starts here */} 
         <div>
+<<<<<<< Updated upstream
           <form onSubmit={ saveDish }>
             <Modal show={addDish} onHide={addClose}>
               <Modal.Header closeButton>
@@ -431,6 +432,32 @@ const Dishes = () => {
                 <label>Select Ingredients: </label>
                 <Button variant="warning" onClick={addIngredientShow}>
                       ADD INGREDIENTS
+=======
+            <Modal show={update} onHide={updateClose}>
+                <Modal.Header closeButton>
+                <Modal.Title>Update Dish</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                <table class="table">
+                    <tr>
+                        <th>Dish Name</th>
+                        <th>Price</th>
+                        <th>Ingredients</th>
+                    </tr>
+                    <tr>
+                        <form method="post">
+                        <td>{selectedData?.dish_name}</td>
+                        <input type="text" id ="name-update" defaultValue={selectedData?.dish_name} name="dishname"/>
+                        <td>{selectedData?.price}</td>
+                        <input type="text" id ="price-update" defaultValue={selectedData?.price} name="price"/>
+                        </form>
+                    </tr>
+                </table>
+                </Modal.Body>
+                <Modal.Footer>
+                <Button variant="secondary" onClick={updateClose}>
+                    Close
+>>>>>>> Stashed changes
                 </Button>
               </Modal.Body>
               <Modal.Footer>

@@ -66,9 +66,15 @@ Route::get('/userinfo',[App\Http\Controllers\ProfileController::class,'userProfi
 
 //return all users info
 Route::get('/empinfo',[App\Http\Controllers\EmployeeController::class,'empInfo']);
+<<<<<<< Updated upstream
 
 // //return all dish table info
 // Route::get('/dishindex',[App\Http\Controllers\DishController::class,'dishIndex']);
+=======
+/*
+//return all dish table info
+Route::get('/dishindex',[App\Http\Controllers\DishController::class,'dishIndex']);
+>>>>>>> Stashed changes
 
 // //return all dish ingredients info
 // Route::get('/dishingredientindex',[App\Http\Controllers\DishIngredientController::class,'dishIngredientIndex']);
@@ -82,6 +88,7 @@ Route::get('/empinfo',[App\Http\Controllers\EmployeeController::class,'empInfo']
 <<<<<<< Updated upstream
 //delete dish info
 Route::post('/dishdel',[App\Http\Controllers\DishController::class,'dishDelete']);
+<<<<<<< Updated upstream
 =======
 // //delete dish info
 // Route::post('/dishdel',[App\Http\Controllers\DishController::class,'dishDelete']);
@@ -92,4 +99,10 @@ Route::post('/addIngredients',[App\Http\Controllers\InventoryController::class,'
 Route::post('/updateIngredients',[App\Http\Controllers\InventoryController::class,'update']);
 //delete ingredient in database
 Route::post('/deleteIngredients',[App\Http\Controllers\InventoryController::class,'delete']);
+>>>>>>> Stashed changes
+=======
+*/
+
+
+Route::resource('dish', 'DishController');
 >>>>>>> Stashed changes
