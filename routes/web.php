@@ -73,6 +73,15 @@ Route::get('/dishindex',[App\Http\Controllers\DishController::class,'dishIndex']
 //return all dish ingredients info
 Route::get('/dishingredientindex',[App\Http\Controllers\DishIngredientController::class,'dishIngredientIndex']);
 
+//save dish info
+Route::post('/dishsave',[App\Http\Controllers\DishController::class,'dishAdd']);
+
+//update dish info
+Route::post('/dishupdate',[App\Http\Controllers\DishController::class,'dishUpdate']);
+
+//delete dish info
+Route::post('/dishdel',[App\Http\Controllers\DishController::class,'dishDelete']);
+
 //add ingredient to database
 Route::post('/addIngredients',[App\Http\Controllers\InventoryController::class,'store']);
 //update ingredient to database
