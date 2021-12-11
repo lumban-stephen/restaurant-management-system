@@ -81,3 +81,10 @@ Route::post('/dishupdate',[App\Http\Controllers\DishController::class,'dishUpdat
 
 //delete dish info
 Route::post('/dishdel',[App\Http\Controllers\DishController::class,'dishDelete']);
+
+//add ingredient to database
+Route::post('/addIngredients',[App\Http\Controllers\InventoryController::class,'store']);
+//update ingredient to database
+Route::post('/updateIngredients',[App\Http\Controllers\InventoryController::class,'update']);
+//delete ingredient in database
+Route::post('/deleteIngredients',[App\Http\Controllers\InventoryController::class,'delete']);
