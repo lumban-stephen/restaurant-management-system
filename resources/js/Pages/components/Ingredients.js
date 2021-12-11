@@ -85,7 +85,7 @@ const Ingredients = () =>{
     const addNew = async (e) => {
       e.preventDefault();
       console.log(addem);
-      const res = await axios.post('/add path',addem).then(res => console.log(res.data));
+      const res = await axios.post('/addIngredients',addem).then(res => console.log(res.data));
   
     }
 
@@ -93,7 +93,7 @@ const Ingredients = () =>{
   const saveUpdate = async (e) => {
     e.preventDefault();
     console.log(selectedData);
-    const res = await axios.post('/add path',selectedData).then(res => console.log(res.data));
+    const res = await axios.post('/updateIngredients',selectedData).then(res => console.log(res.data));
 
   }
 
@@ -101,7 +101,7 @@ const Ingredients = () =>{
   const deleteIng = async (e) => {
     e.preventDefault();
     console.log(selectedData);
-    const res = await axios.post('/add path',selectedData).then(res => console.log(res.data));
+    const res = await axios.post('/deleteIngredients',selectedData).then(res => console.log(res.data));
 
   }
 
@@ -226,7 +226,7 @@ const Ingredients = () =>{
         <br />
 
         <strong>Quantity:  </strong>
-        <input type="text" id ="qty-update" defaultValue={selectedData?.quantity} name="quantity"/>
+        <input type="number" id ="qty-update" defaultValue={selectedData?.quantity} name="quantity"/>
 
         <br />
         <strong>Restock Date:  {selectedData?.restocked_date}</strong>
@@ -241,7 +241,7 @@ const Ingredients = () =>{
           <Button variant="secondary" onClick={updateClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleUpdate}>
+          <Button variant="primary" onClick={handleUpdate}   type="submit">
             Save Changes
           </Button>
         </Modal.Footer>
@@ -306,14 +306,14 @@ const Ingredients = () =>{
         <br />
 
         <strong>Quantity:  </strong>
-        <input type="text" id ="qty-add" defaultValue={selectedData?.quantity} name="quantity"  onChange={handleInput}/>
+        <input type="number" id ="qty-add" defaultValue={selectedData?.quantity} name="quantity"  onChange={handleInput}/>
         
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={addClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={addNewIng}>
+          <Button variant="primary" onClick={addNewIng} type="submit">
             Save Changes
           </Button>
         </Modal.Footer>

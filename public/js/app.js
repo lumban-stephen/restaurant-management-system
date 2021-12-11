@@ -8223,7 +8223,7 @@ var Ingredients = function Ingredients() {
               e.preventDefault();
               console.log(addem);
               _context.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/add path', addem).then(function (res) {
+              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/addIngredients', addem).then(function (res) {
                 return console.log(res.data);
               });
 
@@ -8254,7 +8254,7 @@ var Ingredients = function Ingredients() {
               e.preventDefault();
               console.log(selectedData);
               _context2.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/add path', selectedData).then(function (res) {
+              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/updateIngredients', selectedData).then(function (res) {
                 return console.log(res.data);
               });
 
@@ -8285,7 +8285,7 @@ var Ingredients = function Ingredients() {
               e.preventDefault();
               console.log(selectedData);
               _context3.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/add path', selectedData).then(function (res) {
+              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/deleteIngredients', selectedData).then(function (res) {
                 return console.log(res.data);
               });
 
@@ -8494,7 +8494,7 @@ var Ingredients = function Ingredients() {
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
               children: "Quantity:  "
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
-              type: "text",
+              type: "number",
               id: "qty-update",
               defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.quantity,
               name: "quantity"
@@ -8521,6 +8521,7 @@ var Ingredients = function Ingredients() {
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
               variant: "primary",
               onClick: handleUpdate,
+              type: "submit",
               children: "Save Changes"
             })]
           })]
@@ -8616,7 +8617,7 @@ var Ingredients = function Ingredients() {
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
               children: "Quantity:  "
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
-              type: "text",
+              type: "number",
               id: "qty-add",
               defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.quantity,
               name: "quantity",
@@ -8630,6 +8631,7 @@ var Ingredients = function Ingredients() {
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
               variant: "primary",
               onClick: addNewIng,
+              type: "submit",
               children: "Save Changes"
             })]
           })]
