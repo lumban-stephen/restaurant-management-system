@@ -68,7 +68,7 @@ Route::get('/userinfo',[App\Http\Controllers\ProfileController::class,'userProfi
 Route::get('/empinfo',[App\Http\Controllers\EmployeeController::class,'empInfo']);
 
 //return all dish table info
-Route::get('/dishindex',[App\Http\Controllers\DishController::class,'dishIndex']);
+Route::get('/dishindex',[App\Http\Controllers\DishController::class,'index']);
 
 //return all dish ingredients info
 Route::get('/dishingredientindex',[App\Http\Controllers\DishIngredientController::class,'dishIngredientIndex']);
