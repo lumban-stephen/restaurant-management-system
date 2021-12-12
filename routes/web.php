@@ -44,6 +44,14 @@ Route::get('/inventorymanagement', function () {
     return Inertia::render('Inventory');
 })->name('inventorymanagement');
 
+Route::get('/pos', function () {
+    return Inertia::render('Pos');
+})->name('pos');
+
+// Route::get('/pos', function () {
+//     return Inertia::render('pos');
+// })->name('pos');
+
 Route::get('/dish', function () {
     return Inertia::render('DishManagement');
 })->name('dish');
