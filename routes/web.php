@@ -44,6 +44,10 @@ Route::get('/inventorymanagement', function () {
     return Inertia::render('Inventory');
 })->name('inventorymanagement');
 
+Route::get('/pos', function () {
+    return Inertia::render('Pos');
+})->name('pos');
+
 Route::get('/dish', function () {
     return Inertia::render('DishManagement');
 })->name('dish');
@@ -52,10 +56,6 @@ require __DIR__.'/auth.php';
 
 Route::get('/orders', function () {
     return view('Ordermanagement');
-});
-
-Route::get('/pos', function () {
-    return view('ordermanagement');
 });
 
 //return inventory info
