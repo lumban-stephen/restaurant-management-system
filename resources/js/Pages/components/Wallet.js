@@ -27,7 +27,7 @@ const Wallet = () =>{
                 <p>You currently have PHP {money} from your total earnings</p>
                 <p>Enter reason for action:</p>
                 <input type="number" class="form-control" name="moneyInput" value={input} onChange={handleChange}/>
-                <Button variant="secondary" onClick={ withdraw }>
+                <Button variant="primary" onClick={ withdraw }>
                     Withdraw
                 </Button>
                 <Button variant="secondary" onClick={ deposit }>

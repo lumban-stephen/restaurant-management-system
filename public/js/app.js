@@ -11148,7 +11148,7 @@ var Wallet = function Wallet() {
         value: input,
         onChange: handleChange
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        variant: "secondary",
+        variant: "primary",
         onClick: withdraw,
         children: "Withdraw"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
