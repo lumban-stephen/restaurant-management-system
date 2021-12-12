@@ -7879,6 +7879,10 @@ function Authenticated(_ref) {
                 active: route().current('account'),
                 children: "Account"
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                href: route('pos'),
+                active: route().current('pos'),
+                children: "POS"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
                 href: route('employee'),
                 active: route().current('employee'),
                 children: "Employee Management"
@@ -9035,15 +9039,41 @@ function EmployeeManagement(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "default": () => (/* binding */ Pos)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var chart_js_auto__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! chart.js/auto */ "./node_modules/chart.js/auto/auto.esm.js");
-/* harmony import */ var _components_DateSalesChart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/DateSalesChart */ "./resources/js/Pages/components/DateSalesChart.js");
-/* harmony import */ var reactjs_popup_dist_index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactjs-popup/dist/index.css */ "./node_modules/reactjs-popup/dist/index.css");
-/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
- //import { Table,Button, Modal } from 'react-bootstrap';
+/* harmony import */ var _Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Layouts/Authenticated */ "./resources/js/Layouts/Authenticated.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _components_DateSalesChart__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/DateSalesChart */ "./resources/js/Pages/components/DateSalesChart.js");
+/* harmony import */ var _components_ProductSalesChart__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/ProductSalesChart */ "./resources/js/Pages/components/ProductSalesChart.js");
+/* harmony import */ var _components_Wallet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Wallet */ "./resources/js/Pages/components/Wallet.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+// import React, { useState, useEffect } from 'react';
+// //import { Table,Button, Modal } from 'react-bootstrap';
+// import Chart from 'chart.js/auto';
+// import 'reactjs-popup/dist/index.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// const Pos = () =>{
+//   return (
+//       <div>
+//           <table>
+//             <tr>
+//                 <td>
+//                     Sales
+//                 </td>
+//                 <td>
+//                     Products
+//                 </td>
+//                 <td>
+//                     Records
+//                 </td>
+//             </tr>
+//           </table>
+//           <DateSalesChart />
+//       </div>
+//   );
+// }
+// export default Pos;
 
 
 
@@ -9052,23 +9082,30 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Pos = function Pos() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("table", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
-          children: "Sales"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
-          children: "Products"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
-          children: "Records"
-        })]
+function Pos(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    auth: props.auth,
+    errors: props.errors,
+    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("h2", {
+      className: "font-semibold text-xl text-gray-800 leading-tight",
+      children: "Pos"
+    }),
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
+      title: "POS"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "py-12",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        className: "max-w-7xl mx-auto sm:px-6 lg:px-8",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          className: "bg-white overflow-hidden shadow-sm sm:rounded-lg",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_ProductSalesChart__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_DateSalesChart__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_Wallet__WEBPACK_IMPORTED_MODULE_5__["default"], {})]
+        })
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_DateSalesChart__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
+    })]
   });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Pos);
+}
 
 /***/ }),
 
@@ -9358,6 +9395,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var chart_js_auto__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! chart.js/auto */ "./node_modules/chart.js/auto/auto.esm.js");
+/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/dist/index.modern.js");
 /* harmony import */ var reactjs_popup_dist_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactjs-popup/dist/index.css */ "./node_modules/reactjs-popup/dist/index.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
@@ -9368,9 +9406,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 var DateSalesChart = function DateSalesChart() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-    children: "Hello World"
+  var data = {
+    labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    datasets: [{
+      label: '2nd week of October',
+      data: [160, 50, 100, 120, 50, 100, 120],
+      backgroundColor: ['rgb(255, 99, 132)', 'rgb(54, 162, 235)', 'rgb(255, 205, 86)', 'rgb(225, 9, 132)', 'rgb(5, 162, 15)', 'rgb(75, 205, 86)', 'rgb(205, 11, 100)'],
+      hoverOffset: 4
+    }]
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
+      children: "Most sales in the week:"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      style: {
+        width: "350px"
+      },
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_5__.Bar, {
+        data: data
+      })
+    })]
   });
 };
 
@@ -10978,6 +11036,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var chart_js_auto__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! chart.js/auto */ "./node_modules/chart.js/auto/auto.esm.js");
+/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/dist/index.modern.js");
 /* harmony import */ var reactjs_popup_dist_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactjs-popup/dist/index.css */ "./node_modules/reactjs-popup/dist/index.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
@@ -10988,28 +11047,120 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 var ProductSalesChart = function ProductSalesChart() {
-  var config = {
-    type: 'doughnut',
-    data: data
-  };
   var data = {
-    labels: ['Red', 'Blue', 'Yellow'],
+    labels: ['Herb Roasted Chicken', 'Coffee Roasted Spare Rib', 'Masala dosa', 'Ohmi-gyu beef steak'],
     datasets: [{
       label: 'My First Dataset',
-      data: [300, 50, 100],
-      backgroundColor: ['rgb(255, 99, 132)', 'rgb(54, 162, 235)', 'rgb(255, 205, 86)'],
+      data: [300, 50, 100, 250],
+      backgroundColor: ['rgb(255, 99, 132)', 'rgb(54, 162, 235)', 'rgb(255, 205, 86)', 'rgb(0, 0, 0)'],
       hoverOffset: 4
     }]
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("canvas", {
-    id: "myChart",
-    width: "400",
-    height: "400"
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
+      children: "Most sold product of the week:"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      style: {
+        width: "350px"
+      },
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_5__.Doughnut, {
+        data: data
+      })
+    })]
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProductSalesChart);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/components/Wallet.js":
+/*!*************************************************!*\
+  !*** ./resources/js/Pages/components/Wallet.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var reactjs_popup_dist_index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactjs-popup/dist/index.css */ "./node_modules/reactjs-popup/dist/index.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+var Wallet = function Wallet() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
+      _useState2 = _slicedToArray(_useState, 2),
+      money = _useState2[0],
+      setMoney = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
+      _useState4 = _slicedToArray(_useState3, 2),
+      input = _useState4[0],
+      setInput = _useState4[1];
+
+  var withdraw = function withdraw() {
+    if (money >= input) setMoney(money - input);
+  };
+
+  var deposit = function deposit() {
+    setMoney(money + input);
+  };
+
+  var handleChange = function handleChange(e) {
+    setInput(e.target.value);
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("p", {
+        children: ["You currently have PHP ", money, " from your total earnings"]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+        children: "Enter reason for action:"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+        type: "number",
+        "class": "form-control",
+        name: "moneyInput",
+        value: input,
+        onChange: handleChange
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        variant: "secondary",
+        onClick: withdraw,
+        children: "Withdraw"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        variant: "secondary",
+        onClick: deposit,
+        children: "Deposit"
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Wallet);
 
 /***/ }),
 
@@ -48222,6 +48373,202 @@ function triggerBrowserReflow(node) {
 
 /***/ }),
 
+/***/ "./node_modules/react-chartjs-2/dist/index.modern.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-chartjs-2/dist/index.modern.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Bar": () => (/* binding */ Bar),
+/* harmony export */   "Bubble": () => (/* binding */ Bubble),
+/* harmony export */   "Chart": () => (/* binding */ Chart),
+/* harmony export */   "Doughnut": () => (/* binding */ Doughnut),
+/* harmony export */   "Line": () => (/* binding */ Line),
+/* harmony export */   "Pie": () => (/* binding */ Pie),
+/* harmony export */   "PolarArea": () => (/* binding */ PolarArea),
+/* harmony export */   "Radar": () => (/* binding */ Radar),
+/* harmony export */   "Scatter": () => (/* binding */ Scatter),
+/* harmony export */   "getDatasetAtEvent": () => (/* binding */ getDatasetAtEvent),
+/* harmony export */   "getElementAtEvent": () => (/* binding */ getElementAtEvent),
+/* harmony export */   "getElementsAtEvent": () => (/* binding */ getElementsAtEvent)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var chart_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! chart.js */ "./node_modules/chart.js/dist/chart.esm.js");
+
+
+
+const defaultDatasetIdKey = 'label';
+function reforwardRef(ref, value) {
+    if (typeof ref === 'function') {
+        ref(value);
+    } else if (ref) {
+        ref.current = value;
+    }
+}
+function setOptions(chart, nextOptions) {
+    chart.options = {
+        ...nextOptions
+    };
+}
+function setLabels(currentData, nextLabels) {
+    currentData.labels = nextLabels;
+}
+function setDatasets(currentData, nextDatasets, datasetIdKey = defaultDatasetIdKey) {
+    const addedDatasets = [];
+    currentData.datasets = nextDatasets.map((nextDataset)=>{
+        // given the new set, find it's current match
+        const currentDataset = currentData.datasets.find((dataset)=>dataset[datasetIdKey] === nextDataset[datasetIdKey]
+        );
+        // There is no original to update, so simply add new one
+        if (!currentDataset || !nextDataset.data || addedDatasets.includes(currentDataset)) {
+            return {
+                ...nextDataset
+            };
+        }
+        addedDatasets.push(currentDataset);
+        Object.assign(currentDataset, nextDataset);
+        return currentDataset;
+    });
+}
+function cloneData(data, datasetIdKey = defaultDatasetIdKey) {
+    const nextData = {
+        labels: [],
+        datasets: []
+    };
+    setLabels(nextData, data.labels);
+    setDatasets(nextData, data.datasets, datasetIdKey);
+    return nextData;
+}
+/**
+ * Get dataset from mouse click event
+ * @param chart - Chart.js instance
+ * @param event - Mouse click event
+ * @returns Dataset
+ */ function getDatasetAtEvent(chart, event) {
+    return chart.getElementsAtEventForMode(event.nativeEvent, 'dataset', {
+        intersect: true
+    }, false);
+}
+/**
+ * Get single dataset element from mouse click event
+ * @param chart - Chart.js instance
+ * @param event - Mouse click event
+ * @returns Dataset
+ */ function getElementAtEvent(chart, event) {
+    return chart.getElementsAtEventForMode(event.nativeEvent, 'nearest', {
+        intersect: true
+    }, false);
+}
+/**
+ * Get all dataset elements from mouse click event
+ * @param chart - Chart.js instance
+ * @param event - Mouse click event
+ * @returns Dataset
+ */ function getElementsAtEvent(chart, event) {
+    return chart.getElementsAtEventForMode(event.nativeEvent, 'index', {
+        intersect: true
+    }, false);
+}
+
+function ChartComponent({ height =150 , width =300 , redraw =false , datasetIdKey , type , data , options , plugins =[] , fallbackContent , ...props }, ref) {
+    const canvasRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+    const chartRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+    const renderChart = ()=>{
+        if (!canvasRef.current) return;
+        chartRef.current = new chart_js__WEBPACK_IMPORTED_MODULE_1__.Chart(canvasRef.current, {
+            type,
+            data: cloneData(data, datasetIdKey),
+            options,
+            plugins
+        });
+        reforwardRef(ref, chartRef.current);
+    };
+    const destroyChart = ()=>{
+        reforwardRef(ref, null);
+        if (chartRef.current) {
+            chartRef.current.destroy();
+            chartRef.current = null;
+        }
+    };
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(()=>{
+        if (!redraw && chartRef.current && options) {
+            setOptions(chartRef.current, options);
+        }
+    }, [
+        redraw,
+        options
+    ]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(()=>{
+        if (!redraw && chartRef.current) {
+            setLabels(chartRef.current.config.data, data.labels);
+        }
+    }, [
+        redraw,
+        data.labels
+    ]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(()=>{
+        if (!redraw && chartRef.current && data.datasets) {
+            setDatasets(chartRef.current.config.data, data.datasets, datasetIdKey);
+        }
+    }, [
+        redraw,
+        data.datasets
+    ]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(()=>{
+        if (!chartRef.current) return;
+        if (redraw) {
+            destroyChart();
+            setTimeout(renderChart);
+        } else {
+            chartRef.current.update();
+        }
+    }, [
+        redraw,
+        options,
+        data.labels,
+        data.datasets
+    ]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(()=>{
+        renderChart();
+        return ()=>destroyChart()
+        ;
+    }, []);
+    return(/*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement("canvas", Object.assign({
+        ref: canvasRef,
+        role: "img",
+        height: height,
+        width: width
+    }, props), fallbackContent));
+}
+const Chart = /*#__PURE__*/ (0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(ChartComponent);
+
+function createTypedChart(type, registerables) {
+    chart_js__WEBPACK_IMPORTED_MODULE_1__.Chart.register(registerables);
+    return(/*#__PURE__*/ (0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)((props, ref)=>/*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(Chart, Object.assign({
+        }, props, {
+            ref: ref,
+            type: type
+        }))
+    ));
+}
+const Line = /* #__PURE__ */ createTypedChart('line', chart_js__WEBPACK_IMPORTED_MODULE_1__.LineController);
+const Bar = /* #__PURE__ */ createTypedChart('bar', chart_js__WEBPACK_IMPORTED_MODULE_1__.BarController);
+const Radar = /* #__PURE__ */ createTypedChart('radar', chart_js__WEBPACK_IMPORTED_MODULE_1__.RadarController);
+const Doughnut = /* #__PURE__ */ createTypedChart('doughnut', chart_js__WEBPACK_IMPORTED_MODULE_1__.DoughnutController);
+const PolarArea = /* #__PURE__ */ createTypedChart('polarArea', chart_js__WEBPACK_IMPORTED_MODULE_1__.PolarAreaController);
+const Bubble = /* #__PURE__ */ createTypedChart('bubble', chart_js__WEBPACK_IMPORTED_MODULE_1__.BubbleController);
+const Pie = /* #__PURE__ */ createTypedChart('pie', chart_js__WEBPACK_IMPORTED_MODULE_1__.PieController);
+const Scatter = /* #__PURE__ */ createTypedChart('scatter', chart_js__WEBPACK_IMPORTED_MODULE_1__.ScatterController);
+
+
+//# sourceMappingURL=index.modern.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/react-dom/cjs/react-dom.development.js":
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/cjs/react-dom.development.js ***!
@@ -81394,7 +81741,9 @@ var map = {
 	"./components/Inputprofile": "./resources/js/Pages/components/Inputprofile.js",
 	"./components/Inputprofile.js": "./resources/js/Pages/components/Inputprofile.js",
 	"./components/ProductSalesChart": "./resources/js/Pages/components/ProductSalesChart.js",
-	"./components/ProductSalesChart.js": "./resources/js/Pages/components/ProductSalesChart.js"
+	"./components/ProductSalesChart.js": "./resources/js/Pages/components/ProductSalesChart.js",
+	"./components/Wallet": "./resources/js/Pages/components/Wallet.js",
+	"./components/Wallet.js": "./resources/js/Pages/components/Wallet.js"
 };
 
 
