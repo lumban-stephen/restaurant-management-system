@@ -10,11 +10,11 @@ const Wallet = () =>{
 
     const withdraw =() => {
         if(money >= input)
-        setMoney(money - input)
+        setMoney(+money - +input)
     }
 
     const deposit =() => {
-        setMoney(money + input)
+        setMoney(+money + +input)
     }
 
     const handleChange = (e) => {
@@ -24,13 +24,13 @@ const Wallet = () =>{
     return(
         <div>
             <div>
-                <p>You currently have PHP {money} from your total earnings</p>
-                <p>Enter reason for action:</p>
+                <h1>PHP {money}</h1>
+                <p>Enter amount:</p>
                 <input type="number" class="form-control" name="moneyInput" value={input} onChange={handleChange}/>
-                <Button variant="primary" onClick={ withdraw }>
+                <Button variant="danger" onClick={ withdraw }>
                     Withdraw
                 </Button>
-                <Button variant="secondary" onClick={ deposit }>
+                <Button variant="success" onClick={ deposit }>
                     Deposit
                 </Button>
             </div>

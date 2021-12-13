@@ -1,42 +1,18 @@
-// import React, { useState, useEffect } from 'react';
-// //import { Table,Button, Modal } from 'react-bootstrap';
-// import Chart from 'chart.js/auto';
-// import 'reactjs-popup/dist/index.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
-// const Pos = () =>{
-//   return (
-//       <div>
-//           <table>
-//             <tr>
-//                 <td>
-//                     Sales
-//                 </td>
-//                 <td>
-//                     Products
-//                 </td>
-//                 <td>
-//                     Records
-//                 </td>
-//             </tr>
-//           </table>
-//           <DateSalesChart />
-
-//       </div>
-//   );
-// }
-
-// export default Pos;
-
-
-import React from 'react';
+import React, { useState } from 'react';
 import Authenticated from '@/Layouts/Authenticated';
 import { Head } from '@inertiajs/inertia-react';
+import { Button, Collapse, Card, Stack, Table } from 'react-bootstrap';
+import 'reactjs-popup/dist/index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import DateSalesChart  from "./components/DateSalesChart";
 import ProductSalesChart  from "./components/ProductSalesChart";
 import Wallet  from "./components/Wallet";
 
 export default function Pos(props) {
+    const [one, setOne] = useState(false);
+    const [two, setTwo] = useState(false);
+    const [table, setTable] = useState(false);
+
     return (
         <Authenticated
             auth={props.auth}
@@ -48,11 +24,54 @@ export default function Pos(props) {
             <div className="py-12">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                        <span>
-                            <ProductSalesChart />
-                            <DateSalesChart />
-                        </span>
-                        <Wallet />
+                        <Card bg={'primary'} width={'40rem'}>
+                            <Wallet />
+                        </Card>
+                        <Stack direction="horizontal" gap={5}>
+                            <Button
+                                onClick={() => {setOne(!one)}}
+                                aria-controls="collapse-product"
+                                aria-expanded={one}
+                                md={4}
+                            >
+                                Product Analytics
+                            </Button>
+                            <Button
+                                onClick={() => {setTwo(!two)}}
+                                aria-controls="collapse-date"
+                                aria-expanded={two}
+                                md={4}
+                            >
+                                Date Sales Analytics
+                            </Button>
+                            <Button
+                                onClick={() => {setTable(!table)}}
+                                aria-controls="collapse-date"
+                                aria-expanded={two}
+                                md={4}
+                            >
+                                Orders fulfilled
+                            </Button>
+                        </Stack>
+
+                        <Collapse in={one}>
+                            <Card body style={{width: '1000px'}} className='text-center'>
+                            <Card.Title>Product Sales</Card.Title>
+                                <ProductSalesChart className='text-center' />
+                            </Card>
+                        </Collapse>
+                        <Collapse in={two}>
+                        <Card body style={{width: '1000px'}} className='text-center' variant='primary'>
+                            <Card.Title>Daily Sales</Card.Title>
+                            <DateSalesChart className='text-center' />
+                        </Card>  
+                        </Collapse>
+                        <Collapse in={table}>
+                        <Card body style={{width: '1000px'}} className='text-center' variant='primary'>
+                            <Card.Title>Daily Sales</Card.Title>
+                            
+                        </Card>  
+                        </Collapse>                         
                     </div>
                 </div>
             </div>
