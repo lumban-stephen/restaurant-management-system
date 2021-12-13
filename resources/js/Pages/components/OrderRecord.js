@@ -4,16 +4,15 @@ import 'reactjs-popup/dist/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const OrderRecord = () =>{
-  //fetching data from database. Data is stored in "users" as array
-  const[users, setUsers]=useState([]);
+  //fetching data from database. Data is stored in "orderRecord" as array
+  const[orderRecord, setOrderRecord]=useState([]);
   useEffect(()=>{
-    fetch('/empinfo')
+    fetch('/orderrecord')
     .then(response=>response.json())
     .then(response=>{
       console.log(response);
-      setUsers(response)  
+      setOrderRecord(response)  
     })
-    
   },[])
 
     const [selectedData, setSelectedData] = useState({});//data in selected cell
@@ -70,15 +69,19 @@ const OrderRecord = () =>{
             </tr>
         </thead>
         <tbody>
-            {users.map((v) => (
+            {orderRecord.map((v) => (
                 <tr>
-                <td>{v.id}</td>
-                <td>{v.name}</td>
-                <td>@{v.role}</td>
-                <td><Button variant="success" onClick={() => hanldeClick1(v)}>View Order</Button>
+                <td>{ v.id }</td>
+                <td>{ v.order_id.order_detail_id.receiver }</td>
+                <td>{ v.order_id }</td>
+                <td>{ v.order_id.order_detail_id.date }</td>
+                <td>{ v.order_id.order_detail_id.status }</td>
+                <td>{ v.order_id.order_detail_id.payment }</td>
+                <td>
+                  <Button variant="success" onClick={() => hanldeClick1(v)}>View Order</Button>
                 </td>
                 </tr>
-            ))}
+            ))} 
         </tbody>
     </Table>
     </div>
