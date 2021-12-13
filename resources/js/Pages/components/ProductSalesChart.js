@@ -28,9 +28,9 @@ const ProductSalesChart = () =>{
     };
 
     return (
-        <div>
+        <div className='text-center'>
             <h1>Most sold product of the week:</h1>
-            <div style={{width:"350px"}} >
+            <div style={{width:"50%"}} >
                 <Doughnut data = { data } />
             </div>
             

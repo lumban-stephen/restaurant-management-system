@@ -34,9 +34,9 @@ const DateSalesChart = () =>{
     };
 
     return (
-        <div>
+        <div className='text-center'>
             <h1>Most sales in the week:</h1>
-                <div style={{width:"350px"}} >
+                <div style={{width:"50%"}} >
                 <Bar data = { data } />
             </div>
             
