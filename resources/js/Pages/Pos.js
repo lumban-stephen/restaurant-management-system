@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import Authenticated from '@/Layouts/Authenticated';
 import { Head } from '@inertiajs/inertia-react';
-import { Button, Collapse, Card, Stack, Table } from 'react-bootstrap';
+import { Button, Collapse, Card, Stack } from 'react-bootstrap';
 import 'reactjs-popup/dist/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DateSalesChart  from "./components/DateSalesChart";
 import ProductSalesChart  from "./components/ProductSalesChart";
 import Wallet  from "./components/Wallet";
+import OrderRecord from './components/OrderRecord';
 
 export default function Pos(props) {
     const [one, setOne] = useState(false);
@@ -50,7 +51,7 @@ export default function Pos(props) {
                                 aria-expanded={two}
                                 md={4}
                             >
-                                Orders fulfilled
+                                Orders Records
                             </Button>
                         </Stack>
 
@@ -68,8 +69,8 @@ export default function Pos(props) {
                         </Collapse>
                         <Collapse in={table}>
                         <Card body style={{width: '1000px'}} className='text-center' variant='primary'>
-                            <Card.Title>Daily Sales</Card.Title>
-                            
+                            <Card.Title>Order Records</Card.Title>
+                            <OrderRecord />
                         </Card>  
                         </Collapse>                         
                     </div>
