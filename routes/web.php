@@ -88,3 +88,9 @@ Route::post('/addIngredients',[App\Http\Controllers\InventoryController::class,'
 Route::post('/updateIngredients',[App\Http\Controllers\InventoryController::class,'update']);
 //delete ingredient in database
 Route::post('/deleteIngredients',[App\Http\Controllers\InventoryController::class,'delete']);
+
+//Order Records
+Route::get('/orderrecord',[App\Http\Controllers\OrderRecordController::class,'index']);
+
+//Order Management
+Route::get('/orderindex',[App\Http\Controllers\OrderController::class,'index']);
