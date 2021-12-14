@@ -94,3 +94,12 @@ Route::get('/orderrecord',[App\Http\Controllers\OrderRecordController::class,'in
 
 //Order Management
 Route::get('/orderindex',[App\Http\Controllers\OrderController::class,'index']);
+Route::post('/addorder',[App\Http\Controllers\OrderController::class,'store']);
+Route::get('//updateorder/{$id}',[App\Http\Controllers\OrderController::class,'update']);
+Route::get('/deleteorder/{$id}',[App\Http\Controllers\OrderController::class,'delete']);
+
+//Order Details
+Route::get('/orderdetails',[App\Http\Controllers\OrderController::class,'index']);
+Route::post('/adddetails',[App\Http\Controllers\OrderController::class,'store']);
+Route::get('//updatedetails/{$id}',[App\Http\Controllers\OrderController::class,'update']);
+Route::get('/deleteorderdetail/{$id}',[App\Http\Controllers\OrderController::class,'delete']);
