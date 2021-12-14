@@ -14,10 +14,12 @@ class OrderItems extends Model
         'dish_id'
     ];
 
+    protected $orderFunc = ['order'];
     public function order() {
         return $this->belongsTo(Order::class, 'order_id', 'id');
     } //This function allows us to call the metadata of this foreign key in the react components
     
+    protected $dishFunc = ['dish'];
     public function dish() {
         return $this->belongsTo(Dish::class, 'dish_id', 'id');
     } //This function allows us to call the metadata of this foreign key in the react components

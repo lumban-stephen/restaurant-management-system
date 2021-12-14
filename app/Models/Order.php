@@ -14,10 +14,12 @@ class Order extends Model
         'user_id',
     ];
 
+    protected $odFunc = ['orderDetails'];
     public function orderDetails() {
         return $this->belongsTo(OrderDetails::class, 'order_detail_id', 'id');
     } //This function allows us to call the metadata of this foreign key in the react components
 
+    protected $userFunc = ['user'];
     public function user() {
         return $this->belongsTo(User::class, 'user_id', 'id');
     } //This function allows us to call the metadata of this foreign key in the react components
