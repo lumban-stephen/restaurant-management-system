@@ -6,12 +6,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const OrderTable = () =>{
   //fetching data from database. Data is stored in "orders" as array
   const[orders, setOrders]=useState([]);
+  const[orderDetails, setOrderDetails] = useState([]);
+
   useEffect(()=>{
     fetch('/orderindex')
     .then(response=>response.json())
     .then(response=>{
       console.log(response);
       setOrders(response)  
+    })
+  },[])
+
+  useEffect(()=>{
+    fetch('/orderdetails')
+    .then(response=>response.json())
+    .then(response=>{
+      console.log(response);
+      setOrderDetails(response)  
     })
   },[])
     
@@ -22,6 +33,7 @@ const OrderTable = () =>{
     const [selectedData, setSelectedData] = useState({});//data in selected cell
     const [text, setText] = useState(0);
     const [data, setData] = useState(orders);
+    const [details, setDetails] = useState(orderDetails);
 
     const viewClose = () => setView(false);
    // const viewShow = () => setView(true);
@@ -150,8 +162,10 @@ const OrderTable = () =>{
               </tr>
               <tr>
                 <td>{selectedData?.id}</td>
-                <td>{ selectedData?.order_detail_id.receive }</td>
-                <td>{ selectedData?.order_detail_id.location }</td>
+                <input type="text" id ="name-update" defaultValue={selectedData?.name} name="quantity"  
+                onChange={handleInput} value={ selectedData?.order_detail_id.receiver }/>
+                <input type="text" id ="location-update" defaultValue={selectedData?.quantity} name="quantity"  
+                onChange={handleInput} value={ selectedData?.order_detail_id.location }/>
               </tr>
           </table>
         </Modal.Body>
@@ -191,8 +205,8 @@ const OrderTable = () =>{
           <Button variant="secondary" onClick={delClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={delClose}>
-            Save Changes
+          <Button variant="danger" onClick={delClose}>
+            Delete
           </Button>
         </Modal.Footer>
       </Modal>
@@ -212,10 +226,11 @@ const OrderTable = () =>{
             <th scope="col">Location</th>
         </tr>
         <tr>
-                <td>{selectedData?.id}</td>
-                <input type="text" id ="name-add"   name="email"/>
-                <td>{selectedData?.role}</td>
-              </tr>
+          <input type="text" id ="name-add" defaultValue={selectedData?.quantity} name="quantity"  
+          onChange={handleInput} value={ selectedData?.order_detail_id.receive }/>
+          <input type="text" id ="location-add" defaultValue={selectedData?.quantity} name="quantity"  
+          onChange={handleInput} value={ selectedData?.order_detail_id.location }/>
+        </tr>
 
 
         </Modal.Body>
