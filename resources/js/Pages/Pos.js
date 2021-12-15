@@ -8,6 +8,7 @@ import DateSalesChart  from "./components/DateSalesChart";
 import ProductSalesChart  from "./components/ProductSalesChart";
 import Wallet  from "./components/Wallet";
 import OrderRecord from './components/OrderRecord';
+import { padding } from 'tailwindcss/defaultTheme';
 
 export default function Pos(props) {
     const [one, setOne] = useState(false);
@@ -25,10 +26,10 @@ export default function Pos(props) {
             <div className="py-12">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                        <Card bg={'primary'} width={'40rem'}>
+                        <Card bg={'primary'} className='ml-5 ml-lg-0' >
                             <Wallet />
                         </Card>
-                        <Stack direction="horizontal" gap={5}>
+                        <Stack direction="horizontal" gap={5} className='ml-5 ml-lg-0 mt-5'>
                             <Button
                                 onClick={() => {setOne(!one)}}
                                 aria-controls="collapse-product"

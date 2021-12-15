@@ -65,7 +65,7 @@ const OrderRecord = () =>{
             <th>Date</th>
             <th>Status</th>
             <th>Payment</th>
-            <th></th>
+            <th>View Order</th>
             </tr>
         </thead>
         <tbody>
@@ -78,7 +78,7 @@ const OrderRecord = () =>{
                 <td>{ v.order_id.order_detail_id.status }</td>
                 <td>{ v.order_id.order_detail_id.payment }</td>
                 <td>
-                  <Button variant="success" onClick={() => hanldeClick1(v)}>View Order</Button>
+                  <Button variant="success" onClick={() => hanldeClick1(v)}>View</Button>
                 </td>
                 </tr>
             ))} 
