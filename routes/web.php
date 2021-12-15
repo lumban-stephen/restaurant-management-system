@@ -52,11 +52,15 @@ Route::get('/dish', function () {
     return Inertia::render('DishManagement');
 })->name('dish');
 
+Route::get('/orders', function () {
+    return Inertia::render('OrderManagement');
+})->name('ordermanagement');
+
 require __DIR__.'/auth.php';
 
-Route::get('/orders', function () {
-    return view('Ordermanagement');
-});
+// Route::get('/orders', function () {
+//     return view('Ordermanagement');
+// });
 
 //return inventory info
 Route::get('/inventory',[App\Http\Controllers\InventoryController::class,'inventoryIndex']);

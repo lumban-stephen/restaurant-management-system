@@ -221,15 +221,20 @@ const OrderTable = () =>{
         </Modal.Header>
         <Modal.Body>
         <tr>
-            <th scope="col">Priority</th>
-            <th scope="col">Name</th>
+            <th scope="col">Receiver</th>
             <th scope="col">Location</th>
+            <th scope="col">Date to Deliver</th>
+            <th scope="col">Add Dish</th>
         </tr>
         <tr>
-          <input type="text" id ="name-add" defaultValue={selectedData?.quantity} name="quantity"  
-          onChange={handleInput} value={ selectedData?.order_detail_id.receive }/>
-          <input type="text" id ="location-add" defaultValue={selectedData?.quantity} name="quantity"  
-          onChange={handleInput} value={ selectedData?.order_detail_id.location }/>
+          <input type="text" id ="name-add" defaultValue={ selectedData?.order_detail_id.location } name="name"  
+          onChange={handleInput}/>
+          <input type="text" id ="location-add" defaultValue={ selectedData?.order_detail_id.location } name="location"  
+          onChange={handleInput}/>
+          <input type="date" id = "date-add" defaultValue={ selectedData?.order_detail_id.date } />
+          <Button variant="primary" onClick={delClose}>
+            Add Dishes
+          </Button>
         </tr>
 
 

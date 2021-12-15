@@ -5725,13 +5725,9 @@ function Authenticated(_ref) {
                 active: route().current('dish'),
                 children: "Dish"
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                href: route('account'),
-                active: route().current('account'),
+                href: route('ordermanagement'),
+                active: route().current('ordermanagement'),
                 children: "Order Management"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                href: route('account'),
-                active: route().current('account'),
-                children: "Account"
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
                 href: route('pos'),
                 active: route().current('pos'),
@@ -6922,8 +6918,7 @@ function OrderManagement(props) {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           className: "bg-white overflow-hidden shadow-sm sm:rounded-lg",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-            className: "p-6 bg-white border-b border-gray-200",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(OrderTable, {})
+            className: "p-6 bg-white border-b border-gray-200"
           })
         })
       })
@@ -9219,6 +9214,11 @@ var OrderTable = function OrderTable() {
       orders = _useState2[0],
       setOrders = _useState2[1];
 
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      orderDetails = _useState4[0],
+      setOrderDetails = _useState4[1];
+
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     fetch('/orderindex').then(function (response) {
       return response.json();
@@ -9227,46 +9227,59 @@ var OrderTable = function OrderTable() {
       setOrders(response);
     });
   }, []);
-
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-      _useState4 = _slicedToArray(_useState3, 2),
-      view = _useState4[0],
-      setView = _useState4[1]; //see details
-
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    fetch('/orderdetails').then(function (response) {
+      return response.json();
+    }).then(function (response) {
+      console.log(response);
+      setOrderDetails(response);
+    });
+  }, []);
 
   var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
       _useState6 = _slicedToArray(_useState5, 2),
-      update = _useState6[0],
-      setUpdate = _useState6[1]; //update
+      view = _useState6[0],
+      setView = _useState6[1]; //see details
 
 
   var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
       _useState8 = _slicedToArray(_useState7, 2),
-      del = _useState8[0],
-      setDel = _useState8[1]; //delete
+      update = _useState8[0],
+      setUpdate = _useState8[1]; //update
 
 
-  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
       _useState10 = _slicedToArray(_useState9, 2),
-      addOrder = _useState10[0],
-      setAddOrder = _useState10[1]; //add new ? 
+      del = _useState10[0],
+      setDel = _useState10[1]; //delete
 
 
   var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
       _useState12 = _slicedToArray(_useState11, 2),
-      selectedData = _useState12[0],
-      setSelectedData = _useState12[1]; //data in selected cell
+      addOrder = _useState12[0],
+      setAddOrder = _useState12[1]; //add new ? 
 
 
-  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
       _useState14 = _slicedToArray(_useState13, 2),
-      text = _useState14[0],
-      setText = _useState14[1];
+      selectedData = _useState14[0],
+      setSelectedData = _useState14[1]; //data in selected cell
 
-  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(orders),
+
+  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
       _useState16 = _slicedToArray(_useState15, 2),
-      data = _useState16[0],
-      setData = _useState16[1];
+      text = _useState16[0],
+      setText = _useState16[1];
+
+  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(orders),
+      _useState18 = _slicedToArray(_useState17, 2),
+      data = _useState18[0],
+      setData = _useState18[1];
+
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(orderDetails),
+      _useState20 = _slicedToArray(_useState19, 2),
+      details = _useState20[0],
+      setDetails = _useState20[1];
 
   var viewClose = function viewClose() {
     return setView(false);
@@ -9449,10 +9462,20 @@ var OrderTable = function OrderTable() {
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                 children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.order_detail_id.receive
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.order_detail_id.location
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                type: "text",
+                id: "name-update",
+                defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.name,
+                name: "quantity",
+                onChange: handleInput,
+                value: selectedData === null || selectedData === void 0 ? void 0 : selectedData.order_detail_id.receiver
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                type: "text",
+                id: "location-update",
+                defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.quantity,
+                name: "quantity",
+                onChange: handleInput,
+                value: selectedData === null || selectedData === void 0 ? void 0 : selectedData.order_detail_id.location
               })]
             })]
           })
@@ -9507,9 +9530,9 @@ var OrderTable = function OrderTable() {
             onClick: delClose,
             children: "Close"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "primary",
+            variant: "danger",
             onClick: delClose,
-            children: "Save Changes"
+            children: "Delete"
           })]
         })]
       })
@@ -9526,23 +9549,38 @@ var OrderTable = function OrderTable() {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
               scope: "col",
-              children: "Priority"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-              scope: "col",
-              children: "Name"
+              children: "Receiver"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
               scope: "col",
               children: "Location"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+              scope: "col",
+              children: "Date to Deliver"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+              scope: "col",
+              children: "Add Dish"
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-              children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
               type: "text",
               id: "name-add",
-              name: "email"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-              children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.role
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.order_detail_id.location,
+              name: "name",
+              onChange: handleInput
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+              type: "text",
+              id: "location-add",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.order_detail_id.location,
+              name: "location",
+              onChange: handleInput
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+              type: "date",
+              id: "date-add",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.order_detail_id.date
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+              variant: "primary",
+              onClick: delClose,
+              children: "Add Dishes"
             })]
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Footer, {
