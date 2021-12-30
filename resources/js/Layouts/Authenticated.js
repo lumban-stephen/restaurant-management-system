@@ -22,7 +22,7 @@ export default function Authenticated({ auth, header, children }) {
 
                             <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                                 <NavLink href={route('dashboard')} active={route().current('dashboard')}>
-                                    Dashboard
+                                    Order Management
                                 </NavLink>
                                 <NavLink href={route('inventorymanagement')} active={route().current('inventorymanagement')}>
                                     Inventory
@@ -31,13 +31,13 @@ export default function Authenticated({ auth, header, children }) {
                                     Dish
                                 </NavLink>
                                 <NavLink href={route('account')} active={route().current('account')}>
-                                    Order Management
-                                </NavLink>
-                                <NavLink href={route('account')} active={route().current('account')}>
                                     Account
                                 </NavLink>
                                 <NavLink href={route('employee')} active={route().current('employee')}>
                                     Employee Management
+                                </NavLink>
+                                <NavLink href={route('pos')} active={route().current('pos')}>
+                                    Pos
                                 </NavLink>
                             </div>
                         </div>

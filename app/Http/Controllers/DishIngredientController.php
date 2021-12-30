@@ -13,4 +13,9 @@ class DishIngredientController extends Controller
 
         return $dishIngredient;
     }
+
+    public function store( Request $request)
+    {
+        DB::insert('insert into dish_ingredients (dish_id, ingredient_id) values (?, ?)', [$request->input('dish_id'), $request->input('inventory_id')]);
+    }
 }

@@ -18,7 +18,10 @@ class InventoryController extends Controller
 
     public function store( Request $request)
     {
-        DB::insert('insert into inventories (food_name, unit, quantity) values (?, ?,?)', [$request->input('food_name'), $request->input('unit'),$request->input('quantity')]);
+        $date = Carbon::now();
+        $expire = Carbon::now()->addDays(7);
+
+        DB::insert('insert into inventories (food_name, unit, quantity,restocked_date,expiry_date) values (?, ?,?,?,?)', [$request->input('food_name'), $request->input('unit'),$request->input('quantity'),$date->toDateString(),$expire->toDateString()]);
 
     }
 

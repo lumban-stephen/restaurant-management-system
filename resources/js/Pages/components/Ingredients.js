@@ -17,11 +17,21 @@ const Ingredients = () =>{
     })
     
   },[])
+
+  let tempAddEm = {
+    food_name :'',
+    unit :'',
+    quantity :0,
+    restocked_date :'2021-12-29',
+    expiry_date :'2022-01-05',
+  };
+
+  const [date,setDate] = useState(new Date());
     
     const [view, setView] = useState(false);//see details
     const [update, setUpdate] = useState(false);//update
     const [del, setDel] = useState(false);//delete
-    const [addem, setAdd] = useState({});//add new ? 
+    const [addem, setAdd] = useState(tempAddEm);//add new ? 
     const [selectedData, setSelectedData] = useState({});//data in selected cell
     const [text, setText] = useState(0);
     const [data, setData] = useState(ingredients);
@@ -116,6 +126,13 @@ const Ingredients = () =>{
 
     //add new ingredients to an array ( front end)
     const addNewIng=()=>{
+      var re = '2021-12-29';
+      var ex = '2022-01-05';
+
+      
+      // setAdd({...addem, ['expiry_date']: '2022-01-05'});
+      // setAdd({...addem, ['restocked_date']: '2021-12-29'});
+      console.log(addem)
       setingredients([...ingredients,
       addem])
     }
@@ -135,7 +152,6 @@ const Ingredients = () =>{
     <Table striped bordered hover>
   <thead>
     <tr>
-      <th>#</th>
       <th>Ingredient</th>
       <th>Unit</th>
       <th>Quantity</th>
@@ -146,7 +162,6 @@ const Ingredients = () =>{
   <tbody>
     {ingredients.map((v) => (
             <tr>
-              <td> { v.id } </td>
               <td> { v.food_name } </td>
               <td> { v.unit } </td>
               <td> { v.quantity } </td>
@@ -172,7 +187,6 @@ const Ingredients = () =>{
         <Modal.Body>
         <table class="table">
               <tr>
-                <th scope="col">Id</th>
                 <th scope="col">Ingredient</th>
                 <th scope="col">Unit</th>
                 <th scope="col">Quantity</th>
@@ -180,7 +194,6 @@ const Ingredients = () =>{
                 <th scope="col">Expiry Date</th>
               </tr>
               <tr>
-                <td>{selectedData?.id}</td>
                 <td>{selectedData?.food_name}</td>
                 <td>{selectedData?.unit}</td>
                 <td>{selectedData?.quantity}</td>
@@ -259,16 +272,8 @@ const Ingredients = () =>{
         <form onSubmit={deleteIng} >
         <Modal.Body>
         <table class="table">
-              <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Ingredient</th>
-              </tr>
-              <tr>
-                <td>{selectedData?.id}</td>
-                <td>{selectedData?.food_name}</td>
-                
-              </tr>
-          </table>
+          <p>Are you sure you want to delete { selectedData?.food_name }?</p>
+        </table>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={delClose}>
@@ -307,7 +312,8 @@ const Ingredients = () =>{
 
         <strong>Quantity:  </strong>
         <input type="number" id ="qty-add" defaultValue={selectedData?.quantity} name="quantity"  onChange={handleInput}/>
-        
+      
+
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={addClose}>

@@ -1,7 +1,19 @@
 import {useState,useEffect} from "react";
+import { Table,Button, Modal } from 'react-bootstrap';
+import 'reactjs-popup/dist/index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
+
 
 const Inputprofile = () =>{
+  let state1 = {
+    id : 0,
+    name : "users.name",
+    email :" users.email",
+  }
     const[users, setUsers]=useState({});
+    const[state, setState]=useState(state1);
+    
       useEffect(()=>{
         fetch('/userinfo')
         .then(response=>response.json())
@@ -11,23 +23,37 @@ const Inputprofile = () =>{
         })
         
       },[])
+
+    //when you input data, it is changed
+    const handleInput = (e) => {
+      e.persist();
+      const nm = e.target.name;
+      console.log(nm)
+      setState({...state, [nm]: e.target.value});
+    }
+
+    //when you click save changes, it is sent to database
+    const saveStudent = async (e) => {
+      e.preventDefault();
+      console.log(state);
+      const res = await axios.post('/updateAccount',state).then(res => console.log(res.data));
+
+    }
     
     return(
-        <form action="#" method="POST" enctype="multipart/form-data">
-    <h1></h1>
-        <label for="picture"><strong>Picture:</strong></label>
-        <img src="/image/{{ $user->file_path }}" width="100px" />
-        <input type="file" name="picture" id="picture" />
-        <br /><label for="name"><strong>Name: {users.name} </strong></label>
+        <form onSubmit={saveStudent} >
+        <br /><label for="name"><strong>Name: </strong></label>
         
-        <input type="text" class="form-control" id ="name" name="name" />
-        
+        <input type="text" class="form-control" id ="name-update" defaultValue={users.name} name="name" onChange={handleInput}/>
         <br />
-        <label for="email"><strong>Email:</strong></label>
-        <input type="text" class="form-control" id ="email" name="email" />
-        <br /><strong>Salary:  </strong>
-        <br /><strong>Role: Add data from database</strong>    
-        <button class="btn btn-primary" type="submit">Update Profile</button>
+        <label for="email"><strong>Email: </strong></label>
+        <input type="text" class="form-control" id ="email" defaultValue={users.email} name="email" onChange={handleInput}/>
+        <br /><strong>Salary:  {users.salary}</strong>
+        <br /><strong>Role: {users.role}</strong>
+        <br />    
+        <Button variant="primary" type="submit">
+            Save Changes
+        </Button>
         </form>
       
 

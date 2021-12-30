@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
-class DishController extends Controller
+class BillController extends Controller
 {
     //
-    public function dishIndex() {
+    public function billIndex() {
         
-        $dishes = DB::table('dishes')->get();
+        $bill = DB::table('bill')->get();
 
-        return $dishes;
+        return $bill;
     }
 
     public function store( Request $request)

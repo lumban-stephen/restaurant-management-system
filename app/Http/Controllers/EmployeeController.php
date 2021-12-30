@@ -12,23 +12,34 @@ class EmployeeController extends Controller
         return $users;
     }
 
-    public function userUpdate( Request $request)
+    public function updateEmp( Request $request)
     {
+        
+        $id = $request->input('id');
         $name = $request->input('name');
         $email = $request->input('email');
+        $role = $request->input('role');
+        $salary = $request->input('salary');
 
-        if ($image = $request->file('picture')) {
-            $destinationPath = 'image/';
-            $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
-            $image->move($destinationPath, $profileImage);
-            $input['picture'] = "$profileImage";
-            DB::update('update users set file_path=? where id = ?',[$input['picture'],auth()->user()->id]);
-    
-        }
 
-        DB::update('update users set name = ?,email=? where id = ?',[$name,$email,auth()->user()->id]);
-        return redirect()->back()->with('status','Student Updated Successfully');
+        DB::update('update users set name = ?,email=?,role=?,salary=? where id = ?',[$name,$email,$role,$salary,$id]);
     }
 
+    public function deleteEmp( Request $request)
+    {
+        
+        $id = $request->input('id');
+
+        DB::delete('delete from users where id=?',[$id]);
+    }
+
+    
+    public function store( Request $request)
+    {
+
+        //$password = Hash::make($request->input('password'));
+        DB::insert('insert into users (name, email, salary,role,password) values (?, ?,?,?,?)', [$request->input('name'), $request->input('email'),$request->input('salary'),$request->input('role'),'aaa']);
+
+    }
 
 }
