@@ -95,7 +95,10 @@ const Ingredients = () =>{
     const addNew = async (e) => {
       e.preventDefault();
       console.log(addem);
-      const res = await axios.post('/addIngredients',addem).then(res => console.log(res.data));
+      const res = await axios.post('/addIngredients',addem).then(res => console.log(res.data).catch(function(error) {
+      console.log(error);
+    })
+    );
   
     }
 
@@ -103,7 +106,11 @@ const Ingredients = () =>{
   const saveUpdate = async (e) => {
     e.preventDefault();
     console.log(selectedData);
-    const res = await axios.post('/updateIngredients',selectedData).then(res => console.log(res.data));
+    const res = await axios.post('/updateIngredients',selectedData).then(res => console.log(res.data)
+    .catch(function(error) {
+      console.log(error);
+    })
+    );
 
   }
 
