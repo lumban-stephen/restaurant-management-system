@@ -5228,13 +5228,9 @@ __webpack_require__.r(__webpack_exports__);
 
 function ApplicationLogo(_ref) {
   var className = _ref.className;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
-    className: className,
-    viewBox: "0 0 316 316",
-    xmlns: "http://www.w3.org/2000/svg",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
-      d: "M305.8 81.125C305.77 80.995 305.69 80.885 305.65 80.755C305.56 80.525 305.49 80.285 305.37 80.075C305.29 79.935 305.17 79.815 305.07 79.685C304.94 79.515 304.83 79.325 304.68 79.175C304.55 79.045 304.39 78.955 304.25 78.845C304.09 78.715 303.95 78.575 303.77 78.475L251.32 48.275C249.97 47.495 248.31 47.495 246.96 48.275L194.51 78.475C194.33 78.575 194.19 78.725 194.03 78.845C193.89 78.955 193.73 79.045 193.6 79.175C193.45 79.325 193.34 79.515 193.21 79.685C193.11 79.815 192.99 79.935 192.91 80.075C192.79 80.285 192.71 80.525 192.63 80.755C192.58 80.875 192.51 80.995 192.48 81.125C192.38 81.495 192.33 81.875 192.33 82.265V139.625L148.62 164.795V52.575C148.62 52.185 148.57 51.805 148.47 51.435C148.44 51.305 148.36 51.195 148.32 51.065C148.23 50.835 148.16 50.595 148.04 50.385C147.96 50.245 147.84 50.125 147.74 49.995C147.61 49.825 147.5 49.635 147.35 49.485C147.22 49.355 147.06 49.265 146.92 49.155C146.76 49.025 146.62 48.885 146.44 48.785L93.99 18.585C92.64 17.805 90.98 17.805 89.63 18.585L37.18 48.785C37 48.885 36.86 49.035 36.7 49.155C36.56 49.265 36.4 49.355 36.27 49.485C36.12 49.635 36.01 49.825 35.88 49.995C35.78 50.125 35.66 50.245 35.58 50.385C35.46 50.595 35.38 50.835 35.3 51.065C35.25 51.185 35.18 51.305 35.15 51.435C35.05 51.805 35 52.185 35 52.575V232.235C35 233.795 35.84 235.245 37.19 236.025L142.1 296.425C142.33 296.555 142.58 296.635 142.82 296.725C142.93 296.765 143.04 296.835 143.16 296.865C143.53 296.965 143.9 297.015 144.28 297.015C144.66 297.015 145.03 296.965 145.4 296.865C145.5 296.835 145.59 296.775 145.69 296.745C145.95 296.655 146.21 296.565 146.45 296.435L251.36 236.035C252.72 235.255 253.55 233.815 253.55 232.245V174.885L303.81 145.945C305.17 145.165 306 143.725 306 142.155V82.265C305.95 81.875 305.89 81.495 305.8 81.125ZM144.2 227.205L100.57 202.515L146.39 176.135L196.66 147.195L240.33 172.335L208.29 190.625L144.2 227.205ZM244.75 114.995V164.795L226.39 154.225L201.03 139.625V89.825L219.39 100.395L244.75 114.995ZM249.12 57.105L292.81 82.265L249.12 107.425L205.43 82.265L249.12 57.105ZM114.49 184.425L96.13 194.995V85.305L121.49 70.705L139.85 60.135V169.815L114.49 184.425ZM91.76 27.425L135.45 52.585L91.76 77.745L48.07 52.585L91.76 27.425ZM43.67 60.135L62.03 70.705L87.39 85.305V202.545V202.555V202.565C87.39 202.735 87.44 202.895 87.46 203.055C87.49 203.265 87.49 203.485 87.55 203.695V203.705C87.6 203.875 87.69 204.035 87.76 204.195C87.84 204.375 87.89 204.575 87.99 204.745C87.99 204.745 87.99 204.755 88 204.755C88.09 204.905 88.22 205.035 88.33 205.175C88.45 205.335 88.55 205.495 88.69 205.635L88.7 205.645C88.82 205.765 88.98 205.855 89.12 205.965C89.28 206.085 89.42 206.225 89.59 206.325C89.6 206.325 89.6 206.325 89.61 206.335C89.62 206.335 89.62 206.345 89.63 206.345L139.87 234.775V285.065L43.67 229.705V60.135ZM244.75 229.705L148.58 285.075V234.775L219.8 194.115L244.75 179.875V229.705ZM297.2 139.625L253.49 164.795V114.995L278.85 100.395L297.21 89.825V139.625H297.2Z"
-    })
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+    src: "https://icons.iconarchive.com/icons/google/noto-emoji-food-drink/256/32405-spaghetti-icon.png",
+    width: "50"
   });
 }
 
@@ -5715,7 +5711,7 @@ function Authenticated(_ref) {
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
                 href: route('dashboard'),
                 active: route().current('dashboard'),
-                children: "Dashboard"
+                children: "Order Management"
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
                 href: route('inventorymanagement'),
                 active: route().current('inventorymanagement'),
@@ -5725,17 +5721,17 @@ function Authenticated(_ref) {
                 active: route().current('dish'),
                 children: "Dish"
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                href: route('ordermanagement'),
-                active: route().current('ordermanagement'),
-                children: "Order Management"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                href: route('pos'),
-                active: route().current('pos'),
-                children: "POS"
+                href: route('account'),
+                active: route().current('account'),
+                children: "Account"
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
                 href: route('employee'),
                 active: route().current('employee'),
                 children: "Employee Management"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                href: route('pos'),
+                active: route().current('pos'),
+                children: "Pos"
               })]
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
@@ -6236,6 +6232,10 @@ function Login(_ref) {
           processing: processing,
           children: "Log in"
         })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+        href: "/register",
+        className: "underline text-sm text-gray-600 hover:text-gray-900",
+        children: "Create Account?"
       })]
     })]
   });
@@ -6578,31 +6578,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Layouts/Authenticated */ "./resources/js/Layouts/Authenticated.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_OrderManagement__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/OrderManagement */ "./resources/js/Pages/components/OrderManagement.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
 
 
 function Dashboard(props) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
     auth: props.auth,
     errors: props.errors,
-    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
+    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
       className: "font-semibold text-xl text-gray-800 leading-tight",
-      children: "Dashboard"
+      children: "Order Management"
     }),
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
       title: "Dashboard"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "py-12",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
         className: "max-w-7xl mx-auto sm:px-6 lg:px-8",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
           className: "bg-white overflow-hidden shadow-sm sm:rounded-lg",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
             className: "p-6 bg-white border-b border-gray-200",
-            children: "You're logged in!"
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_OrderManagement__WEBPACK_IMPORTED_MODULE_3__["default"], {})
           })
         })
       })
@@ -6871,57 +6873,6 @@ function EmployeeManagement(props) {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
             className: "p-6 bg-white border-b border-gray-200",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Ingredients__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-          })
-        })
-      })
-    })]
-  });
-}
-
-/***/ }),
-
-/***/ "./resources/js/Pages/OrderManagement.js":
-/*!***********************************************!*\
-  !*** ./resources/js/Pages/OrderManagement.js ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ OrderManagement)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Layouts/Authenticated */ "./resources/js/Layouts/Authenticated.js");
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _components_OrderTable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/OrderTable */ "./resources/js/Pages/components/OrderTable.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
- //import Employee from './components/Employee';
-
-
-
-function OrderManagement(props) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    auth: props.auth,
-    errors: props.errors,
-    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
-      className: "font-semibold text-xl text-gray-800 leading-tight",
-      children: "Order Management"
-    }),
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
-      title: "Order Management"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      className: "py-12",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-        className: "max-w-7xl mx-auto sm:px-6 lg:px-8",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-          className: "bg-white overflow-hidden shadow-sm sm:rounded-lg",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-            className: "p-6 bg-white border-b border-gray-200",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_OrderTable__WEBPACK_IMPORTED_MODULE_3__["default"], {})
           })
         })
       })
@@ -7437,13 +7388,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Table.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Modal.js");
-/* harmony import */ var reactjs_popup_dist_index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactjs-popup/dist/index.css */ "./node_modules/reactjs-popup/dist/index.css");
-/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Table.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Modal.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Col.js");
+/* harmony import */ var reactjs_popup_dist_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactjs-popup/dist/index.css */ "./node_modules/reactjs-popup/dist/index.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -7472,12 +7441,12 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var Dishes = function Dishes() {
   //fetching data from database. Data is stored in "users" as array
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
       _useState2 = _slicedToArray(_useState, 2),
       dishes = _useState2[0],
       setDishes = _useState2[1];
 
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
     fetch('/dishindex').then(function (response) {
       return response.json();
     }).then(function (response) {
@@ -7486,79 +7455,105 @@ var Dishes = function Dishes() {
     });
   }, []); //fetching data from database. Data is stored in "users" as array
 
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
       _useState4 = _slicedToArray(_useState3, 2),
       dishIng = _useState4[0],
       setDishIng = _useState4[1];
 
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    fetch('/dishingredientsindex').then(function (response) {
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
+    fetch('/dishingredientindex').then(function (response) {
       return response.json();
     }).then(function (response) {
       console.log(response);
       setDishIng(response);
     });
-  }, []);
+  }, []); //fetching data from database. Data is stored in "users" as array
 
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
       _useState6 = _slicedToArray(_useState5, 2),
-      ingredient = _useState6[0],
-      setIngredient = _useState6[1];
+      ingredients = _useState6[0],
+      setingredients = _useState6[1];
 
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
     fetch('/inventory').then(function (response) {
       return response.json();
     }).then(function (response) {
       console.log(response);
-      setIngredient(response);
+      setingredients(response);
     });
   }, []);
 
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
       _useState8 = _slicedToArray(_useState7, 2),
       view = _useState8[0],
       setView = _useState8[1]; //see details
 
 
-  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
       _useState10 = _slicedToArray(_useState9, 2),
       update = _useState10[0],
       setUpdate = _useState10[1]; //update
 
 
-  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
       _useState12 = _slicedToArray(_useState11, 2),
       del = _useState12[0],
       setDel = _useState12[1]; //delete
 
 
-  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
       _useState14 = _slicedToArray(_useState13, 2),
-      addDish = _useState14[0],
-      setaddDish = _useState14[1]; //add new dish 
+      addem = _useState14[0],
+      setAdd = _useState14[1]; //add new ? 
 
 
-  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
       _useState16 = _slicedToArray(_useState15, 2),
-      addDi = _useState16[0],
-      setaddDi = _useState16[1]; //add new dish ingredient
+      selectedData = _useState16[0],
+      setSelectedData = _useState16[1]; //data in selected cell
 
 
-  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
       _useState18 = _slicedToArray(_useState17, 2),
-      selectedData = _useState18[0],
-      setSelectedData = _useState18[1]; //data in selected cell
+      selectedIng = _useState18[0],
+      setSelectedIng = _useState18[1]; //data in selected cell
 
 
-  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0),
       _useState20 = _slicedToArray(_useState19, 2),
       text = _useState20[0],
       setText = _useState20[1];
 
-  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(dishes),
+  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(dishes),
       _useState22 = _slicedToArray(_useState21, 2),
       data = _useState22[0],
       setData = _useState22[1];
+
+  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+      _useState24 = _slicedToArray(_useState23, 2),
+      showAdd = _useState24[0],
+      setShowadd = _useState24[1];
+
+  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+      _useState26 = _slicedToArray(_useState25, 2),
+      popIng = _useState26[0],
+      setShowIng = _useState26[1];
+
+  var _useState27 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+      _useState28 = _slicedToArray(_useState27, 2),
+      showIngList = _useState28[0],
+      setshowIngList = _useState28[1];
+
+  var _useState29 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
+      _useState30 = _slicedToArray(_useState29, 2),
+      addIng = _useState30[0],
+      setaddIng = _useState30[1]; //add new ingredients 
+
+
+  var _useState31 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+      _useState32 = _slicedToArray(_useState31, 2),
+      showIngListNoBT = _useState32[0],
+      setshowIngListNoBT = _useState32[1];
 
   var viewClose = function viewClose() {
     return setView(false);
@@ -7576,19 +7571,23 @@ var Dishes = function Dishes() {
 
 
   var addClose = function addClose() {
-    return setaddDish(false);
+    return setShowadd(false);
   };
 
   var addShow = function addShow() {
-    return setAddDish(true);
+    return setShowadd(true);
   };
 
-  var addIngredientShow = function addIngredientShow() {
-    return setaddDi(true);
+  var IngClose = function IngClose() {
+    return setShowIng(false);
   };
 
-  var addIngredientClose = function addIngredientClose() {
-    return setaddDi(false);
+  var ShowIngListClose = function ShowIngListClose() {
+    return setshowIngList(false);
+  };
+
+  var showIngListNoBTClose = function showIngListNoBTClose() {
+    return setshowIngListNoBT(false);
   }; // when you click the button, data in the cell will be stored in setSelectedData   
 
 
@@ -7599,12 +7598,34 @@ var Dishes = function Dishes() {
 
   var hanldeClick2 = function hanldeClick2(selectedRec) {
     setSelectedData(selectedRec);
+    var ingID = dishIng.filter(function (item) {
+      return item.dish_id === selectedData.id;
+    });
+    var tempArr = ingredients.filter(function (item) {
+      return ingID.filter(function (it) {
+        return item.id == it.id;
+      });
+    }); //setSelectedIng();
+
     setUpdate(true);
   };
 
   var hanldeClick3 = function hanldeClick3(selectedRec) {
     setSelectedData(selectedRec);
     setDel(true);
+  };
+
+  var hanldeClickAddIng = function hanldeClickAddIng(selectedRec) {
+    setSelectedData(selectedRec);
+    setShowIng(true);
+  };
+
+  var showIngredients = function showIngredients() {
+    setshowIngList(true);
+  };
+
+  var showIngredientsNoButton = function showIngredientsNoButton() {
+    setshowIngListNoBT(true);
   }; //data is updated on front end
 
 
@@ -7615,69 +7636,222 @@ var Dishes = function Dishes() {
     selectedData.dish_name = name.value;
     selectedData.price = price.value;
     data.map(function (d) {
-      d.dish_id === selectedData.id ? _objectSpread(_objectSpread({}, d), {}, {
+      d.id === selectedData.id ? _objectSpread(_objectSpread({}, d), {}, {
         selectedData: selectedData
       }) : d;
     });
     updateClose();
+  }; //add new dishes and send it to database
+
+
+  var addNew = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(e) {
+      var res;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              e.preventDefault();
+              console.log(addem);
+              _context.next = 4;
+              return axios.post('/adddishes', addem).then(function (res) {
+                return console.log(res.data);
+              });
+
+            case 4:
+              res = _context.sent;
+
+            case 5:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }));
+
+    return function addNew(_x) {
+      return _ref.apply(this, arguments);
+    };
+  }(); //when you click save changes, it is sent to database
+
+
+  var saveUpdate = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2(e) {
+      var res;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              e.preventDefault();
+              console.log(selectedData);
+              _context2.next = 4;
+              return axios.post('/updatedishes', selectedData).then(function (res) {
+                return console.log(res.data);
+              });
+
+            case 4:
+              res = _context2.sent;
+
+            case 5:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2);
+    }));
+
+    return function saveUpdate(_x2) {
+      return _ref2.apply(this, arguments);
+    };
+  }(); //when you click save changes, it is sent to database
+
+
+  var deleteIng = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3(e) {
+      var res;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
+        while (1) {
+          switch (_context3.prev = _context3.next) {
+            case 0:
+              e.preventDefault();
+              console.log(selectedData);
+              _context3.next = 4;
+              return axios.post('/deletedishes', selectedData).then(function (res) {
+                return console.log(res.data);
+              });
+
+            case 4:
+              res = _context3.sent;
+
+            case 5:
+            case "end":
+              return _context3.stop();
+          }
+        }
+      }, _callee3);
+    }));
+
+    return function deleteIng(_x3) {
+      return _ref3.apply(this, arguments);
+    };
+  }(); //add new ingredients to dishes and send it to database
+
+
+  var saveNewIng = /*#__PURE__*/function () {
+    var _ref4 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee4(e) {
+      var dish_id, inventory_id, res;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee4$(_context4) {
+        while (1) {
+          switch (_context4.prev = _context4.next) {
+            case 0:
+              e.preventDefault();
+              dish_id = document.getElementById("dish_id");
+              inventory_id = document.getElementById("inventory_id");
+              addIng.dish_id = dish_id.value;
+              addIng.inventory_id = inventory_id.value;
+              console.log(addIng);
+              _context4.next = 8;
+              return axios.post('/adddnewIng', addIng).then(function (res) {
+                return console.log(res.data);
+              });
+
+            case 8:
+              res = _context4.sent;
+
+            case 9:
+            case "end":
+              return _context4.stop();
+          }
+        }
+      }, _callee4);
+    }));
+
+    return function saveNewIng(_x4) {
+      return _ref4.apply(this, arguments);
+    };
+  }(); //data is deleted on front end
+
+
+  var handleDelete = function handleDelete(id) {
+    var newList = dishes.filter(function (item) {
+      return item.id !== id;
+    });
+    setDishes(newList);
+    delClose();
+  }; //data is deleted on front end
+
+
+  var handleRemoveIng = function handleRemoveIng(id) {
+    var newList = selectedIng.filter(function (item) {
+      return item.id !== id;
+    });
+    setSelectedIng(newList);
+    delClose();
+  }; //add new dishes to an array ( front end)
+
+
+  var addNewIng = function addNewIng() {
+    setDishes([].concat(_toConsumableArray(dishes), [addem]));
+  }; //add new ingredients to an array ( front end)
+
+
+  var addNewIngList = function addNewIngList(v) {
+    setSelectedIng([].concat(_toConsumableArray(selectedIng), [v]));
+  }; //input data in add new ingredient (object)
+
+
+  var handleInput = function handleInput(e) {
+    e.persist();
+    var nm = e.target.name;
+    console.log(nm);
+    setAdd(_objectSpread(_objectSpread({}, addem), {}, _defineProperty({}, nm, e.target.value)));
   };
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
       variant: "primary",
       onClick: addShow,
       children: "Add New Dish"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
         striped: true,
         bordered: true,
         hover: true,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("thead", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-              children: "#"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
               children: "Dish Name"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
               children: "Price"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
               children: "Ingredients"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-              colSpan: "3",
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
               children: "Actions"
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tbody", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("tbody", {
           children: dishes.map(function (v) {
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
-                children: [" ", v.id, " "]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
                 children: [" ", v.dish_name, " "]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
                 children: [" ", v.price, " "]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
-                children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
                   variant: "warning",
                   onClick: function onClick() {
-                    return showIngredients(v.id);
+                    return showIngredientsNoButton(v);
                   },
                   children: "..."
                 }), " "]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-                  variant: "success",
-                  onClick: function onClick() {
-                    return hanldeClick1(v);
-                  },
-                  children: "View"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
                   variant: "warning",
                   onClick: function onClick() {
                     return hanldeClick2(v);
                   },
                   children: "Update"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
                   variant: "danger",
                   onClick: function onClick() {
                     return hanldeClick3(v);
@@ -7689,209 +7863,395 @@ var Dishes = function Dishes() {
           })
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
         show: view,
         onHide: viewClose,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Header, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
           closeButton: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
-            children: "Dish Details"
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+            children: "See Details"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("article", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("p", {
-              children: ["Dish Name: ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.dish_name]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("p", {
-              children: ["Dish Price: ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.price, " "]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-              children: "Dish Ingredients: "
-            }), dishIng.filter(function () {
-              if ((selectedData === null || selectedData === void 0 ? void 0 : selectedData.id) === dishIng.dish_id) {
-                return selectedData;
-              } else {
-                return;
-              }
-            }).map(function (ingredient) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("p", {
-                children: [" ", ingredient, " "]
-              });
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+            "class": "table",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                scope: "col",
+                children: "Id"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                scope: "col",
+                children: "Ingredient"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                scope: "col",
+                children: "Unit"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                scope: "col",
+                children: "Quantity"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                scope: "col",
+                children: "Restock Date"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                scope: "col",
+                children: "Expiry Date"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.food_name
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.unit
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.quantity
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.restocked_date
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.expiry_date
+              })]
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Footer, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "primary",
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            variant: "secondary",
             onClick: viewClose,
             children: "Close"
           })
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
         show: update,
         onHide: updateClose,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Header, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
           closeButton: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
-            children: "Update Dish"
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+            children: "Update"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("table", {
-            "class": "table",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-                children: "Dish Name"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-                children: "Price"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-                children: "Ingredients"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+          onSubmit: saveUpdate,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("strong", {
+              children: ["Id:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.id]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Dish:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "text",
+              id: "name-update",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.dish_name,
+              name: "dish_name"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Price:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "number",
+              id: "price-update",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.price,
+              name: "price"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Ingredients:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                children: "Food name: spare rib "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                children: "Quantity: 11 "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                  variant: "primary",
+                  onClick: function onClick() {
+                    return handleRemoveIng(v.id);
+                  },
+                  children: "remove"
+                })
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.dish_name
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
-                type: "text",
-                id: "name-update",
-                defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.dish_name,
-                name: "dishname"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.price
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
-                type: "text",
-                id: "price-update",
-                defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.price,
-                name: "price"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                children: "Food name: coffee "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                children: "Quantity: 2 "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                  variant: "primary",
+                  onClick: function onClick() {
+                    return handleRemoveIng(v.id);
+                  },
+                  children: "remove"
+                })
               })]
+            }), selectedIng.map(function (v) {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                  children: ["Food name: ", v.food_name, " "]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                  children: ["Quantity: ", v.quantity, " "]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                    variant: "primary",
+                    onClick: function onClick() {
+                      return handleRemoveIng(v.id);
+                    },
+                    children: "remove"
+                  })
+                })]
+              });
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "success",
+              onClick: function onClick() {
+                return showIngredients();
+              },
+              children: "Add Ingredients"
             })]
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Footer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "secondary",
-            onClick: updateClose,
-            children: "Close"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "primary",
-            onClick: handleUpdate,
-            children: "Save Changes"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "secondary",
+              onClick: updateClose,
+              children: "Close"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "primary",
+              onClick: handleUpdate,
+              type: "submit",
+              children: "Save Changes"
+            })]
           })]
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
         show: del,
         onHide: delClose,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Header, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
           closeButton: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
-            children: "Delete Dish"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("article", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("p", {
-              children: ["Are you sure you want to delete ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.dish_name, "?"]
-            })
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Footer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "secondary",
-            onClick: delClose,
-            children: "Cancel"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "primary",
-            onClick: delClose,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
             children: "Delete"
-          })]
-        })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        show: addDish,
-        onHide: addClose,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Header, {
-          closeButton: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
-            children: "Add new dish"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
-            children: "Dish Name: "
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
-            type: "text",
-            id: "name-add",
-            name: "dish"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
-            children: "Dish Price: "
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
-            type: "text",
-            id: "price-add",
-            name: "price"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
-            children: "Select Ingredients: "
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "warning",
-            onClick: addIngredientShow,
-            children: "ADD INGREDIENTS"
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Footer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "secondary",
-            onClick: addClose,
-            children: "Cancel"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "primary",
-            onClick: addClose,
-            children: "Add"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+          onSubmit: deleteIng,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("table", {
+              "class": "table",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
+                children: ["Are you sure you want to delete ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.dish_name, "?"]
+              })
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "secondary",
+              onClick: delClose,
+              children: "Close"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "primary",
+              onClick: function onClick() {
+                return handleDelete(selectedData.id);
+              },
+              type: "submit",
+              children: "Delete"
+            })]
           })]
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      show: addDi,
-      onHide: addIngredientClose,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Header, {
-        closeButton: true,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
-          children: "Ingredients for new dish"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("table", {
-          "class": "table",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-              children: "Checkbox"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-              children: "Ingredients"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-              children: "Ingredient Qty"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        show: showAdd,
+        onHide: addClose,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+          closeButton: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+            children: "Add new Dish"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+          onSubmit: addNew,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Dish:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "text",
+              id: "name-add",
+              name: "dish_name",
+              onChange: handleInput
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Price:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "number",
+              id: "name-add",
+              name: "price",
+              onChange: handleInput
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {})]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "secondary",
+              onClick: addClose,
+              children: "Close"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "primary",
+              onClick: addNewIng,
+              type: "submit",
+              children: "Save Changes"
             })]
-          }), ingredient.map(function (i) {
-            /*#__PURE__*/
-            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
-                  type: "checkbox"
-                })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: i.food_name
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
-                  type: "text",
-                  placeholder: "Enter Quantity"
-                })
+          })]
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        show: popIng,
+        onHide: IngClose,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+          closeButton: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+            children: "Ingredients"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+          onSubmit: addNew,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Ingredient:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "text",
+              id: "name-add",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.food_name,
+              name: "food_name",
+              onChange: handleInput
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Unit:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+              name: "unit",
+              id: "unit",
+              onChange: handleInput,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                children: "Open this select menu"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                value: "grams",
+                children: "grams"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                value: "kg",
+                children: "kg"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                value: "pcs",
+                children: "pcs"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                value: "l",
+                children: "l"
               })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Quantity:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "number",
+              id: "qty-add",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.quantity,
+              name: "quantity",
+              onChange: handleInput
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "secondary",
+              onClick: IngClose,
+              children: "Close"
+            })
+          })]
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        show: showIngList,
+        onHide: ShowIngListClose,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+          closeButton: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+            children: "Ingredients"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: "Ingredient"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: "Unit"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: "Quantity"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: "Action"
+            })]
+          }), ingredients.map(function (v) {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("form", {
+              onSubmit: saveNewIng,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  children: [" ", v.food_name, " "]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  children: [" ", v.unit, " "]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  children: [" ", v.quantity, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                    type: "hidden",
+                    id: "dish_id",
+                    defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id,
+                    name: "dish_id"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                    type: "hidden",
+                    id: "inventory_id",
+                    defaultValue: v.id,
+                    name: "inventory_id"
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                    variant: "primary",
+                    onClick: function onClick() {
+                      return addNewIngList(v);
+                    },
+                    type: "submit",
+                    children: "ADD"
+                  })
+                })]
+              })
             });
           })]
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Footer, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          variant: "secondary",
-          onClick: addClose,
-          children: "Cancel"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          variant: "primary",
-          onClick: addClose,
-          children: "Add"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            variant: "secondary",
+            onClick: ShowIngListClose,
+            children: "Close"
+          })
         })]
-      })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        show: showIngListNoBT,
+        onHide: showIngListNoBTClose,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+          closeButton: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+            children: "Ingredients"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: "Ingredient"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: "Unit"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: "Quantity"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: " spare rib "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: " pcs "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: " 11 "
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: " coffee "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: " kg "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: " 2 "
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            variant: "secondary",
+            onClick: showIngListNoBTClose,
+            children: "Close"
+          })
+        })]
+      })
     })]
   });
 };
@@ -7911,18 +8271,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Table.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Modal.js");
-/* harmony import */ var reactjs_popup_dist_index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactjs-popup/dist/index.css */ "./node_modules/reactjs-popup/dist/index.css");
-/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Table.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Modal.js");
+/* harmony import */ var reactjs_popup_dist_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactjs-popup/dist/index.css */ "./node_modules/reactjs-popup/dist/index.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -7944,14 +8322,15 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 var Employee = function Employee() {
   //fetching data from database. Data is stored in "users" as array
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
       _useState2 = _slicedToArray(_useState, 2),
       users = _useState2[0],
       setUsers = _useState2[1];
 
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
     fetch('/empinfo').then(function (response) {
       return response.json();
     }).then(function (response) {
@@ -7960,45 +8339,41 @@ var Employee = function Employee() {
     });
   }, []);
 
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
       _useState4 = _slicedToArray(_useState3, 2),
       view = _useState4[0],
       setView = _useState4[1]; //see details
 
 
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
       _useState6 = _slicedToArray(_useState5, 2),
       update = _useState6[0],
       setUpdate = _useState6[1]; //update
 
 
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
       _useState8 = _slicedToArray(_useState7, 2),
       del = _useState8[0],
       setDel = _useState8[1]; //delete
 
 
-  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
       _useState10 = _slicedToArray(_useState9, 2),
       addem = _useState10[0],
       setAdd = _useState10[1]; //add new ? 
 
 
-  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
       _useState12 = _slicedToArray(_useState11, 2),
       selectedData = _useState12[0],
       setSelectedData = _useState12[1]; //data in selected cell
 
 
-  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
       _useState14 = _slicedToArray(_useState13, 2),
-      text = _useState14[0],
-      setText = _useState14[1];
+      showAdd = _useState14[0],
+      setShowadd = _useState14[1]; //delete
 
-  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(users),
-      _useState16 = _slicedToArray(_useState15, 2),
-      data = _useState16[0],
-      setData = _useState16[1];
 
   var viewClose = function viewClose() {
     return setView(false);
@@ -8016,11 +8391,11 @@ var Employee = function Employee() {
 
 
   var addClose = function addClose() {
-    return setAdd(false);
+    return setShowadd(false);
   };
 
   var addShow = function addShow() {
-    return setAdd(true);
+    return setShowadd(true);
   }; // when you click the button, data in the cell will be stored in setSelectedData   
 
 
@@ -8037,13 +8412,112 @@ var Employee = function Employee() {
   var hanldeClick3 = function hanldeClick3(selectedRec) {
     setSelectedData(selectedRec);
     setDel(true);
-  }; //data is updated on front end
+  }; //when you click save changes, it is sent to database
+
+
+  var saveEmp = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(e) {
+      var res;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              e.preventDefault();
+              console.log(selectedData);
+              _context.next = 4;
+              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/updateEmp', selectedData).then(function (res) {
+                return console.log(res.data);
+              });
+
+            case 4:
+              res = _context.sent;
+
+            case 5:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }));
+
+    return function saveEmp(_x) {
+      return _ref.apply(this, arguments);
+    };
+  }(); //when you click save changes, it is sent to database
+
+
+  var deleteEmp = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2(e) {
+      var res;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              e.preventDefault();
+              console.log(selectedData);
+              _context2.next = 4;
+              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/deleteEmp', selectedData).then(function (res) {
+                return console.log(res.data);
+              });
+
+            case 4:
+              res = _context2.sent;
+
+            case 5:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2);
+    }));
+
+    return function deleteEmp(_x2) {
+      return _ref2.apply(this, arguments);
+    };
+  }(); //when you click save changes, it is sent to database
+
+
+  var addNew = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3(e) {
+      var res;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
+        while (1) {
+          switch (_context3.prev = _context3.next) {
+            case 0:
+              e.preventDefault();
+              console.log(addem);
+              _context3.next = 4;
+              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/addNewEmp', addem).then(function (res) {
+                return console.log(res.data);
+              });
+
+            case 4:
+              res = _context3.sent;
+
+            case 5:
+            case "end":
+              return _context3.stop();
+          }
+        }
+      }, _callee3);
+    }));
+
+    return function addNew(_x3) {
+      return _ref3.apply(this, arguments);
+    };
+  }(); //data is updated on front end
 
 
   var handleUpdate = function handleUpdate() {
     console.log(selectedData);
     var name = document.getElementById("name-update");
+    var role = document.getElementById("role-update");
+    var mail = document.getElementById("mail-update");
+    var salary = document.getElementById("salary-update");
     selectedData.name = name.value;
+    selectedData.role = role.value;
+    selectedData.mail = mail.value;
+    selectedData.salary = salary.value;
     console.log(selectedData);
     console.log(name.value);
     data.map(function (d) {
@@ -8052,53 +8526,74 @@ var Employee = function Employee() {
       }) : d;
     });
     updateClose();
+  }; //data is deleted on front end
+
+
+  var handleDelete = function handleDelete(id) {
+    var newList = users.filter(function (item) {
+      return item.id !== id;
+    });
+    setUsers(newList);
+    delClose();
   };
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  var addNewEmp = function addNewEmp() {
+    setUsers([].concat(_toConsumableArray(users), [addem]));
+  }; //input data in add new employee
+
+
+  var handleInput = function handleInput(e) {
+    e.persist();
+    var nm = e.target.name;
+    console.log(nm);
+    setAdd(_objectSpread(_objectSpread({}, addem), {}, _defineProperty({}, nm, e.target.value)));
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
       variant: "primary",
       onClick: addShow,
       children: "Add New Employee"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
         striped: true,
         bordered: true,
         hover: true,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("thead", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("thead", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
               children: "#"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
               children: "Name"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
               children: "Role"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
               children: "Action"
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tbody", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("tbody", {
           children: users.map(function (v) {
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                 children: v.id
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                 children: v.name
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
-                children: ["@", v.role]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                children: v.role
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("td", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
                   variant: "success",
                   onClick: function onClick() {
                     return hanldeClick1(v);
                   },
                   children: "View"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
                   variant: "warning",
                   onClick: function onClick() {
                     return hanldeClick2(v);
                   },
                   children: "Update"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
                   variant: "danger",
                   onClick: function onClick() {
                     return hanldeClick3(v);
@@ -8110,185 +8605,227 @@ var Employee = function Employee() {
           })
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
         show: view,
         onHide: viewClose,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Header, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Header, {
           closeButton: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Title, {
             children: "See Details"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("table", {
-            "class": "table",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-                scope: "col",
-                children: "Id"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-                scope: "col",
-                children: "First"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-                scope: "col",
-                children: "Role"
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.name
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.role
-              })]
-            })]
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Footer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Body, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("strong", {
+            children: ["Id:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.id]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("strong", {
+            children: ["Name:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.name]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("strong", {
+            children: ["Role:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.role]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("strong", {
+            children: ["Email:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.email]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("strong", {
+            children: ["Salary:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.salary]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Footer, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
             variant: "secondary",
             onClick: viewClose,
             children: "Close"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "primary",
-            onClick: viewClose,
-            children: "Save Changes"
-          })]
+          })
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
         show: update,
         onHide: updateClose,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Header, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Header, {
           closeButton: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Title, {
             children: "Update"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("table", {
-            "class": "table",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-                scope: "col",
-                children: "Id"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-                scope: "col",
-                children: "First"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-                scope: "col",
-                children: "Role"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("form", {
+          onSubmit: saveEmp,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Body, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("strong", {
+              children: ["Id:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.id]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
+              children: "Name:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+              type: "text",
+              id: "name-update",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.name,
+              name: "name"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("strong", {
+              children: ["Role:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.role]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.role,
+              name: "role",
+              id: "role-update",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                children: "Open this select menu"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                value: "employee",
+                children: "employee"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                value: "admin",
+                children: "admin"
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
-                type: "text",
-                id: "name-update",
-                defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.name,
-                name: "email"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.role
-              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
+              children: "Email:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+              type: "text",
+              "class": "form-control",
+              id: "email-update",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.email,
+              name: "email"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
+              children: "Salary:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+              type: "number",
+              "class": "form-control",
+              id: "salary-update",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.salary,
+              name: "salary"
             })]
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Footer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "secondary",
-            onClick: updateClose,
-            children: "Close"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "primary",
-            onClick: handleUpdate,
-            children: "Save Changes"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Footer, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+              variant: "secondary",
+              onClick: updateClose,
+              children: "Close"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+              variant: "primary",
+              onClick: handleUpdate,
+              type: "submit",
+              children: "Save Changes"
+            })]
           })]
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
         show: del,
         onHide: delClose,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Header, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Header, {
           closeButton: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Title, {
             children: "Delete"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("table", {
-            "class": "table",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-                scope: "col",
-                children: "Id"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-                scope: "col",
-                children: "First"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-                scope: "col",
-                children: "Role"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("form", {
+          onSubmit: deleteEmp,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Body, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
+              "class": "table",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                  scope: "col",
+                  children: "Id"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                  scope: "col",
+                  children: "First"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                  scope: "col",
+                  children: "Role"
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                  children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                  children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.name
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                  children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.role
+                })]
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.name
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.role
-              })]
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Footer, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+              variant: "secondary",
+              onClick: delClose,
+              children: "Cancel"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+              variant: "primary",
+              onClick: function onClick() {
+                return handleDelete(selectedData.id);
+              },
+              type: "submit",
+              children: "Delete"
             })]
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Footer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "secondary",
-            onClick: delClose,
-            children: "Close"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "primary",
-            onClick: delClose,
-            children: "Save Changes"
           })]
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        show: addem,
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        show: showAdd,
         onHide: addClose,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Header, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Header, {
           closeButton: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Title, {
             children: "Add new employee"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-              scope: "col",
-              children: "Id"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-              scope: "col",
-              children: "First"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-              scope: "col",
-              children: "Role"
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-              children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("form", {
+          onSubmit: addNew,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Body, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+              "for": "name",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
+                children: "Name: "
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
               type: "text",
-              id: "name-add",
-              name: "email"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-              children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.role
+              id: "name",
+              name: "name",
+              onChange: handleInput
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+              "for": "email",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
+                children: "Email: "
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+              type: "text",
+              id: "email",
+              name: "email",
+              onChange: handleInput
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
+              children: "Salary:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+              type: "text",
+              id: "salary",
+              name: "salary",
+              onChange: handleInput
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
+              children: "Role: "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
+              name: "role",
+              id: "role",
+              onChange: handleInput,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                children: "Open this select menu"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                value: "employee",
+                children: "employee"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                value: "admin",
+                children: "admin"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
+              children: "Password:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+              type: "password",
+              id: "password",
+              name: "password",
+              onChange: handleInput,
+              placeholder: "more than 8 characters"
             })]
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Footer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "secondary",
-            onClick: addClose,
-            children: "Close"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            variant: "primary",
-            onClick: addClose,
-            children: "Save Changes"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Footer, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+              variant: "secondary",
+              onClick: addClose,
+              children: "Close"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+              variant: "primary",
+              onClick: addNewEmp,
+              type: "submit",
+              children: "Save Changes"
+            })]
           })]
         })]
       })
@@ -8378,51 +8915,63 @@ var Ingredients = function Ingredients() {
       setingredients(response);
     });
   }, []);
+  var tempAddEm = {
+    food_name: '',
+    unit: '',
+    quantity: 0,
+    restocked_date: '2021-12-29',
+    expiry_date: '2022-01-05'
+  };
 
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(new Date()),
       _useState4 = _slicedToArray(_useState3, 2),
-      view = _useState4[0],
-      setView = _useState4[1]; //see details
-
+      date = _useState4[0],
+      setDate = _useState4[1];
 
   var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
       _useState6 = _slicedToArray(_useState5, 2),
-      update = _useState6[0],
-      setUpdate = _useState6[1]; //update
+      view = _useState6[0],
+      setView = _useState6[1]; //see details
 
 
   var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
       _useState8 = _slicedToArray(_useState7, 2),
-      del = _useState8[0],
-      setDel = _useState8[1]; //delete
+      update = _useState8[0],
+      setUpdate = _useState8[1]; //update
 
 
-  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
       _useState10 = _slicedToArray(_useState9, 2),
-      addem = _useState10[0],
-      setAdd = _useState10[1]; //add new ? 
+      del = _useState10[0],
+      setDel = _useState10[1]; //delete
 
 
-  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(tempAddEm),
       _useState12 = _slicedToArray(_useState11, 2),
-      selectedData = _useState12[0],
-      setSelectedData = _useState12[1]; //data in selected cell
+      addem = _useState12[0],
+      setAdd = _useState12[1]; //add new ? 
 
 
-  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0),
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
       _useState14 = _slicedToArray(_useState13, 2),
-      text = _useState14[0],
-      setText = _useState14[1];
+      selectedData = _useState14[0],
+      setSelectedData = _useState14[1]; //data in selected cell
 
-  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(ingredients),
+
+  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0),
       _useState16 = _slicedToArray(_useState15, 2),
-      data = _useState16[0],
-      setData = _useState16[1];
+      text = _useState16[0],
+      setText = _useState16[1];
 
-  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(ingredients),
       _useState18 = _slicedToArray(_useState17, 2),
-      showAdd = _useState18[0],
-      setShowadd = _useState18[1]; //delete
+      data = _useState18[0],
+      setData = _useState18[1];
+
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+      _useState20 = _slicedToArray(_useState19, 2),
+      showAdd = _useState20[0],
+      setShowadd = _useState20[1]; //delete
 
 
   var viewClose = function viewClose() {
@@ -8497,9 +9046,7 @@ var Ingredients = function Ingredients() {
               console.log(addem);
               _context.next = 4;
               return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/addIngredients', addem).then(function (res) {
-                return console.log(res.data)["catch"](function (error) {
-                  console.log(error);
-                });
+                return console.log(res.data);
               });
 
             case 4:
@@ -8530,9 +9077,7 @@ var Ingredients = function Ingredients() {
               console.log(selectedData);
               _context2.next = 4;
               return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/updateIngredients', selectedData).then(function (res) {
-                return console.log(res.data)["catch"](function (error) {
-                  console.log(error);
-                });
+                return console.log(res.data);
               });
 
             case 4:
@@ -8593,6 +9138,11 @@ var Ingredients = function Ingredients() {
 
 
   var addNewIng = function addNewIng() {
+    var re = '2021-12-29';
+    var ex = '2022-01-05'; // setAdd({...addem, ['expiry_date']: '2022-01-05'});
+    // setAdd({...addem, ['restocked_date']: '2021-12-29'});
+
+    console.log(addem);
     setingredients([].concat(_toConsumableArray(ingredients), [addem]));
   }; //input data in add new ingredient (object)
 
@@ -8617,8 +9167,6 @@ var Ingredients = function Ingredients() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("thead", {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
-              children: "#"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
               children: "Ingredient"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
               children: "Unit"
@@ -8634,8 +9182,6 @@ var Ingredients = function Ingredients() {
           children: ingredients.map(function (v) {
             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("td", {
-                children: [" ", v.id, " "]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("td", {
                 children: [" ", v.food_name, " "]
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("td", {
                 children: [" ", v.unit, " "]
@@ -8685,9 +9231,6 @@ var Ingredients = function Ingredients() {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                 scope: "col",
-                children: "Id"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
-                scope: "col",
                 children: "Ingredient"
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
                 scope: "col",
@@ -8704,8 +9247,6 @@ var Ingredients = function Ingredients() {
               })]
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
-                children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                 children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.food_name
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
                 children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.unit
@@ -8816,23 +9357,11 @@ var Ingredients = function Ingredients() {
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("form", {
           onSubmit: deleteIng,
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Body, {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("table", {
               "class": "table",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
-                  scope: "col",
-                  children: "Id"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
-                  scope: "col",
-                  children: "Ingredient"
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
-                  children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.id
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
-                  children: selectedData === null || selectedData === void 0 ? void 0 : selectedData.food_name
-                })]
-              })]
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("p", {
+                children: ["Are you sure you want to delete ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.food_name, "?"]
+              })
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Footer, {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -8933,8 +9462,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var reactjs_popup_dist_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactjs-popup/dist/index.css */ "./node_modules/reactjs-popup/dist/index.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -8951,69 +9499,1286 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
+
+
 var Inputprofile = function Inputprofile() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+  var state1 = {
+    id: 0,
+    name: "users.name",
+    email: " users.email"
+  };
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
       _useState2 = _slicedToArray(_useState, 2),
       users = _useState2[0],
       setUsers = _useState2[1];
 
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(state1),
+      _useState4 = _slicedToArray(_useState3, 2),
+      state = _useState4[0],
+      setState = _useState4[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
     fetch('/userinfo').then(function (response) {
       return response.json();
     }).then(function (response) {
       console.log(response.name);
       setUsers(response);
     });
-  }, []);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("form", {
-    action: "#",
-    method: "POST",
-    enctype: "multipart/form-data",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
-      "for": "picture",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
-        children: "Picture:"
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-      src: "/image/{{ $user->file_path }}",
-      width: "100px"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
-      type: "file",
-      name: "picture",
-      id: "picture"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
+  }, []); //when you input data, it is changed
+
+  var handleInput = function handleInput(e) {
+    e.persist();
+    var nm = e.target.name;
+    console.log(nm);
+    setState(_objectSpread(_objectSpread({}, state), {}, _defineProperty({}, nm, e.target.value)));
+  }; //when you click save changes, it is sent to database
+
+
+  var saveStudent = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(e) {
+      var res;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              e.preventDefault();
+              console.log(state);
+              _context.next = 4;
+              return axios__WEBPACK_IMPORTED_MODULE_4___default().post('/updateAccount', state).then(function (res) {
+                return console.log(res.data);
+              });
+
+            case 4:
+              res = _context.sent;
+
+            case 5:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }));
+
+    return function saveStudent(_x) {
+      return _ref.apply(this, arguments);
+    };
+  }();
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("form", {
+    onSubmit: saveStudent,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
       "for": "name",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("strong", {
-        children: ["Name: ", users.name, " "]
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
+        children: "Name: "
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
       type: "text",
       "class": "form-control",
-      id: "name",
-      name: "name"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
+      id: "name-update",
+      defaultValue: users.name,
+      name: "name",
+      onChange: handleInput
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
       "for": "email",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
-        children: "Email:"
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
+        children: "Email: "
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
       type: "text",
       "class": "form-control",
       id: "email",
-      name: "email"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
-      children: "Salary:  "
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
-      children: "Role: Add data from database"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
-      "class": "btn btn-primary",
+      defaultValue: users.email,
+      name: "email",
+      onChange: handleInput
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("strong", {
+      children: ["Salary:  ", users.salary]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("strong", {
+      children: ["Role: ", users.role]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      variant: "primary",
       type: "submit",
-      children: "Update Profile"
+      children: "Save Changes"
     })]
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Inputprofile);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/components/OrderManagement.js":
+/*!**********************************************************!*\
+  !*** ./resources/js/Pages/components/OrderManagement.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Table.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Modal.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Col.js");
+/* harmony import */ var reactjs_popup_dist_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactjs-popup/dist/index.css */ "./node_modules/reactjs-popup/dist/index.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+var mystyle = {
+  display: "flex"
+};
+
+var OrderManagement = function OrderManagement() {
+  //fetching data from database. Data is stored in "users" as array
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      dishes = _useState2[0],
+      setDishes = _useState2[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
+    fetch('/dishindex').then(function (response) {
+      return response.json();
+    }).then(function (response) {
+      console.log(response);
+      setDishes(response);
+    });
+  }, []); //fetching data from database. Data is stored in "users" as array
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      order = _useState4[0],
+      setOrder = _useState4[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
+    fetch('/order').then(function (response) {
+      return response.json();
+    }).then(function (response) {
+      console.log(response);
+      setOrder(response);
+    });
+  }, []);
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
+      _useState6 = _slicedToArray(_useState5, 2),
+      filterOrder = _useState6[0],
+      setfilterOrder = _useState6[1];
+
+  var A = order.filter(function (item) {
+    return item.status === 'preparing';
+  });
+  var B = order.filter(function (item) {
+    return item.status === 'delivered';
+  }); //fetching data from database. Data is stored in "users" as array
+
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
+      _useState8 = _slicedToArray(_useState7, 2),
+      orderDetail = _useState8[0],
+      setOrderDetail = _useState8[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
+    fetch('/orderDetail').then(function (response) {
+      return response.json();
+    }).then(function (response) {
+      console.log(response);
+      setOrderDetail(response);
+    });
+  }, []);
+  var tempAddEm = {
+    receiver: '',
+    location: '',
+    order_date: '',
+    note: '',
+    total: 0
+  };
+
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+      _useState10 = _slicedToArray(_useState9, 2),
+      view = _useState10[0],
+      setView = _useState10[1]; //see details
+
+
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+      _useState12 = _slicedToArray(_useState11, 2),
+      update = _useState12[0],
+      setUpdate = _useState12[1]; //update
+
+
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+      _useState14 = _slicedToArray(_useState13, 2),
+      del = _useState14[0],
+      setDel = _useState14[1]; //delete
+
+
+  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+      _useState16 = _slicedToArray(_useState15, 2),
+      done = _useState16[0],
+      setDone = _useState16[1]; //delete
+
+
+  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(tempAddEm),
+      _useState18 = _slicedToArray(_useState17, 2),
+      addem = _useState18[0],
+      setAdd = _useState18[1]; //add new ? 
+
+
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
+      _useState20 = _slicedToArray(_useState19, 2),
+      selectedData = _useState20[0],
+      setSelectedData = _useState20[1]; //data in selected cell
+
+
+  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
+      _useState22 = _slicedToArray(_useState21, 2),
+      selectedIng = _useState22[0],
+      setSelectedIng = _useState22[1]; //data in selected cell
+
+
+  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0),
+      _useState24 = _slicedToArray(_useState23, 2),
+      text = _useState24[0],
+      setText = _useState24[1];
+
+  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(dishes),
+      _useState26 = _slicedToArray(_useState25, 2),
+      data = _useState26[0],
+      setData = _useState26[1];
+
+  var _useState27 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+      _useState28 = _slicedToArray(_useState27, 2),
+      showAdd = _useState28[0],
+      setShowadd = _useState28[1];
+
+  var _useState29 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+      _useState30 = _slicedToArray(_useState29, 2),
+      popIng = _useState30[0],
+      setShowIng = _useState30[1];
+
+  var _useState31 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+      _useState32 = _slicedToArray(_useState31, 2),
+      showIngList = _useState32[0],
+      setshowIngList = _useState32[1];
+
+  var _useState33 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
+      _useState34 = _slicedToArray(_useState33, 2),
+      addIng = _useState34[0],
+      setaddIng = _useState34[1]; //add new ingredients 
+
+
+  var _useState35 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+      _useState36 = _slicedToArray(_useState35, 2),
+      showIngListNoBT = _useState36[0],
+      setshowIngListNoBT = _useState36[1];
+
+  var _useState37 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
+      _useState38 = _slicedToArray(_useState37, 2),
+      tempDish = _useState38[0],
+      settempDish = _useState38[1]; //temp dish to send to database
+
+
+  var _useState39 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
+      _useState40 = _slicedToArray(_useState39, 2),
+      selectedDish = _useState40[0],
+      setSelectedDish = _useState40[1];
+
+  var _useState41 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
+      _useState42 = _slicedToArray(_useState41, 2),
+      selectedOrderDetail = _useState42[0],
+      setSelectedOrderDetail = _useState42[1];
+
+  var _useState43 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0),
+      _useState44 = _slicedToArray(_useState43, 2),
+      total = _useState44[0],
+      setTotal = _useState44[1];
+
+  var _useState45 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+      _useState46 = _slicedToArray(_useState45, 2),
+      showUpdateDish = _useState46[0],
+      setshowUpdateDish = _useState46[1];
+
+  var viewClose = function viewClose() {
+    return setView(false);
+  }; // const viewShow = () => setView(true);
+
+
+  var updateClose = function updateClose() {
+    return setUpdate(false);
+  }; //  const updateShow = () => setUpdate(true);
+
+
+  var delClose = function delClose() {
+    return setDel(false);
+  }; //  const delShow = () => setDel(true);
+
+
+  var doneClose = function doneClose() {
+    return setDone(false);
+  };
+
+  var addClose = function addClose() {
+    return setShowadd(false);
+  };
+
+  var addShow = function addShow() {
+    return setShowadd(true);
+  };
+
+  var IngClose = function IngClose() {
+    return setShowIng(false);
+  };
+
+  var ShowIngListClose = function ShowIngListClose() {
+    return setshowIngList(false);
+  };
+
+  var _useState47 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
+      _useState48 = _slicedToArray(_useState47, 2),
+      newDish = _useState48[0],
+      setnewDish = _useState48[1];
+
+  var showIngListNoBTClose = function showIngListNoBTClose() {
+    return setshowIngListNoBT(false);
+  };
+
+  var showUpdateDishClose = function showUpdateDishClose() {
+    return setshowUpdateDish(false);
+  }; // when you click the button, data in the cell will be stored in setSelectedData   
+
+
+  var hanldeClick1 = function hanldeClick1(selectedRec) {
+    setSelectedData(selectedRec);
+    var tempOderDetail = orderDetail.filter(function (item) {
+      return item.order_id === selectedData.order_id;
+    });
+    setSelectedOrderDetail(tempOderDetail);
+    setView(true);
+  };
+
+  var hanldeClick2 = function hanldeClick2(selectedRec) {
+    setSelectedData(selectedRec);
+    var tempOderDetail = orderDetail.filter(function (item) {
+      return item.order_id === selectedData.order_id;
+    });
+    setSelectedOrderDetail(tempOderDetail);
+    setUpdate(true);
+  };
+
+  var hanldeClick3 = function hanldeClick3(selectedRec) {
+    setSelectedData(selectedRec);
+    setDel(true);
+  };
+
+  var hanldeClick4 = function hanldeClick4(selectedRec) {
+    setSelectedData(selectedRec);
+    setDone(true);
+  };
+
+  var hanldeClickAddIng = function hanldeClickAddIng(selectedRec) {
+    setSelectedData(selectedRec);
+    setShowIng(true);
+  };
+
+  var showIngredients = function showIngredients() {
+    setshowIngList(true);
+  };
+
+  var showIngredientsNoButton = function showIngredientsNoButton(selectedRec) {
+    setSelectedData(selectedRec);
+    var tempOderDetail = orderDetail.filter(function (item) {
+      return item.order_id === selectedData.order_id;
+    });
+    setSelectedOrderDetail(tempOderDetail);
+    console.log(selectedDish);
+    setshowIngListNoBT(true);
+  };
+
+  var showDishes = function showDishes() {
+    setshowUpdateDish(true);
+  }; //data is deleted on front end
+
+
+  var handleRemoveDish = function handleRemoveDish(v) {
+    var temp = selectedData.total_bill;
+    var A = dishes.filter(function (item) {
+      return item.id === v.dish_id;
+    });
+    temp -= A[0].price;
+    console.log(temp);
+    setSelectedData(_objectSpread(_objectSpread({}, selectedData), {}, _defineProperty({}, 'total_bill', temp)));
+    var newList = selectedOrderDetail.filter(function (item) {
+      return item.id !== v.id;
+    });
+    setSelectedOrderDetail(newList);
+    delClose();
+  };
+
+  var All = function All() {
+    setfilterOrder(order);
+  };
+
+  var Preparing = function Preparing() {
+    setfilterOrder(A);
+  };
+
+  var Delivered = function Delivered() {
+    setfilterOrder(B);
+  }; //data is updated on front end
+
+
+  var handleUpdate = function handleUpdate() {
+    console.log(selectedData);
+    var receiver = document.getElementById("receiver-update");
+    var order_date = document.getElementById("order_date-update");
+    var location = document.getElementById("location-update");
+    var note = document.getElementById("note-update");
+    var bill = document.getElementById("bill-update");
+    selectedData.receiver = receiver.value;
+    selectedData.order_date = order_date.value;
+    selectedData.location = location.value;
+    selectedData.note = note.value;
+    selectedData.total_bill = bill.value;
+    data.map(function (d) {
+      d.id === selectedData.id ? _objectSpread(_objectSpread({}, d), {}, {
+        selectedData: selectedData
+      }) : d;
+    });
+    updateClose();
+  }; //add new dishes and send it to database
+
+
+  var addNew = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(e) {
+      var res;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              e.preventDefault();
+              console.log(addem.receiver);
+              console.log(addem.location);
+              console.log(addem.order_date);
+              console.log(addem.note);
+              _context.next = 7;
+              return axios.post('/addOrderInfo', addem).then(function (res) {
+                return console.log(res.data);
+              });
+
+            case 7:
+              res = _context.sent;
+
+            case 8:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }));
+
+    return function addNew(_x) {
+      return _ref.apply(this, arguments);
+    };
+  }(); //when you click save changes, it is sent to database
+
+
+  var saveUpdate = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2(e) {
+      var res;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              e.preventDefault();
+              console.log(selectedData);
+              _context2.next = 4;
+              return axios.post('/updateOrder', selectedData).then(function (res) {
+                return console.log(res.data);
+              });
+
+            case 4:
+              res = _context2.sent;
+
+            case 5:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2);
+    }));
+
+    return function saveUpdate(_x2) {
+      return _ref2.apply(this, arguments);
+    };
+  }(); //when you click save changes, it is sent to database
+
+
+  var deleteIng = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3(e) {
+      var res;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
+        while (1) {
+          switch (_context3.prev = _context3.next) {
+            case 0:
+              e.preventDefault();
+              console.log(selectedData);
+              _context3.next = 4;
+              return axios.post('/deleteOrder', selectedData).then(function (res) {
+                return console.log(res.data);
+              });
+
+            case 4:
+              res = _context3.sent;
+
+            case 5:
+            case "end":
+              return _context3.stop();
+          }
+        }
+      }, _callee3);
+    }));
+
+    return function deleteIng(_x3) {
+      return _ref3.apply(this, arguments);
+    };
+  }(); //add new ingredients to dishes and send it to database
+
+
+  var saveNewIng = /*#__PURE__*/function () {
+    var _ref4 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee4(e) {
+      var res;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee4$(_context4) {
+        while (1) {
+          switch (_context4.prev = _context4.next) {
+            case 0:
+              e.preventDefault(); //const quantity = document.getElementById("quantity");
+              //const dish_id = document.getElementById("dish_id");
+              //addIng.dish_id = dish_id.value;
+              //addIng.quantity = quantity.value;
+              //console.log(addIng);
+
+              _context4.next = 3;
+              return axios.post('/adddNewDish', tempDish).then(function (res) {
+                return console.log(res.data);
+              });
+
+            case 3:
+              res = _context4.sent;
+
+            case 4:
+            case "end":
+              return _context4.stop();
+          }
+        }
+      }, _callee4);
+    }));
+
+    return function saveNewIng(_x4) {
+      return _ref4.apply(this, arguments);
+    };
+  }(); //data is deleted on front end
+
+
+  var handleDelete = function handleDelete(id) {
+    var newList = order.filter(function (item) {
+      return item.order_id !== id;
+    });
+    setOrder(newList);
+    delClose();
+  }; //data is deleted on front end
+
+
+  var handleDone = function handleDone() {
+    selectedData.status = 'Done';
+    doneClose();
+  }; //add new dishes to an array ( front end)
+
+
+  var addNewOrders = function addNewOrders() {
+    addem.status = 'preparing';
+    setOrder([].concat(_toConsumableArray(order), [addem]));
+    addClose();
+  }; //add new dishes to an array ( front end)
+
+
+  var addNewIng = function addNewIng() {
+    setDishes([].concat(_toConsumableArray(dishes), [addem]));
+  }; //add new dishes to an array ( front end)
+
+
+  var addNewIngList = function addNewIngList(selectedRec) {
+    console.log(selectedRec);
+    settempDish(_objectSpread(_objectSpread({}, tempDish), selectedRec));
+    console.log(tempDish.dish_name);
+    setSelectedIng([].concat(_toConsumableArray(selectedIng), [tempDish])); // temp = tempDish.price*tempDish.quantity;
+    // setNumber1(tempDish.price*tempDish.quantity);
+    // setNumber2(total);
+    // console.log(temp)
+
+    var temp = total;
+    temp += selectedRec.price;
+    setTotal(temp);
+    setAdd(_objectSpread(_objectSpread({}, addem), {}, _defineProperty({}, 'total', temp)));
+    console.log(addem);
+  }; //input data in add new dish (object)
+
+
+  var handleInputDish = function handleInputDish(e) {
+    e.persist();
+    var nm = e.target.name;
+    console.log(nm);
+    settempDish(_objectSpread(_objectSpread({}, tempDish), {}, _defineProperty({}, nm, e.target.value)));
+  }; //input data in add new ingredient (object)
+
+
+  var handleInput = function handleInput(e) {
+    e.persist();
+    var nm = e.target.name;
+    console.log(nm);
+    setAdd(_objectSpread(_objectSpread({}, addem), {}, _defineProperty({}, nm, e.target.value)));
+  }; //add new dishes to an update array ( front end)
+
+
+  var addNewDish = function addNewDish(selectedRec) {
+    settempDish(_objectSpread(_objectSpread({}, tempDish), selectedRec));
+    setSelectedOrderDetail([].concat(_toConsumableArray(selectedOrderDetail), [tempDish]));
+    var temp = selectedData.total_bill;
+    temp += selectedRec.price;
+    setSelectedData(_objectSpread(_objectSpread({}, selectedData), {}, _defineProperty({}, 'total_bill', temp)));
+    console.log(selectedData.total_bill);
+  };
+
+  var saveNewDish = /*#__PURE__*/function () {
+    var _ref5 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee5(e) {
+      var res;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee5$(_context5) {
+        while (1) {
+          switch (_context5.prev = _context5.next) {
+            case 0:
+              e.preventDefault(); //const quantity = document.getElementById("quantity");
+              //const dish_id = document.getElementById("dish_id");
+              //addIng.dish_id = dish_id.value;
+              //addIng.quantity = quantity.value;
+              //console.log(addIng);
+
+              _context5.next = 3;
+              return axios.post('/adddNewDishUpdate', tempDish).then(function (res) {
+                return console.log(res.data);
+              });
+
+            case 3:
+              res = _context5.sent;
+
+            case 4:
+            case "end":
+              return _context5.stop();
+          }
+        }
+      }, _callee5);
+    }));
+
+    return function saveNewDish(_x5) {
+      return _ref5.apply(this, arguments);
+    };
+  }();
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      variant: "primary",
+      onClick: addShow,
+      children: "Add New Order"
+    }), '  ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      variant: "warning",
+      onClick: All,
+      children: "All"
+    }), '  ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      variant: "success",
+      onClick: Preparing,
+      children: "Preparing"
+    }), '  ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      variant: "info",
+      onClick: Delivered,
+      children: "Delivered"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        striped: true,
+        bordered: true,
+        hover: true,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+              children: "Receiver"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+              children: "Delivery Date"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+              children: "Dishes"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+              children: "Status"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+              children: "Actions"
+            })]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("tbody", {
+          children: filterOrder.map(function (v) {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                children: [" ", v.receiver, " "]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                children: [" ", v.order_date, " "]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                  variant: "warning",
+                  onClick: function onClick() {
+                    return showIngredientsNoButton(v);
+                  },
+                  children: "..."
+                }), " "]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                children: [v.status, " "]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                  variant: "success",
+                  onClick: function onClick() {
+                    return hanldeClick1(v);
+                  },
+                  children: "View"
+                }), ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                  variant: "warning",
+                  onClick: function onClick() {
+                    return hanldeClick2(v);
+                  },
+                  children: "Update"
+                }), ' ', " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                  variant: "info",
+                  onClick: function onClick() {
+                    return hanldeClick4(v);
+                  },
+                  children: "Done"
+                }), ' ', " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                  variant: "danger",
+                  onClick: function onClick() {
+                    return hanldeClick3(v);
+                  },
+                  children: "Delete"
+                })]
+              })]
+            });
+          })
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        show: view,
+        onHide: viewClose,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+          closeButton: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+            children: "See Details"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("strong", {
+            children: ["Id:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.order_id]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("strong", {
+            children: ["Receiver:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.receiver]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("strong", {
+            children: ["Delivery date:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.order_date]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("strong", {
+            children: ["Location:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.location]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("strong", {
+            children: ["Note: ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), " ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.note]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("strong", {
+            children: ["Total Bill:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.total_bill]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+            children: "Dishes:  "
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), selectedOrderDetail.map(function (v) {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
+              children: ["Dish: ", v.dish_name, '  ', "Quantity: ", v.quantity]
+            });
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            variant: "secondary",
+            onClick: viewClose,
+            children: "Close"
+          })
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        show: update,
+        onHide: updateClose,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+          closeButton: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+            children: "Update"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+          onSubmit: saveUpdate,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("strong", {
+              children: ["Id:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.id]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Receiver:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "text",
+              id: "receiver-update",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.receiver,
+              name: "receiver"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Delevery date:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "date",
+              id: "order_date-update",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.order_date,
+              name: "order_date"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Location:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "text",
+              id: "location-update",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.location,
+              name: "location"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Note:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("textarea", {
+              name: "note",
+              id: "note-update",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.note
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("strong", {
+              children: ["Total Bill:  ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.total_bill]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Dish:  "
+            }), selectedOrderDetail.map(function (v) {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
+                children: ["Dish: ", v.dish_name, " ", '  ', "Quantity: ", v.quantity, "  ", '  ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                  variant: "primary",
+                  onClick: function onClick() {
+                    return handleRemoveDish(v);
+                  },
+                  children: "remove"
+                })]
+              });
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "success",
+              onClick: function onClick() {
+                return showDishes();
+              },
+              children: "Add New Dish"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "secondary",
+              onClick: updateClose,
+              children: "Close"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "primary",
+              onClick: handleUpdate,
+              type: "submit",
+              children: "Save Changes"
+            })]
+          })]
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        show: del,
+        onHide: delClose,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+          closeButton: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+            children: "Delete"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+          onSubmit: deleteIng,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("table", {
+              "class": "table",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
+                children: ["Are you sure you want to delete ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.receiver, "?"]
+              })
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "secondary",
+              onClick: delClose,
+              children: "Close"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "primary",
+              onClick: function onClick() {
+                return handleDelete(selectedData.order_id);
+              },
+              type: "submit",
+              children: "Delete"
+            })]
+          })]
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        show: done,
+        onHide: doneClose,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+          closeButton: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+            children: "Done"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("table", {
+            "class": "table",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
+              children: ["Is ", selectedData === null || selectedData === void 0 ? void 0 : selectedData.receiver, "'s order done?"]
+            })
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            variant: "secondary",
+            onClick: doneClose,
+            children: "Close"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            variant: "primary",
+            onClick: function onClick() {
+              return handleDone();
+            },
+            type: "submit",
+            children: "Done"
+          })]
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        show: showAdd,
+        onHide: addClose,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+          closeButton: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+            children: "Add new Order"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+          onSubmit: addNew,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Receiver:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "text",
+              id: "name-add",
+              name: "receiver",
+              onChange: handleInput
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Address:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "text",
+              id: "name-add",
+              name: "location",
+              onChange: handleInput
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Date:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "date",
+              id: "name-add",
+              name: "order_date",
+              onChange: handleInput
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Note:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("textarea", {
+              name: "note",
+              onChange: handleInput
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Total bill:  "
+            }), total, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Dish:  "
+            }), selectedIng.map(function (v) {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
+                children: ["Food name: ", v.dish_name, " ", '  ', "Quantity: ", v.quantity]
+              });
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "success",
+              onClick: function onClick() {
+                return showIngredients();
+              },
+              children: "Add Dish"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "secondary",
+              onClick: addClose,
+              children: "Close"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "primary",
+              onClick: addNewOrders,
+              type: "submit",
+              children: "Save Changes"
+            })]
+          })]
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        show: popIng,
+        onHide: IngClose,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+          closeButton: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+            children: "Ingredients"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+          onSubmit: addNew,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Ingredient:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "text",
+              id: "name-add",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.food_name,
+              name: "food_name",
+              onChange: handleInput
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Unit:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+              name: "unit",
+              id: "unit",
+              onChange: handleInput,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                children: "Open this select menu"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                value: "grams",
+                children: "grams"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                value: "kg",
+                children: "kg"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                value: "pcs",
+                children: "pcs"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                value: "l",
+                children: "l"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: "Quantity:  "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+              type: "number",
+              id: "qty-add",
+              defaultValue: selectedData === null || selectedData === void 0 ? void 0 : selectedData.quantity,
+              name: "quantity",
+              onChange: handleInput
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              variant: "secondary",
+              onClick: IngClose,
+              children: "Close"
+            })
+          })]
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        show: showIngList,
+        onHide: ShowIngListClose,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+          closeButton: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+            children: "Dishes"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: "Dish"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: '     '
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: "Price"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: '     '
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: "Quantity"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: '     '
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: "Action"
+            })]
+          }), dishes.map(function (v) {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("form", {
+              onSubmit: saveNewIng,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  children: [" ", v.dish_name, " "]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  children: [" ", v.price, " "]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                    type: "number",
+                    id: "quantity",
+                    name: "quantity",
+                    onChange: handleInputDish,
+                    style: {
+                      width: '70%'
+                    }
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                    variant: "primary",
+                    onClick: function onClick() {
+                      return addNewIngList(v);
+                    },
+                    type: "submit",
+                    children: "ADD"
+                  })
+                })]
+              })
+            });
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            variant: "secondary",
+            onClick: ShowIngListClose,
+            children: "Close"
+          })
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      show: showIngListNoBT,
+      onHide: showIngListNoBTClose,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+        closeButton: true,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+          children: "Dish"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+            children: "Dish"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+            children: "Quantity"
+          })]
+        }), selectedOrderDetail.map(function (v) {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: [" ", v.dish_name, " "]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: [" ", v.quantity, " "]
+            })]
+          });
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          variant: "secondary",
+          onClick: showIngListNoBTClose,
+          children: "Close"
+        })
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        show: showUpdateDish,
+        onHide: showUpdateDishClose,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Header, {
+          closeButton: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, {
+            children: "Add More Dishes"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: "Dish"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: '     '
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: "Price"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: '     '
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: "Quantity"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: '     '
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: "Action"
+            })]
+          }), dishes.map(function (v) {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("form", {
+              onSubmit: saveNewDish,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  children: [" ", v.dish_name, " "]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  children: [" ", v.price, " "]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                    type: "number",
+                    id: "quantity",
+                    name: "quantity",
+                    onChange: handleInputDish,
+                    style: {
+                      width: '70%'
+                    }
+                  }), "  "]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                    variant: "primary",
+                    onClick: function onClick() {
+                      return addNewDish(v);
+                    },
+                    type: "submit",
+                    children: "ADD"
+                  })
+                })]
+              })
+            });
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Footer, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            variant: "secondary",
+            onClick: showUpdateDishClose,
+            children: "Close"
+          })
+        })]
+      })
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (OrderManagement);
 
 /***/ }),
 
@@ -9062,7 +10827,7 @@ var OrderRecord = function OrderRecord() {
       setOrderRecord = _useState2[1];
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    fetch('/orderrecord').then(function (response) {
+    fetch('/order').then(function (response) {
       return response.json();
     }).then(function (response) {
       console.log(response);
@@ -9121,11 +10886,9 @@ var OrderRecord = function OrderRecord() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("thead", {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-              children: "Receipt"
+              children: "Order Number"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
               children: "Customer"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-              children: "Order Number"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
               children: "Date"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
@@ -9140,17 +10903,19 @@ var OrderRecord = function OrderRecord() {
           children: orderRecord.map(function (v) {
             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: v.id
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: v.order_id.order_detail_id.receiver
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                 children: v.order_id
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: v.order_id.order_detail_id.date
+                children: v.receiver
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: v.order_id.order_detail_id.status
+                children: v.order_date
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: v.order_id.order_detail_id.payment
+                children: v.status
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: v.status === 'preparing' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+                  children: "not yet"
+                }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+                  children: "done"
+                })
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
                   variant: "success",
@@ -9640,7 +11405,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ProductSalesChart = function ProductSalesChart() {
   var data = {
-    labels: ['Herb Roasted Chicken', 'Coffee Roasted Spare Rib', 'Masala dosa', 'Ohmi-gyu beef steak'],
+    labels: ['Herb Roasted Chicken', 'Coffee Roasted Spare Rib', 'Sisig', 'Ohmi-gyu beef steak'],
     datasets: [{
       label: 'My First Dataset',
       data: [300, 50, 100, 250],
@@ -9997,7 +11762,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./chunks/helpers.segment.js */ "./node_modules/chart.js/dist/chunks/helpers.segment.js");
 /*!
- * Chart.js v3.6.2
+ * Chart.js v3.7.0
  * https://www.chartjs.org
  * (c) 2021 Chart.js Contributors
  * Released under the MIT License
@@ -10909,6 +12674,7 @@ class DatasetController {
     const active = [];
     const start = this._drawStart || 0;
     const count = this._drawCount || (elements.length - start);
+    const drawActiveElementsOnTop = this.options.drawActiveElementsOnTop;
     let i;
     if (meta.dataset) {
       meta.dataset.draw(ctx, area, start, count);
@@ -10918,7 +12684,7 @@ class DatasetController {
       if (element.hidden) {
         continue;
       }
-      if (element.active) {
+      if (element.active && drawActiveElementsOnTop) {
         active.push(element);
       } else {
         element.draw(ctx, area);
@@ -12524,7 +14290,7 @@ function evaluateAllVisibleItems(chart, handler) {
 function binarySearch(metaset, axis, value, intersect) {
   const {controller, data, _sorted} = metaset;
   const iScale = controller._cachedMeta.iScale;
-  if (iScale && axis === iScale.axis && _sorted && data.length) {
+  if (iScale && axis === iScale.axis && axis !== 'r' && _sorted && data.length) {
     const lookupMethod = iScale._reversePixels ? _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.A : _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.x;
     if (!intersect) {
       return lookupMethod(data, axis, value);
@@ -12576,19 +14342,30 @@ function getIntersectItems(chart, position, axis, useFinalPosition) {
   optimizedEvaluateItems(chart, axis, position, evaluationFunc, true);
   return items;
 }
-function getNearestItems(chart, position, axis, intersect, useFinalPosition) {
+function getNearestRadialItems(chart, position, axis, useFinalPosition) {
+  let items = [];
+  function evaluationFunc(element, datasetIndex, index) {
+    const {startAngle, endAngle} = element.getProps(['startAngle', 'endAngle'], useFinalPosition);
+    const {angle} = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(element, {x: position.x, y: position.y});
+    if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.p)(angle, startAngle, endAngle)) {
+      items.push({element, datasetIndex, index});
+    }
+  }
+  optimizedEvaluateItems(chart, axis, position, evaluationFunc);
+  return items;
+}
+function getNearestCartesianItems(chart, position, axis, intersect, useFinalPosition) {
+  let items = [];
   const distanceMetric = getDistanceMetricForAxis(axis);
   let minDistance = Number.POSITIVE_INFINITY;
-  let items = [];
-  if (!(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.z)(position, chart.chartArea, chart._minPadding)) {
-    return items;
-  }
-  const evaluationFunc = function(element, datasetIndex, index) {
-    if (intersect && !element.inRange(position.x, position.y, useFinalPosition)) {
+  function evaluationFunc(element, datasetIndex, index) {
+    const inRange = element.inRange(position.x, position.y, useFinalPosition);
+    if (intersect && !inRange) {
       return;
     }
     const center = element.getCenterPoint(useFinalPosition);
-    if (!(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.z)(center, chart.chartArea, chart._minPadding) && !element.inRange(position.x, position.y, useFinalPosition)) {
+    const pointInArea = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.z)(center, chart.chartArea, chart._minPadding);
+    if (!pointInArea && !inRange) {
       return;
     }
     const distance = distanceMetric(position, center);
@@ -12598,9 +14375,17 @@ function getNearestItems(chart, position, axis, intersect, useFinalPosition) {
     } else if (distance === minDistance) {
       items.push({element, datasetIndex, index});
     }
-  };
+  }
   optimizedEvaluateItems(chart, axis, position, evaluationFunc);
   return items;
+}
+function getNearestItems(chart, position, axis, intersect, useFinalPosition) {
+  if (!(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.z)(position, chart.chartArea, chart._minPadding)) {
+    return [];
+  }
+  return axis === 'r' && !intersect
+    ? getNearestRadialItems(chart, position, axis, useFinalPosition)
+    : getNearestCartesianItems(chart, position, axis, intersect, useFinalPosition);
 }
 function getAxisItems(chart, e, options, useFinalPosition) {
   const position = getRelativePosition(e, chart);
@@ -12930,13 +14715,13 @@ var layouts = {
     if (!chart) {
       return;
     }
-    const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(chart.options.layout.padding);
+    const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(chart.options.layout.padding);
     const availableWidth = Math.max(width - padding.width, 0);
     const availableHeight = Math.max(height - padding.height, 0);
     const boxes = buildLayoutBoxes(chart.boxes);
     const verticalBoxes = boxes.vertical;
     const horizontalBoxes = boxes.horizontal;
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(chart.boxes, box => {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(chart.boxes, box => {
       if (typeof box.beforeLayout === 'function') {
         box.beforeLayout();
       }
@@ -12953,7 +14738,7 @@ var layouts = {
       hBoxMaxHeight: availableHeight / 2
     });
     const maxPadding = Object.assign({}, padding);
-    updateMaxPadding(maxPadding, (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(minPadding));
+    updateMaxPadding(maxPadding, (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(minPadding));
     const chartArea = Object.assign({
       maxPadding,
       w: availableWidth,
@@ -12980,7 +14765,7 @@ var layouts = {
       height: chartArea.h,
       width: chartArea.w,
     };
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(boxes.chartArea, (layout) => {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(boxes.chartArea, (layout) => {
       const box = layout.box;
       Object.assign(box, chart.chartArea);
       box.update(chartArea.w, chartArea.h, {left: 0, top: 0, right: 0, bottom: 0});
@@ -13053,7 +14838,7 @@ function initCanvas(canvas, aspectRatio) {
   style.display = style.display || 'block';
   style.boxSizing = style.boxSizing || 'border-box';
   if (isNullOrEmpty(renderWidth)) {
-    const displayWidth = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.F)(canvas, 'width');
+    const displayWidth = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.G)(canvas, 'width');
     if (displayWidth !== undefined) {
       canvas.width = displayWidth;
     }
@@ -13062,7 +14847,7 @@ function initCanvas(canvas, aspectRatio) {
     if (canvas.style.height === '') {
       canvas.height = canvas.width / (aspectRatio || 2);
     } else {
-      const displayHeight = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.F)(canvas, 'height');
+      const displayHeight = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.G)(canvas, 'height');
       if (displayHeight !== undefined) {
         canvas.height = displayHeight;
       }
@@ -13070,7 +14855,7 @@ function initCanvas(canvas, aspectRatio) {
   }
   return canvas;
 }
-const eventListenerOptions = _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.I ? {passive: true} : false;
+const eventListenerOptions = _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.J ? {passive: true} : false;
 function addListener(node, type, listener) {
   node.addEventListener(type, listener, eventListenerOptions);
 }
@@ -13153,11 +14938,11 @@ function unlistenDevicePixelRatioChanges(chart) {
 }
 function createResizeObserver(chart, type, listener) {
   const canvas = chart.canvas;
-  const container = canvas && (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.E)(canvas);
+  const container = canvas && (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.F)(canvas);
   if (!container) {
     return;
   }
-  const resize = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.G)((width, height) => {
+  const resize = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.I)((width, height) => {
     const w = container.clientWidth;
     listener(width, height);
     if (w < container.clientWidth) {
@@ -13187,7 +14972,7 @@ function releaseObserver(chart, type, observer) {
 }
 function createProxyAndListen(chart, type, listener) {
   const canvas = chart.canvas;
-  const proxy = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.G)((event) => {
+  const proxy = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.I)((event) => {
     if (chart.ctx !== null) {
       listener(fromNativeEvent(event, chart));
     }
@@ -13259,16 +15044,16 @@ class DomPlatform extends BasePlatform {
     return window.devicePixelRatio;
   }
   getMaximumSize(canvas, width, height, aspectRatio) {
-    return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(canvas, width, height, aspectRatio);
+    return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.E)(canvas, width, height, aspectRatio);
   }
   isAttached(canvas) {
-    const container = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.E)(canvas);
+    const container = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.F)(canvas);
     return !!(container && container.isConnected);
   }
 }
 
 function _detectPlatform(canvas) {
-  if (!(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.J)() || (typeof OffscreenCanvas !== 'undefined' && canvas instanceof OffscreenCanvas)) {
+  if (!(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.K)() || (typeof OffscreenCanvas !== 'undefined' && canvas instanceof OffscreenCanvas)) {
     return BasicPlatform;
   }
   return DomPlatform;
@@ -13322,7 +15107,7 @@ const formatters = {
       }
       delta = calculateDelta(tickValue, ticks);
     }
-    const logDelta = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.K)(Math.abs(delta));
+    const logDelta = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.L)(Math.abs(delta));
     const numDecimal = Math.max(Math.min(-1 * Math.floor(logDelta), 20), 0);
     const options = {notation, minimumFractionDigits: numDecimal, maximumFractionDigits: numDecimal};
     Object.assign(options, this.options.ticks.format);
@@ -13332,7 +15117,7 @@ const formatters = {
     if (tickValue === 0) {
       return '0';
     }
-    const remain = tickValue / (Math.pow(10, Math.floor((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.K)(tickValue))));
+    const remain = tickValue / (Math.pow(10, Math.floor((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.L)(tickValue))));
     if (remain === 1 || remain === 2 || remain === 5) {
       return formatters.numeric.call(this, tickValue, index, ticks);
     }
@@ -13454,7 +15239,7 @@ function calculateSpacing(majorIndices, ticks, ticksLimit) {
   if (!evenMajorSpacing) {
     return Math.max(spacing, 1);
   }
-  const factors = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.L)(evenMajorSpacing);
+  const factors = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.M)(evenMajorSpacing);
   for (let i = 0, ilen = factors.length - 1; i < ilen; i++) {
     const factor = factors[i];
     if (factor > spacing) {
@@ -13559,7 +15344,7 @@ function getPixelForGridLine(scale, index, offsetGridLines) {
   return lineValue;
 }
 function garbageCollect(caches, length) {
-  (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(caches, (cache) => {
+  (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(caches, (cache) => {
     const gc = cache.gc;
     const gcLen = gc.length / 2;
     let i;
@@ -13578,8 +15363,8 @@ function getTitleHeight(options, fallback) {
   if (!options.display) {
     return 0;
   }
-  const font = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(options.font, fallback);
-  const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(options.padding);
+  const font = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(options.font, fallback);
+  const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(options.padding);
   const lines = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.b)(options.text) ? options.text.length : 1;
   return (lines * font.lineHeight) + padding.height;
 }
@@ -13597,7 +15382,7 @@ function createTickContext(parent, index, tick) {
   });
 }
 function titleAlign(align, position, reverse) {
-  let ret = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(align);
+  let ret = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(align);
   if ((reverse && position !== 'right') || (!reverse && position === 'right')) {
     ret = reverseAlign(ret);
   }
@@ -13611,7 +15396,7 @@ function titleArgs(scale, offset, position, align) {
   const height = bottom - top;
   const width = right - left;
   if (scale.isHorizontal()) {
-    titleX = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(align, left, right);
+    titleX = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(align, left, right);
     if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.i)(position)) {
       const positionAxisID = Object.keys(position)[0];
       const value = position[positionAxisID];
@@ -13632,7 +15417,7 @@ function titleArgs(scale, offset, position, align) {
     } else {
       titleX = offsetFromEdge(scale, position, offset);
     }
-    titleY = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(align, bottom, top);
+    titleY = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(align, bottom, top);
     rotation = position === 'left' ? -_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.H : _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.H;
   }
   return {titleX, titleY, maxWidth, rotation};
@@ -13701,13 +15486,13 @@ class Scale extends Element {
   }
   getUserBounds() {
     let {_userMin, _userMax, _suggestedMin, _suggestedMax} = this;
-    _userMin = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.M)(_userMin, Number.POSITIVE_INFINITY);
-    _userMax = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.M)(_userMax, Number.NEGATIVE_INFINITY);
-    _suggestedMin = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.M)(_suggestedMin, Number.POSITIVE_INFINITY);
-    _suggestedMax = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.M)(_suggestedMax, Number.NEGATIVE_INFINITY);
+    _userMin = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(_userMin, Number.POSITIVE_INFINITY);
+    _userMax = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(_userMax, Number.NEGATIVE_INFINITY);
+    _suggestedMin = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(_suggestedMin, Number.POSITIVE_INFINITY);
+    _suggestedMax = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(_suggestedMax, Number.NEGATIVE_INFINITY);
     return {
-      min: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.M)(_userMin, _suggestedMin),
-      max: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.M)(_userMax, _suggestedMax),
+      min: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(_userMin, _suggestedMin),
+      max: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(_userMax, _suggestedMax),
       minDefined: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.g)(_userMin),
       maxDefined: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.g)(_userMax)
     };
@@ -13731,8 +15516,8 @@ class Scale extends Element {
     min = maxDefined && min > max ? max : min;
     max = minDefined && min > max ? min : max;
     return {
-      min: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.M)(min, (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.M)(max, min)),
-      max: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.M)(max, (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.M)(min, max))
+      min: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(min, (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(max, min)),
+      max: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(max, (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(min, max))
     };
   }
   getPadding() {
@@ -13755,7 +15540,7 @@ class Scale extends Element {
     this._dataLimitsCached = false;
   }
   beforeUpdate() {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(this.options.beforeUpdate, [this]);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(this.options.beforeUpdate, [this]);
   }
   update(maxWidth, maxHeight, margins) {
     const {beginAtZero, grace, ticks: tickOpts} = this.options;
@@ -13783,7 +15568,7 @@ class Scale extends Element {
       this.beforeDataLimits();
       this.determineDataLimits();
       this.afterDataLimits();
-      this._range = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(this, grace, beginAtZero);
+      this._range = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Q)(this, grace, beginAtZero);
       this._dataLimitsCached = true;
     }
     this.beforeBuildTicks();
@@ -13825,10 +15610,10 @@ class Scale extends Element {
     this._alignToPixels = this.options.alignToPixels;
   }
   afterUpdate() {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(this.options.afterUpdate, [this]);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(this.options.afterUpdate, [this]);
   }
   beforeSetDimensions() {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(this.options.beforeSetDimensions, [this]);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(this.options.beforeSetDimensions, [this]);
   }
   setDimensions() {
     if (this.isHorizontal()) {
@@ -13846,11 +15631,11 @@ class Scale extends Element {
     this.paddingBottom = 0;
   }
   afterSetDimensions() {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(this.options.afterSetDimensions, [this]);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(this.options.afterSetDimensions, [this]);
   }
   _callHooks(name) {
     this.chart.notifyPlugins(name, this.getContext());
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(this.options[name], [this]);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(this.options[name], [this]);
   }
   beforeDataLimits() {
     this._callHooks('beforeDataLimits');
@@ -13869,21 +15654,21 @@ class Scale extends Element {
     this._callHooks('afterBuildTicks');
   }
   beforeTickToLabelConversion() {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(this.options.beforeTickToLabelConversion, [this]);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(this.options.beforeTickToLabelConversion, [this]);
   }
   generateTickLabels(ticks) {
     const tickOpts = this.options.ticks;
     let i, ilen, tick;
     for (i = 0, ilen = ticks.length; i < ilen; i++) {
       tick = ticks[i];
-      tick.label = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(tickOpts.callback, [tick.value, i, ticks], this);
+      tick.label = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(tickOpts.callback, [tick.value, i, ticks], this);
     }
   }
   afterTickToLabelConversion() {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(this.options.afterTickToLabelConversion, [this]);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(this.options.afterTickToLabelConversion, [this]);
   }
   beforeCalculateLabelRotation() {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(this.options.beforeCalculateLabelRotation, [this]);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(this.options.beforeCalculateLabelRotation, [this]);
   }
   calculateLabelRotation() {
     const options = this.options;
@@ -13907,7 +15692,7 @@ class Scale extends Element {
       maxHeight = this.maxHeight - getTickMarkLength(options.grid)
 				- tickOpts.padding - getTitleHeight(options.title, this.chart.options.font);
       maxLabelDiagonal = Math.sqrt(maxLabelWidth * maxLabelWidth + maxLabelHeight * maxLabelHeight);
-      labelRotation = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Q)(Math.min(
+      labelRotation = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.R)(Math.min(
         Math.asin((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.w)((labelSizes.highest.height + 6) / tickWidth, -1, 1)),
         Math.asin((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.w)(maxHeight / maxLabelDiagonal, -1, 1)) - Math.asin((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.w)(maxLabelHeight / maxLabelDiagonal, -1, 1))
       ));
@@ -13916,10 +15701,10 @@ class Scale extends Element {
     this.labelRotation = labelRotation;
   }
   afterCalculateLabelRotation() {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(this.options.afterCalculateLabelRotation, [this]);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(this.options.afterCalculateLabelRotation, [this]);
   }
   beforeFit() {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(this.options.beforeFit, [this]);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(this.options.beforeFit, [this]);
   }
   fit() {
     const minSize = {
@@ -14013,7 +15798,7 @@ class Scale extends Element {
     }
   }
   afterFit() {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(this.options.afterFit, [this]);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(this.options.afterFit, [this]);
   }
   isHorizontal() {
     const {axis, position} = this.options;
@@ -14062,13 +15847,13 @@ class Scale extends Element {
       lineHeight = tickFont.lineHeight;
       width = height = 0;
       if (!(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.k)(label) && !(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.b)(label)) {
-        width = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.R)(ctx, cache.data, cache.gc, width, label);
+        width = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.S)(ctx, cache.data, cache.gc, width, label);
         height = lineHeight;
       } else if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.b)(label)) {
         for (j = 0, jlen = label.length; j < jlen; ++j) {
           nestedLabel = label[j];
           if (!(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.k)(nestedLabel) && !(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.b)(nestedLabel)) {
-            width = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.R)(ctx, cache.data, cache.gc, width, nestedLabel);
+            width = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.S)(ctx, cache.data, cache.gc, width, nestedLabel);
             height += lineHeight;
           }
         }
@@ -14110,7 +15895,7 @@ class Scale extends Element {
       decimal = 1 - decimal;
     }
     const pixel = this._startPixel + decimal * this._length;
-    return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.S)(this._alignToPixels ? (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.U)(this.chart, pixel, 0) : pixel);
+    return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.U)(this._alignToPixels ? (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.V)(this.chart, pixel, 0) : pixel);
   }
   getDecimalForPixel(pixel) {
     const decimal = (pixel - this._startPixel) / this._length;
@@ -14170,7 +15955,7 @@ class Scale extends Element {
     const axisWidth = borderOpts.drawBorder ? borderOpts.borderWidth : 0;
     const axisHalfWidth = axisWidth / 2;
     const alignBorderValue = function(pixel) {
-      return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.U)(chart, pixel, axisWidth);
+      return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.V)(chart, pixel, axisWidth);
     };
     let borderValue, i, lineValue, alignedLineValue;
     let tx1, ty1, tx2, ty2, x1, y1, x2, y2;
@@ -14239,7 +16024,7 @@ class Scale extends Element {
       if (lineValue === undefined) {
         continue;
       }
-      alignedLineValue = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.U)(chart, lineValue, lineWidth);
+      alignedLineValue = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.V)(chart, lineValue, lineWidth);
       if (isHorizontal) {
         tx1 = tx2 = x1 = x2 = alignedLineValue;
       } else {
@@ -14363,7 +16148,7 @@ class Scale extends Element {
       }
       let backdrop;
       if (optsAtIndex.showLabelBackdrop) {
-        const labelPadding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(optsAtIndex.backdropPadding);
+        const labelPadding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(optsAtIndex.backdropPadding);
         const height = labelSizes.heights[i];
         const width = labelSizes.widths[i];
         let top = y + textOffset - labelPadding.top;
@@ -14572,12 +16357,12 @@ class Scale extends Element {
     const borderValue = this._borderValue;
     let x1, x2, y1, y2;
     if (this.isHorizontal()) {
-      x1 = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.U)(chart, this.left, axisWidth) - axisWidth / 2;
-      x2 = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.U)(chart, this.right, lastLineWidth) + lastLineWidth / 2;
+      x1 = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.V)(chart, this.left, axisWidth) - axisWidth / 2;
+      x2 = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.V)(chart, this.right, lastLineWidth) + lastLineWidth / 2;
       y1 = y2 = borderValue;
     } else {
-      y1 = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.U)(chart, this.top, axisWidth) - axisWidth / 2;
-      y2 = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.U)(chart, this.bottom, lastLineWidth) + lastLineWidth / 2;
+      y1 = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.V)(chart, this.top, axisWidth) - axisWidth / 2;
+      y2 = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.V)(chart, this.bottom, lastLineWidth) + lastLineWidth / 2;
       x1 = x2 = borderValue;
     }
     ctx.save();
@@ -14597,7 +16382,7 @@ class Scale extends Element {
     const ctx = this.ctx;
     const area = this._computeLabelArea();
     if (area) {
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.V)(ctx, area);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.W)(ctx, area);
     }
     const items = this._labelItems || (this._labelItems = this._computeLabelItems(chartArea));
     let i, ilen;
@@ -14610,10 +16395,10 @@ class Scale extends Element {
         ctx.fillRect(item.backdrop.left, item.backdrop.top, item.backdrop.width, item.backdrop.height);
       }
       let y = item.textOffset;
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.W)(ctx, label, 0, y, tickFont, item);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.X)(ctx, label, 0, y, tickFont, item);
     }
     if (area) {
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.X)(ctx);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(ctx);
     }
   }
   drawTitle() {
@@ -14621,8 +16406,8 @@ class Scale extends Element {
     if (!title.display) {
       return;
     }
-    const font = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(title.font);
-    const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(title.padding);
+    const font = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(title.font);
+    const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(title.padding);
     const align = title.align;
     let offset = font.lineHeight / 2;
     if (position === 'bottom' || position === 'center' || (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.i)(position)) {
@@ -14634,7 +16419,7 @@ class Scale extends Element {
       offset += padding.top;
     }
     const {titleX, titleY, maxWidth, rotation} = titleArgs(this, offset, position, align);
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.W)(ctx, title.text, 0, 0, font, {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.X)(ctx, title.text, 0, 0, font, {
       color: title.color,
       maxWidth,
       rotation,
@@ -14699,7 +16484,7 @@ class Scale extends Element {
   }
   _resolveTickFontOptions(index) {
     const opts = this.options.ticks.setContext(this.getContext(index));
-    return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(opts.font);
+    return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(opts.font);
   }
   _maxDigits() {
     const fontSize = this._resolveTickFontOptions(0).lineHeight;
@@ -14752,13 +16537,13 @@ class TypedRegistry {
     if (scope && id in _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.d[scope]) {
       delete _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.d[scope][id];
       if (this.override) {
-        delete _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0[id];
+        delete _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a1[id];
       }
     }
   }
 }
 function registerDefaults(item, scope, parentScope) {
-  const itemDefaults = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a1)(Object.create(null), [
+  const itemDefaults = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a2)(Object.create(null), [
     parentScope ? _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.d.get(parentScope) : {},
     _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.d.get(scope),
     item.defaults
@@ -14842,7 +16627,7 @@ class Registry {
       if (typedRegistry || reg.isForType(arg) || (reg === this.plugins && arg.id)) {
         this._exec(method, reg, arg);
       } else {
-        (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(arg, item => {
+        (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(arg, item => {
           const itemReg = typedRegistry || this._getRegistryForType(item);
           this._exec(method, itemReg, item);
         });
@@ -14850,10 +16635,10 @@ class Registry {
     });
   }
   _exec(method, registry, component) {
-    const camelMethod = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a2)(method);
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(component['before' + camelMethod], [], component);
+    const camelMethod = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a3)(method);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(component['before' + camelMethod], [], component);
     registry[method](component);
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(component['after' + camelMethod], [], component);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(component['after' + camelMethod], [], component);
   }
   _getRegistryForType(type) {
     for (let i = 0; i < this._typedRegistries.length; i++) {
@@ -14885,7 +16670,7 @@ class PluginService {
     }
     const descriptors = filter ? this._descriptors(chart).filter(filter) : this._descriptors(chart);
     const result = this._notify(descriptors, chart, hook, args);
-    if (hook === 'destroy') {
+    if (hook === 'afterDestroy') {
       this._notify(descriptors, chart, 'stop');
       this._notify(this._init, chart, 'uninstall');
     }
@@ -14897,7 +16682,7 @@ class PluginService {
       const plugin = descriptor.plugin;
       const method = plugin[hook];
       const params = [chart, args, descriptor.options];
-      if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(method, params, plugin) === false && args.cancelable) {
+      if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(method, params, plugin) === false && args.cancelable) {
         return false;
       }
     }
@@ -15010,7 +16795,7 @@ function determineAxis(id, scaleOptions) {
   return scaleOptions.axis || axisFromPosition(scaleOptions.position) || id.charAt(0).toLowerCase();
 }
 function mergeScaleConfig(config, options) {
-  const chartDefaults = _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0[config.type] || {scales: {}};
+  const chartDefaults = _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a1[config.type] || {scales: {}};
   const configScales = options.scales || {};
   const chartIndexAxis = getIndexAxis(config.type, options);
   const firstIDs = Object.create(null);
@@ -15027,23 +16812,23 @@ function mergeScaleConfig(config, options) {
     const defaultId = getDefaultScaleIDFromAxis(axis, chartIndexAxis);
     const defaultScaleOptions = chartDefaults.scales || {};
     firstIDs[axis] = firstIDs[axis] || id;
-    scales[id] = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a8)(Object.create(null), [{axis}, scaleConf, defaultScaleOptions[axis], defaultScaleOptions[defaultId]]);
+    scales[id] = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a9)(Object.create(null), [{axis}, scaleConf, defaultScaleOptions[axis], defaultScaleOptions[defaultId]]);
   });
   config.data.datasets.forEach(dataset => {
     const type = dataset.type || config.type;
     const indexAxis = dataset.indexAxis || getIndexAxis(type, options);
-    const datasetDefaults = _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0[type] || {};
+    const datasetDefaults = _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a1[type] || {};
     const defaultScaleOptions = datasetDefaults.scales || {};
     Object.keys(defaultScaleOptions).forEach(defaultID => {
       const axis = getAxisFromDefaultScaleID(defaultID, indexAxis);
       const id = dataset[axis + 'AxisID'] || firstIDs[axis] || axis;
       scales[id] = scales[id] || Object.create(null);
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a8)(scales[id], [{axis}, configScales[id], defaultScaleOptions[defaultID]]);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a9)(scales[id], [{axis}, configScales[id], defaultScaleOptions[defaultID]]);
     });
   });
   Object.keys(scales).forEach(key => {
     const scale = scales[key];
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a8)(scale, [_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.d.scales[scale.type], _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.d.scale]);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a9)(scale, [_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.d.scales[scale.type], _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.d.scale]);
   });
   return scales;
 }
@@ -15181,9 +16966,9 @@ class Config {
         keys.forEach(key => addIfFound(scopes, mainScope, key));
       }
       keys.forEach(key => addIfFound(scopes, options, key));
-      keys.forEach(key => addIfFound(scopes, _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0[type] || {}, key));
+      keys.forEach(key => addIfFound(scopes, _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a1[type] || {}, key));
       keys.forEach(key => addIfFound(scopes, _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.d, key));
-      keys.forEach(key => addIfFound(scopes, _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a3, key));
+      keys.forEach(key => addIfFound(scopes, _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a4, key));
     });
     const array = Array.from(scopes);
     if (array.length === 0) {
@@ -15198,11 +16983,11 @@ class Config {
     const {options, type} = this;
     return [
       options,
-      _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0[type] || {},
+      _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a1[type] || {},
       _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.d.datasets[type] || {},
       {type},
       _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.d,
-      _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a3
+      _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a4
     ];
   }
   resolveNamedOptions(scopes, names, context, prefixes = ['']) {
@@ -15211,9 +16996,9 @@ class Config {
     let options = resolver;
     if (needContext(resolver, names)) {
       result.$shared = false;
-      context = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a4)(context) ? context() : context;
+      context = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a5)(context) ? context() : context;
       const subResolver = this.createResolver(scopes, context, subPrefixes);
-      options = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a5)(resolver, context, subResolver);
+      options = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a6)(resolver, context, subResolver);
     }
     for (const prop of names) {
       result[prop] = options[prop];
@@ -15223,7 +17008,7 @@ class Config {
   createResolver(scopes, context, prefixes = [''], descriptorDefaults) {
     const {resolver} = getResolver(this._resolverCache, scopes, prefixes);
     return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.i)(context)
-      ? (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a5)(resolver, context, undefined, descriptorDefaults)
+      ? (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a6)(resolver, context, undefined, descriptorDefaults)
       : resolver;
   }
 }
@@ -15236,7 +17021,7 @@ function getResolver(resolverCache, scopes, prefixes) {
   const cacheKey = prefixes.join();
   let cached = cache.get(cacheKey);
   if (!cached) {
-    const resolver = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a6)(scopes, prefixes);
+    const resolver = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a7)(scopes, prefixes);
     cached = {
       resolver,
       subPrefixes: prefixes.filter(p => !p.toLowerCase().includes('hover'))
@@ -15246,14 +17031,14 @@ function getResolver(resolverCache, scopes, prefixes) {
   return cached;
 }
 const hasFunction = value => (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.i)(value)
-  && Object.getOwnPropertyNames(value).reduce((acc, key) => acc || (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a4)(value[key]), false);
+  && Object.getOwnPropertyNames(value).reduce((acc, key) => acc || (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a5)(value[key]), false);
 function needContext(proxy, names) {
-  const {isScriptable, isIndexable} = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a7)(proxy);
+  const {isScriptable, isIndexable} = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a8)(proxy);
   for (const prop of names) {
     const scriptable = isScriptable(prop);
     const indexable = isIndexable(prop);
     const value = (indexable || scriptable) && proxy[prop];
-    if ((scriptable && ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a4)(value) || hasFunction(value)))
+    if ((scriptable && ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a5)(value) || hasFunction(value)))
       || (indexable && (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.b)(value))) {
       return true;
     }
@@ -15261,7 +17046,7 @@ function needContext(proxy, names) {
   return false;
 }
 
-var version = "3.6.2";
+var version = "3.7.0";
 
 const KNOWN_POSITIONS = ['top', 'bottom', 'left', 'right', 'chartArea'];
 function positionIsHorizontal(position, axis) {
@@ -15278,15 +17063,15 @@ function onAnimationsComplete(context) {
   const chart = context.chart;
   const animationOptions = chart.options.animation;
   chart.notifyPlugins('afterRender');
-  (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(animationOptions && animationOptions.onComplete, [context], chart);
+  (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(animationOptions && animationOptions.onComplete, [context], chart);
 }
 function onAnimationProgress(context) {
   const chart = context.chart;
   const animationOptions = chart.options.animation;
-  (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(animationOptions && animationOptions.onProgress, [context], chart);
+  (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(animationOptions && animationOptions.onProgress, [context], chart);
 }
 function getCanvas(item) {
-  if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.J)() && typeof item === 'string') {
+  if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.K)() && typeof item === 'string') {
     item = document.getElementById(item);
   } else if (item && item.length) {
     item = item[0];
@@ -15314,6 +17099,15 @@ function moveNumericKeys(obj, start, move) {
     }
   }
 }
+function determineLastEvent(e, lastEvent, inChartArea, isClick) {
+  if (!inChartArea || e.type === 'mouseout') {
+    return null;
+  }
+  if (isClick) {
+    return lastEvent;
+  }
+  return e;
+}
 class Chart {
   constructor(item, userConfig) {
     const config = this.config = new Config(userConfig);
@@ -15332,7 +17126,7 @@ class Chart {
     const canvas = context && context.canvas;
     const height = canvas && canvas.height;
     const width = canvas && canvas.width;
-    this.id = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a9)();
+    this.id = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aa)();
     this.ctx = context;
     this.canvas = canvas;
     this.width = width;
@@ -15357,7 +17151,7 @@ class Chart {
     this.attached = false;
     this._animationsDisabled = undefined;
     this.$context = undefined;
-    this._doResize = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aa)(mode => this.update(mode), options.resizeDelay || 0);
+    this._doResize = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ab)(mode => this.update(mode), options.resizeDelay || 0);
     this._dataChanges = [];
     instances[this.id] = this;
     if (!context || !canvas) {
@@ -15398,14 +17192,14 @@ class Chart {
     if (this.options.responsive) {
       this.resize();
     } else {
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ab)(this, this.options.devicePixelRatio);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ac)(this, this.options.devicePixelRatio);
     }
     this.bindEvents();
     this.notifyPlugins('afterInit');
     return this;
   }
   clear() {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ac)(this.canvas, this.ctx);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ad)(this.canvas, this.ctx);
     return this;
   }
   stop() {
@@ -15429,11 +17223,11 @@ class Chart {
     this.width = newSize.width;
     this.height = newSize.height;
     this._aspectRatio = this.aspectRatio;
-    if (!(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ab)(this, newRatio, true)) {
+    if (!(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ac)(this, newRatio, true)) {
       return;
     }
     this.notifyPlugins('resize', {size: newSize});
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(options.onResize, [this, newSize], this);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(options.onResize, [this, newSize], this);
     if (this.attached) {
       if (this._doResize(mode)) {
         this.render();
@@ -15443,7 +17237,7 @@ class Chart {
   ensureScalesHaveIDs() {
     const options = this.options;
     const scalesOptions = options.scales || {};
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(scalesOptions, (axisOptions, axisID) => {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(scalesOptions, (axisOptions, axisID) => {
       axisOptions.id = axisID;
     });
   }
@@ -15471,7 +17265,7 @@ class Chart {
         })
       );
     }
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(items, (item) => {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(items, (item) => {
       const scaleOptions = item.options;
       const id = scaleOptions.id;
       const axis = determineAxis(id, scaleOptions);
@@ -15495,12 +17289,12 @@ class Chart {
       }
       scale.init(scaleOptions, options);
     });
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(updated, (hasUpdated, id) => {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(updated, (hasUpdated, id) => {
       if (!hasUpdated) {
         delete scales[id];
       }
     });
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(scales, (scale) => {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(scales, (scale) => {
       layouts.configure(this, scale, scale.options);
       layouts.addBox(this, scale);
     });
@@ -15566,7 +17360,7 @@ class Chart {
     return newControllers;
   }
   _resetElements() {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(this.data.datasets, (dataset, datasetIndex) => {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(this.data.datasets, (dataset, datasetIndex) => {
       this.getDatasetMeta(datasetIndex).controller.reset();
     }, this);
   }
@@ -15598,20 +17392,23 @@ class Chart {
     minPadding = this._minPadding = options.layout.autoPadding ? minPadding : 0;
     this._updateLayout(minPadding);
     if (!animsDisabled) {
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(newControllers, (controller) => {
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(newControllers, (controller) => {
         controller.reset();
       });
     }
     this._updateDatasets(mode);
     this.notifyPlugins('afterUpdate', {mode});
     this._layers.sort(compare2Level('z', '_idx'));
-    if (this._lastEvent) {
-      this._eventHandler(this._lastEvent, true);
+    const {_active, _lastEvent} = this;
+    if (_lastEvent) {
+      this._eventHandler(_lastEvent, true);
+    } else if (_active.length) {
+      this._updateHoverStyles(_active, _active, true);
     }
     this.render();
   }
   _updateScales() {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(this.scales, (scale) => {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(this.scales, (scale) => {
       layouts.removeBox(this, scale);
     });
     this.ensureScalesHaveIDs();
@@ -15621,7 +17418,7 @@ class Chart {
     const options = this.options;
     const existingEvents = new Set(Object.keys(this._listeners));
     const newEvents = new Set(options.events);
-    if (!(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ad)(existingEvents, newEvents) || !!this._responsiveListeners !== options.responsive) {
+    if (!(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ae)(existingEvents, newEvents) || !!this._responsiveListeners !== options.responsive) {
       this.unbindEvents();
       this.bindEvents();
     }
@@ -15648,7 +17445,7 @@ class Chart {
     );
     const changeSet = makeSet(0);
     for (let i = 1; i < datasetCount; i++) {
-      if (!(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ad)(changeSet, makeSet(i))) {
+      if (!(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ae)(changeSet, makeSet(i))) {
         return;
       }
     }
@@ -15664,7 +17461,7 @@ class Chart {
     const area = this.chartArea;
     const noArea = area.width <= 0 || area.height <= 0;
     this._layers = [];
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(this.boxes, (box) => {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(this.boxes, (box) => {
       if (noArea && box.position === 'chartArea') {
         return;
       }
@@ -15686,7 +17483,7 @@ class Chart {
       this.getDatasetMeta(i).controller.configure();
     }
     for (let i = 0, ilen = this.data.datasets.length; i < ilen; ++i) {
-      this._updateDataset(i, (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a4)(mode) ? mode({datasetIndex: i}) : mode);
+      this._updateDataset(i, (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a5)(mode) ? mode({datasetIndex: i}) : mode);
     }
     this.notifyPlugins('afterDatasetsUpdate', {mode});
   }
@@ -15776,7 +17573,7 @@ class Chart {
       return;
     }
     if (useClip) {
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.V)(ctx, {
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.W)(ctx, {
         left: clip.left === false ? 0 : area.left - clip.left,
         right: clip.right === false ? this.width : area.right + clip.right,
         top: clip.top === false ? 0 : area.top - clip.top,
@@ -15785,7 +17582,7 @@ class Chart {
     }
     meta.controller.draw();
     if (useClip) {
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.X)(ctx);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(ctx);
     }
     args.cancelable = false;
     this.notifyPlugins('afterDatasetDraw', args);
@@ -15879,18 +17676,20 @@ class Chart {
     }
   }
   destroy() {
+    this.notifyPlugins('beforeDestroy');
     const {canvas, ctx} = this;
     this._stop();
     this.config.clearCache();
     if (canvas) {
       this.unbindEvents();
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ac)(canvas, ctx);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ad)(canvas, ctx);
       this.platform.releaseContext(ctx);
       this.canvas = null;
       this.ctx = null;
     }
     this.notifyPlugins('destroy');
     delete instances[this.id];
+    this.notifyPlugins('afterDestroy');
   }
   toBase64Image(...args) {
     return this.canvas.toDataURL(...args);
@@ -15915,7 +17714,7 @@ class Chart {
       e.offsetY = y;
       this._eventHandler(e);
     };
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(this.options.events, (type) => _add(type, listener));
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(this.options.events, (type) => _add(type, listener));
   }
   bindResponsiveEvents() {
     if (!this._responsiveListeners) {
@@ -15960,11 +17759,11 @@ class Chart {
     }
   }
   unbindEvents() {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(this._listeners, (listener, type) => {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(this._listeners, (listener, type) => {
       this.platform.removeEventListener(this, type, listener);
     });
     this._listeners = {};
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(this._responsiveListeners, (listener, type) => {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(this._responsiveListeners, (listener, type) => {
       this.platform.removeEventListener(this, type, listener);
     });
     this._responsiveListeners = undefined;
@@ -16000,9 +17799,10 @@ class Chart {
         index,
       };
     });
-    const changed = !(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ae)(active, lastActive);
+    const changed = !(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.af)(active, lastActive);
     if (changed) {
       this._active = active;
+      this._lastEvent = null;
       this._updateHoverStyles(active, lastActive);
     }
   }
@@ -16022,12 +17822,17 @@ class Chart {
     }
   }
   _eventHandler(e, replay) {
-    const args = {event: e, replay, cancelable: true};
+    const args = {
+      event: e,
+      replay,
+      cancelable: true,
+      inChartArea: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.z)(e, this.chartArea, this._minPadding)
+    };
     const eventFilter = (plugin) => (plugin.options.events || this.options.events).includes(e.native.type);
     if (this.notifyPlugins('beforeEvent', args, eventFilter) === false) {
       return;
     }
-    const changed = this._handleEvent(e, replay);
+    const changed = this._handleEvent(e, replay, args.inChartArea);
     args.cancelable = false;
     this.notifyPlugins('afterEvent', args, eventFilter);
     if (changed || args.changed) {
@@ -16035,25 +17840,20 @@ class Chart {
     }
     return this;
   }
-  _handleEvent(e, replay) {
+  _handleEvent(e, replay, inChartArea) {
     const {_active: lastActive = [], options} = this;
-    const hoverOptions = options.hover;
     const useFinalPosition = replay;
-    let active = [];
-    let changed = false;
-    let lastEvent = null;
-    if (e.type !== 'mouseout') {
-      active = this.getElementsAtEventForMode(e, hoverOptions.mode, hoverOptions, useFinalPosition);
-      lastEvent = e.type === 'click' ? this._lastEvent : e;
-    }
-    this._lastEvent = null;
-    if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.z)(e, this.chartArea, this._minPadding)) {
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(options.onHover, [e, active, this], this);
-      if (e.type === 'mouseup' || e.type === 'click' || e.type === 'contextmenu') {
-        (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(options.onClick, [e, active, this], this);
+    const active = this._getActiveElements(e, lastActive, inChartArea, useFinalPosition);
+    const isClick = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ag)(e);
+    const lastEvent = determineLastEvent(e, this._lastEvent, inChartArea, isClick);
+    if (inChartArea) {
+      this._lastEvent = null;
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(options.onHover, [e, active, this], this);
+      if (isClick) {
+        (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(options.onClick, [e, active, this], this);
       }
     }
-    changed = !(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ae)(active, lastActive);
+    const changed = !(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.af)(active, lastActive);
     if (changed || replay) {
       this._active = active;
       this._updateHoverStyles(active, lastActive, replay);
@@ -16061,8 +17861,18 @@ class Chart {
     this._lastEvent = lastEvent;
     return changed;
   }
+  _getActiveElements(e, lastActive, inChartArea, useFinalPosition) {
+    if (e.type === 'mouseout') {
+      return [];
+    }
+    if (!inChartArea) {
+      return lastActive;
+    }
+    const hoverOptions = this.options.hover;
+    return this.getElementsAtEventForMode(e, hoverOptions.mode, hoverOptions, useFinalPosition);
+  }
 }
-const invalidatePlugins = () => (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(Chart.instances, (chart) => chart._plugins.invalidate());
+const invalidatePlugins = () => (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(Chart.instances, (chart) => chart._plugins.invalidate());
 const enumerable = true;
 Object.defineProperties(Chart, {
   defaults: {
@@ -16075,7 +17885,7 @@ Object.defineProperties(Chart, {
   },
   overrides: {
     enumerable,
-    value: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0
+    value: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a1
   },
   registry: {
     enumerable,
@@ -16120,7 +17930,7 @@ function clipArc(ctx, element, endAngle) {
   ctx.clip();
 }
 function toRadiusCorners(value) {
-  return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ah)(value, ['outerStart', 'outerEnd', 'innerStart', 'innerEnd']);
+  return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ai)(value, ['outerStart', 'outerEnd', 'innerStart', 'innerEnd']);
 }
 function parseBorderRadius$1(arc, innerRadius, outerRadius, angleDelta) {
   const o = toRadiusCorners(arc.options.borderRadius);
@@ -16234,16 +18044,17 @@ function drawFullCircleBorders(ctx, element, inner) {
 }
 function drawBorder(ctx, element, offset, spacing, endAngle) {
   const {options} = element;
+  const {borderWidth, borderJoinStyle} = options;
   const inner = options.borderAlign === 'inner';
-  if (!options.borderWidth) {
+  if (!borderWidth) {
     return;
   }
   if (inner) {
-    ctx.lineWidth = options.borderWidth * 2;
-    ctx.lineJoin = 'round';
+    ctx.lineWidth = borderWidth * 2;
+    ctx.lineJoin = borderJoinStyle || 'round';
   } else {
-    ctx.lineWidth = options.borderWidth;
-    ctx.lineJoin = 'bevel';
+    ctx.lineWidth = borderWidth;
+    ctx.lineJoin = borderJoinStyle || 'bevel';
   }
   if (element.fullCircles) {
     drawFullCircleBorders(ctx, element, inner);
@@ -16271,7 +18082,7 @@ class ArcElement extends Element {
   }
   inRange(chartX, chartY, useFinalPosition) {
     const point = this.getProps(['x', 'y'], useFinalPosition);
-    const {angle, distance} = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.af)(point, {x: chartX, y: chartY});
+    const {angle, distance} = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(point, {x: chartX, y: chartY});
     const {startAngle, endAngle, innerRadius, outerRadius, circumference} = this.getProps([
       'startAngle',
       'endAngle',
@@ -16282,7 +18093,7 @@ class ArcElement extends Element {
     const rAdjust = this.options.spacing / 2;
     const _circumference = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.v)(circumference, endAngle - startAngle);
     const betweenAngles = _circumference >= _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.T || (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.p)(angle, startAngle, endAngle);
-    const withinRadius = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ag)(distance, innerRadius + rAdjust, outerRadius + rAdjust);
+    const withinRadius = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ah)(distance, innerRadius + rAdjust, outerRadius + rAdjust);
     return (betweenAngles && withinRadius);
   }
   getCenterPoint(useFinalPosition) {
@@ -16336,6 +18147,7 @@ ArcElement.id = 'arc';
 ArcElement.defaults = {
   borderAlign: 'center',
   borderColor: '#fff',
+  borderJoinStyle: undefined,
   borderRadius: 0,
   borderWidth: 2,
   offset: 0,
@@ -16359,10 +18171,10 @@ function lineTo(ctx, previous, target) {
 }
 function getLineMethod(options) {
   if (options.stepped) {
-    return _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ao;
+    return _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ap;
   }
   if (options.tension || options.cubicInterpolationMode === 'monotone') {
-    return _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ap;
+    return _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aq;
   }
   return lineTo;
 }
@@ -16457,12 +18269,12 @@ function _getSegmentMethod(line) {
 }
 function _getInterpolationMethod(options) {
   if (options.stepped) {
-    return _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.al;
-  }
-  if (options.tension || options.cubicInterpolationMode === 'monotone') {
     return _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.am;
   }
-  return _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.an;
+  if (options.tension || options.cubicInterpolationMode === 'monotone') {
+    return _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.an;
+  }
+  return _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ao;
 }
 function strokePathWithCache(ctx, line, start, count) {
   let path = line._path;
@@ -16517,7 +18329,7 @@ class LineElement extends Element {
     const options = this.options;
     if ((options.tension || options.cubicInterpolationMode === 'monotone') && !options.stepped && !this._pointsUpdated) {
       const loop = options.spanGaps ? this._loop : this._fullLoop;
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ai)(this._points, options, chartArea, loop, indexAxis);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aj)(this._points, options, chartArea, loop, indexAxis);
       this._pointsUpdated = true;
     }
   }
@@ -16531,7 +18343,7 @@ class LineElement extends Element {
     return this._points;
   }
   get segments() {
-    return this._segments || (this._segments = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aj)(this, this.options.segment));
+    return this._segments || (this._segments = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ak)(this, this.options.segment));
   }
   first() {
     const segments = this.segments;
@@ -16548,7 +18360,7 @@ class LineElement extends Element {
     const options = this.options;
     const value = point[property];
     const points = this.points;
-    const segments = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ak)(this, {property, start: value, end: value});
+    const segments = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.al)(this, {property, start: value, end: value});
     if (!segments.length) {
       return;
     }
@@ -16668,7 +18480,7 @@ class PointElement extends Element {
     ctx.strokeStyle = options.borderColor;
     ctx.lineWidth = options.borderWidth;
     ctx.fillStyle = options.backgroundColor;
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aq)(ctx, options, this.x, this.y);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ar)(ctx, options, this.x, this.y);
   }
   getRange() {
     const options = this.options || {};
@@ -16714,7 +18526,7 @@ function skipOrLimit(skip, value, min, max) {
 function parseBorderWidth(bar, maxW, maxH) {
   const value = bar.options.borderWidth;
   const skip = bar.borderSkipped;
-  const o = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.as)(value);
+  const o = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.at)(value);
   return {
     t: skipOrLimit(skip.top, o.top, 0, maxH),
     r: skipOrLimit(skip.right, o.right, 0, maxW),
@@ -16725,7 +18537,7 @@ function parseBorderWidth(bar, maxW, maxH) {
 function parseBorderRadius(bar, maxW, maxH) {
   const {enableBorderRadius} = bar.getProps(['enableBorderRadius']);
   const value = bar.options.borderRadius;
-  const o = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.at)(value);
+  const o = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.au)(value);
   const maxR = Math.min(maxW, maxH);
   const skip = bar.borderSkipped;
   const enableBorder = enableBorderRadius || (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.i)(value);
@@ -16770,8 +18582,8 @@ function inRange(bar, x, y, useFinalPosition) {
   const skipBoth = skipX && skipY;
   const bounds = bar && !skipBoth && getBarBounds(bar, useFinalPosition);
   return bounds
-		&& (skipX || (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ag)(x, bounds.left, bounds.right))
-		&& (skipY || (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ag)(y, bounds.top, bounds.bottom));
+		&& (skipX || (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ah)(x, bounds.left, bounds.right))
+		&& (skipY || (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ah)(y, bounds.top, bounds.bottom));
 }
 function hasRadius(radius) {
   return radius.topLeft || radius.topRight || radius.bottomLeft || radius.bottomRight;
@@ -16808,7 +18620,7 @@ class BarElement extends Element {
   draw(ctx) {
     const {inflateAmount, options: {borderColor, backgroundColor}} = this;
     const {inner, outer} = boundingRects(this);
-    const addRectPath = hasRadius(outer.radius) ? _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ar : addNormalRectPath;
+    const addRectPath = hasRadius(outer.radius) ? _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.as : addNormalRectPath;
     ctx.save();
     if (outer.w !== inner.w || outer.h !== inner.h) {
       ctx.beginPath();
@@ -17268,7 +19080,7 @@ function findPoint(line, sourcePoint, property) {
     const segment = segments[i];
     const firstValue = linePoints[segment.start][property];
     const lastValue = linePoints[segment.end][property];
-    if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ag)(pointValue, firstValue, lastValue)) {
+    if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ah)(pointValue, firstValue, lastValue)) {
       first = pointValue === firstValue;
       last = pointValue === lastValue;
       break;
@@ -17348,8 +19160,8 @@ function getBounds(property, first, last, loop) {
   let start = first[property];
   let end = last[property];
   if (property === 'angle') {
-    start = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.av)(start);
-    end = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.av)(end);
+    start = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aw)(start);
+    end = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aw)(end);
   }
   return {property, start, end};
 }
@@ -17377,10 +19189,10 @@ function _segments(line, target, property) {
       });
       continue;
     }
-    const targetSegments = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ak)(target, bounds);
+    const targetSegments = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.al)(target, bounds);
     for (const tgt of targetSegments) {
       const subBounds = getBounds(property, tpoints[tgt.start], tpoints[tgt.end], tgt.loop);
-      const fillSources = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.au)(segment, points, subBounds);
+      const fillSources = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.av)(segment, points, subBounds);
       for (const fillSource of fillSources) {
         parts.push({
           source: fillSource,
@@ -17463,9 +19275,9 @@ function drawfill(ctx, source, area) {
   const color = lineOpts.backgroundColor;
   const {above = color, below = color} = fillOption || {};
   if (target && line.points.length) {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.V)(ctx, area);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.W)(ctx, area);
     doFill(ctx, {line, target, above, below, area, scale, axis});
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.X)(ctx);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(ctx);
   }
 }
 var plugin_filler = {
@@ -17600,7 +19412,7 @@ class Legend extends Element {
   }
   buildLabels() {
     const labelOpts = this.options.labels || {};
-    let legendItems = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(labelOpts.generateLabels, [this.chart], this) || [];
+    let legendItems = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(labelOpts.generateLabels, [this.chart], this) || [];
     if (labelOpts.filter) {
       legendItems = legendItems.filter((item) => labelOpts.filter(item, this.chart.data));
     }
@@ -17619,7 +19431,7 @@ class Legend extends Element {
       return;
     }
     const labelOpts = options.labels;
-    const labelFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(labelOpts.font);
+    const labelFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(labelOpts.font);
     const fontSize = labelFont.size;
     const titleHeight = this._computeTitleHeight();
     const {boxWidth, itemHeight} = getBoxSize(labelOpts, fontSize);
@@ -17691,14 +19503,14 @@ class Legend extends Element {
     }
     const titleHeight = this._computeTitleHeight();
     const {legendHitBoxes: hitboxes, options: {align, labels: {padding}, rtl}} = this;
-    const rtlHelper = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aw)(rtl, this.left, this.width);
+    const rtlHelper = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ax)(rtl, this.left, this.width);
     if (this.isHorizontal()) {
       let row = 0;
-      let left = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(align, this.left + padding, this.right - this.lineWidths[row]);
+      let left = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(align, this.left + padding, this.right - this.lineWidths[row]);
       for (const hitbox of hitboxes) {
         if (row !== hitbox.row) {
           row = hitbox.row;
-          left = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(align, this.left + padding, this.right - this.lineWidths[row]);
+          left = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(align, this.left + padding, this.right - this.lineWidths[row]);
         }
         hitbox.top += this.top + titleHeight + padding;
         hitbox.left = rtlHelper.leftForLtr(rtlHelper.x(left), hitbox.width);
@@ -17706,11 +19518,11 @@ class Legend extends Element {
       }
     } else {
       let col = 0;
-      let top = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(align, this.top + titleHeight + padding, this.bottom - this.columnSizes[col].height);
+      let top = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(align, this.top + titleHeight + padding, this.bottom - this.columnSizes[col].height);
       for (const hitbox of hitboxes) {
         if (hitbox.col !== col) {
           col = hitbox.col;
-          top = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(align, this.top + titleHeight + padding, this.bottom - this.columnSizes[col].height);
+          top = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(align, this.top + titleHeight + padding, this.bottom - this.columnSizes[col].height);
         }
         hitbox.top = top;
         hitbox.left += this.left + padding;
@@ -17725,17 +19537,17 @@ class Legend extends Element {
   draw() {
     if (this.options.display) {
       const ctx = this.ctx;
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.V)(ctx, this);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.W)(ctx, this);
       this._draw();
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.X)(ctx);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(ctx);
     }
   }
   _draw() {
     const {options: opts, columnSizes, lineWidths, ctx} = this;
     const {align, labels: labelOpts} = opts;
     const defaultColor = _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.d.color;
-    const rtlHelper = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aw)(opts.rtl, this.left, this.width);
-    const labelFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(labelOpts.font);
+    const rtlHelper = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ax)(opts.rtl, this.left, this.width);
+    const labelFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(labelOpts.font);
     const {color: fontColor, padding} = labelOpts;
     const fontSize = labelFont.size;
     const halfFontSize = fontSize / 2;
@@ -17768,14 +19580,14 @@ class Legend extends Element {
         };
         const centerX = rtlHelper.xPlus(x, boxWidth / 2);
         const centerY = y + halfFontSize;
-        (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aq)(ctx, drawOptions, centerX, centerY);
+        (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ar)(ctx, drawOptions, centerX, centerY);
       } else {
         const yBoxTop = y + Math.max((fontSize - boxHeight) / 2, 0);
         const xBoxLeft = rtlHelper.leftForLtr(x, boxWidth);
-        const borderRadius = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.at)(legendItem.borderRadius);
+        const borderRadius = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.au)(legendItem.borderRadius);
         ctx.beginPath();
         if (Object.values(borderRadius).some(v => v !== 0)) {
-          (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ar)(ctx, {
+          (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.as)(ctx, {
             x: xBoxLeft,
             y: yBoxTop,
             w: boxWidth,
@@ -17793,7 +19605,7 @@ class Legend extends Element {
       ctx.restore();
     };
     const fillText = function(x, y, legendItem) {
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.W)(ctx, legendItem.text, x, y + (itemHeight / 2), labelFont, {
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.X)(ctx, legendItem.text, x, y + (itemHeight / 2), labelFont, {
         strikethrough: legendItem.hidden,
         textAlign: rtlHelper.textAlign(legendItem.textAlign)
       });
@@ -17802,18 +19614,18 @@ class Legend extends Element {
     const titleHeight = this._computeTitleHeight();
     if (isHorizontal) {
       cursor = {
-        x: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(align, this.left + padding, this.right - lineWidths[0]),
+        x: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(align, this.left + padding, this.right - lineWidths[0]),
         y: this.top + padding + titleHeight,
         line: 0
       };
     } else {
       cursor = {
         x: this.left + padding,
-        y: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(align, this.top + titleHeight + padding, this.bottom - columnSizes[0].height),
+        y: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(align, this.top + titleHeight + padding, this.bottom - columnSizes[0].height),
         line: 0
       };
     }
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ax)(this.ctx, opts.textDirection);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ay)(this.ctx, opts.textDirection);
     const lineHeight = itemHeight + padding;
     this.legendItems.forEach((legendItem, i) => {
       ctx.strokeStyle = legendItem.fontColor || fontColor;
@@ -17828,16 +19640,16 @@ class Legend extends Element {
         if (i > 0 && x + width + padding > this.right) {
           y = cursor.y += lineHeight;
           cursor.line++;
-          x = cursor.x = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(align, this.left + padding, this.right - lineWidths[cursor.line]);
+          x = cursor.x = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(align, this.left + padding, this.right - lineWidths[cursor.line]);
         }
       } else if (i > 0 && y + lineHeight > this.bottom) {
         x = cursor.x = x + columnSizes[cursor.line].width + padding;
         cursor.line++;
-        y = cursor.y = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(align, this.top + titleHeight + padding, this.bottom - columnSizes[cursor.line].height);
+        y = cursor.y = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(align, this.top + titleHeight + padding, this.bottom - columnSizes[cursor.line].height);
       }
       const realX = rtlHelper.x(x);
       drawLegendBox(realX, y, legendItem);
-      x = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ay)(textAlign, x + boxWidth + halfFontSize, isHorizontal ? x + width : this.right, opts.rtl);
+      x = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.az)(textAlign, x + boxWidth + halfFontSize, isHorizontal ? x + width : this.right, opts.rtl);
       fillText(rtlHelper.x(x), y, legendItem);
       if (isHorizontal) {
         cursor.x += width + padding;
@@ -17845,17 +19657,17 @@ class Legend extends Element {
         cursor.y += lineHeight;
       }
     });
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.az)(this.ctx, opts.textDirection);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aA)(this.ctx, opts.textDirection);
   }
   drawTitle() {
     const opts = this.options;
     const titleOpts = opts.title;
-    const titleFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(titleOpts.font);
-    const titlePadding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(titleOpts.padding);
+    const titleFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(titleOpts.font);
+    const titlePadding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(titleOpts.padding);
     if (!titleOpts.display) {
       return;
     }
-    const rtlHelper = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aw)(opts.rtl, this.left, this.width);
+    const rtlHelper = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ax)(opts.rtl, this.left, this.width);
     const ctx = this.ctx;
     const position = titleOpts.position;
     const halfFontSize = titleFont.size / 2;
@@ -17866,34 +19678,34 @@ class Legend extends Element {
     if (this.isHorizontal()) {
       maxWidth = Math.max(...this.lineWidths);
       y = this.top + topPaddingPlusHalfFontSize;
-      left = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(opts.align, left, this.right - maxWidth);
+      left = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(opts.align, left, this.right - maxWidth);
     } else {
       const maxHeight = this.columnSizes.reduce((acc, size) => Math.max(acc, size.height), 0);
-      y = topPaddingPlusHalfFontSize + (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(opts.align, this.top, this.bottom - maxHeight - opts.labels.padding - this._computeTitleHeight());
+      y = topPaddingPlusHalfFontSize + (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(opts.align, this.top, this.bottom - maxHeight - opts.labels.padding - this._computeTitleHeight());
     }
-    const x = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(position, left, left + maxWidth);
-    ctx.textAlign = rtlHelper.textAlign((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(position));
+    const x = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(position, left, left + maxWidth);
+    ctx.textAlign = rtlHelper.textAlign((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(position));
     ctx.textBaseline = 'middle';
     ctx.strokeStyle = titleOpts.color;
     ctx.fillStyle = titleOpts.color;
     ctx.font = titleFont.string;
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.W)(ctx, titleOpts.text, x, y, titleFont);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.X)(ctx, titleOpts.text, x, y, titleFont);
   }
   _computeTitleHeight() {
     const titleOpts = this.options.title;
-    const titleFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(titleOpts.font);
-    const titlePadding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(titleOpts.padding);
+    const titleFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(titleOpts.font);
+    const titlePadding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(titleOpts.padding);
     return titleOpts.display ? titleFont.lineHeight + titlePadding.height : 0;
   }
   _getLegendItemAt(x, y) {
     let i, hitBox, lh;
-    if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ag)(x, this.left, this.right)
-      && (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ag)(y, this.top, this.bottom)) {
+    if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ah)(x, this.left, this.right)
+      && (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ah)(y, this.top, this.bottom)) {
       lh = this.legendHitBoxes;
       for (i = 0; i < lh.length; ++i) {
         hitBox = lh[i];
-        if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ag)(x, hitBox.left, hitBox.left + hitBox.width)
-          && (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ag)(y, hitBox.top, hitBox.top + hitBox.height)) {
+        if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ah)(x, hitBox.left, hitBox.left + hitBox.width)
+          && (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ah)(y, hitBox.top, hitBox.top + hitBox.height)) {
           return this.legendItems[i];
         }
       }
@@ -17910,14 +19722,14 @@ class Legend extends Element {
       const previous = this._hoveredItem;
       const sameItem = itemsEqual(previous, hoveredItem);
       if (previous && !sameItem) {
-        (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(opts.onLeave, [e, previous, this], this);
+        (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(opts.onLeave, [e, previous, this], this);
       }
       this._hoveredItem = hoveredItem;
       if (hoveredItem && !sameItem) {
-        (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(opts.onHover, [e, hoveredItem, this], this);
+        (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(opts.onHover, [e, hoveredItem, this], this);
       }
     } else if (hoveredItem) {
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(opts.onClick, [e, hoveredItem, this], this);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(opts.onClick, [e, hoveredItem, this], this);
     }
   }
 }
@@ -17986,7 +19798,7 @@ var plugin_legend = {
         const {labels: {usePointStyle, pointStyle, textAlign, color}} = chart.legend.options;
         return chart._getSortedDatasetMetas().map((meta) => {
           const style = meta.controller.getStyle(usePointStyle ? 0 : undefined);
-          const borderWidth = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(style.borderWidth);
+          const borderWidth = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(style.borderWidth);
           return {
             text: datasets[meta.index].label,
             fillStyle: style.backgroundColor,
@@ -18050,8 +19862,8 @@ class Title extends Element {
     this.width = this.right = maxWidth;
     this.height = this.bottom = maxHeight;
     const lineCount = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.b)(opts.text) ? opts.text.length : 1;
-    this._padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(opts.padding);
-    const textSize = lineCount * (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(opts.font).lineHeight + this._padding.height;
+    this._padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(opts.padding);
+    const textSize = lineCount * (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(opts.font).lineHeight + this._padding.height;
     if (this.isHorizontal()) {
       this.height = textSize;
     } else {
@@ -18068,17 +19880,17 @@ class Title extends Element {
     let rotation = 0;
     let maxWidth, titleX, titleY;
     if (this.isHorizontal()) {
-      titleX = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(align, left, right);
+      titleX = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(align, left, right);
       titleY = top + offset;
       maxWidth = right - left;
     } else {
       if (options.position === 'left') {
         titleX = left + offset;
-        titleY = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(align, bottom, top);
+        titleY = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(align, bottom, top);
         rotation = _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.P * -0.5;
       } else {
         titleX = right - offset;
-        titleY = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(align, top, bottom);
+        titleY = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a0)(align, top, bottom);
         rotation = _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.P * 0.5;
       }
       maxWidth = bottom - top;
@@ -18091,15 +19903,15 @@ class Title extends Element {
     if (!opts.display) {
       return;
     }
-    const fontOpts = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(opts.font);
+    const fontOpts = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(opts.font);
     const lineHeight = fontOpts.lineHeight;
     const offset = lineHeight / 2 + this._padding.top;
     const {titleX, titleY, maxWidth, rotation} = this._drawArgs(offset);
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.W)(ctx, opts.text, 0, 0, fontOpts, {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.X)(ctx, opts.text, 0, 0, fontOpts, {
       color: opts.color,
       maxWidth,
       rotation,
-      textAlign: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(opts.align),
+      textAlign: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.$)(opts.align),
       textBaseline: 'middle',
       translation: [titleX, titleY],
     });
@@ -18230,7 +20042,7 @@ const positioners = {
       const el = items[i].element;
       if (el && el.hasValue()) {
         const center = el.getCenterPoint();
-        const d = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aB)(eventPosition, center);
+        const d = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aC)(eventPosition, center);
         if (d < minDistance) {
           minDistance = d;
           nearestElement = el;
@@ -18281,16 +20093,16 @@ function createTooltipItem(chart, item) {
   };
 }
 function getTooltipSize(tooltip, options) {
-  const ctx = tooltip._chart.ctx;
+  const ctx = tooltip.chart.ctx;
   const {body, footer, title} = tooltip;
   const {boxWidth, boxHeight} = options;
-  const bodyFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(options.bodyFont);
-  const titleFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(options.titleFont);
-  const footerFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(options.footerFont);
+  const bodyFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(options.bodyFont);
+  const titleFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(options.titleFont);
+  const footerFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(options.footerFont);
   const titleLineCount = title.length;
   const footerLineCount = footer.length;
   const bodyLineItemCount = body.length;
-  const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(options.padding);
+  const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(options.padding);
   let height = padding.height;
   let width = 0;
   let combinedBodyLength = body.reduce((count, bodyItem) => count + bodyItem.before.length + bodyItem.lines.length + bodyItem.after.length, 0);
@@ -18317,18 +20129,18 @@ function getTooltipSize(tooltip, options) {
   };
   ctx.save();
   ctx.font = titleFont.string;
-  (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(tooltip.title, maxLineWidth);
+  (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(tooltip.title, maxLineWidth);
   ctx.font = bodyFont.string;
-  (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(tooltip.beforeBody.concat(tooltip.afterBody), maxLineWidth);
+  (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(tooltip.beforeBody.concat(tooltip.afterBody), maxLineWidth);
   widthPadding = options.displayColors ? (boxWidth + 2 + options.boxPadding) : 0;
-  (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(body, (bodyItem) => {
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(bodyItem.before, maxLineWidth);
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(bodyItem.lines, maxLineWidth);
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(bodyItem.after, maxLineWidth);
+  (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(body, (bodyItem) => {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(bodyItem.before, maxLineWidth);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(bodyItem.lines, maxLineWidth);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(bodyItem.after, maxLineWidth);
   });
   widthPadding = 0;
   ctx.font = footerFont.string;
-  (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(tooltip.footer, maxLineWidth);
+  (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(tooltip.footer, maxLineWidth);
   ctx.restore();
   width += padding.width;
   return {width, height};
@@ -18369,9 +20181,9 @@ function determineXAlign(chart, options, size, yAlign) {
   return xAlign;
 }
 function determineAlignment(chart, options, size) {
-  const yAlign = options.yAlign || determineYAlign(chart, size);
+  const yAlign = size.yAlign || options.yAlign || determineYAlign(chart, size);
   return {
-    xAlign: options.xAlign || determineXAlign(chart, options, size, yAlign),
+    xAlign: size.xAlign || options.xAlign || determineXAlign(chart, options, size, yAlign),
     yAlign
   };
 }
@@ -18399,7 +20211,7 @@ function getBackgroundPoint(options, size, alignment, chart) {
   const {caretSize, caretPadding, cornerRadius} = options;
   const {xAlign, yAlign} = alignment;
   const paddingAndSize = caretSize + caretPadding;
-  const {topLeft, topRight, bottomLeft, bottomRight} = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.at)(cornerRadius);
+  const {topLeft, topRight, bottomLeft, bottomRight} = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.au)(cornerRadius);
   let x = alignX(size, xAlign);
   const y = alignY(size, yAlign, paddingAndSize);
   if (yAlign === 'center') {
@@ -18419,7 +20231,7 @@ function getBackgroundPoint(options, size, alignment, chart) {
   };
 }
 function getAlignedX(tooltip, align, options) {
-  const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(options.padding);
+  const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(options.padding);
   return align === 'center'
     ? tooltip.x + tooltip.width / 2
     : align === 'right'
@@ -18445,13 +20257,14 @@ class Tooltip extends Element {
     super();
     this.opacity = 0;
     this._active = [];
-    this._chart = config._chart;
     this._eventPosition = undefined;
     this._size = undefined;
     this._cachedAnimations = undefined;
     this._tooltipItems = [];
     this.$animations = undefined;
     this.$context = undefined;
+    this.chart = config.chart || config._chart;
+    this._chart = this.chart;
     this.options = config.options;
     this.dataPoints = undefined;
     this.title = undefined;
@@ -18481,10 +20294,10 @@ class Tooltip extends Element {
     if (cached) {
       return cached;
     }
-    const chart = this._chart;
+    const chart = this.chart;
     const options = this.options.setContext(this.getContext());
     const opts = options.enabled && chart.options.animation && options.animations;
-    const animations = new Animations(this._chart, opts);
+    const animations = new Animations(this.chart, opts);
     if (opts._cacheable) {
       this._cachedAnimations = Object.freeze(animations);
     }
@@ -18492,7 +20305,7 @@ class Tooltip extends Element {
   }
   getContext() {
     return this.$context ||
-			(this.$context = createTooltipContext(this._chart.getContext(), this, this._tooltipItems));
+			(this.$context = createTooltipContext(this.chart.getContext(), this, this._tooltipItems));
   }
   getTitle(context, options) {
     const {callbacks} = options;
@@ -18511,7 +20324,7 @@ class Tooltip extends Element {
   getBody(tooltipItems, options) {
     const {callbacks} = options;
     const bodyItems = [];
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(tooltipItems, (context) => {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(tooltipItems, (context) => {
       const bodyItem = {
         before: [],
         lines: [],
@@ -18541,14 +20354,14 @@ class Tooltip extends Element {
   }
   _createItems(options) {
     const active = this._active;
-    const data = this._chart.data;
+    const data = this.chart.data;
     const labelColors = [];
     const labelPointStyles = [];
     const labelTextColors = [];
     let tooltipItems = [];
     let i, len;
     for (i = 0, len = active.length; i < len; ++i) {
-      tooltipItems.push(createTooltipItem(this._chart, active[i]));
+      tooltipItems.push(createTooltipItem(this.chart, active[i]));
     }
     if (options.filter) {
       tooltipItems = tooltipItems.filter((element, index, array) => options.filter(element, index, array, data));
@@ -18556,7 +20369,7 @@ class Tooltip extends Element {
     if (options.itemSort) {
       tooltipItems = tooltipItems.sort((a, b) => options.itemSort(a, b, data));
     }
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(tooltipItems, (context) => {
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(tooltipItems, (context) => {
       const scoped = overrideCallbacks(options.callbacks, context);
       labelColors.push(scoped.labelColor.call(this, context));
       labelPointStyles.push(scoped.labelPointStyle.call(this, context));
@@ -18589,8 +20402,8 @@ class Tooltip extends Element {
       this.footer = this.getFooter(tooltipItems, options);
       const size = this._size = getTooltipSize(this, options);
       const positionAndSize = Object.assign({}, position, size);
-      const alignment = determineAlignment(this._chart, options, positionAndSize);
-      const backgroundPoint = getBackgroundPoint(options, positionAndSize, alignment, this._chart);
+      const alignment = determineAlignment(this.chart, options, positionAndSize);
+      const backgroundPoint = getBackgroundPoint(options, positionAndSize, alignment, this.chart);
       this.xAlign = alignment.xAlign;
       this.yAlign = alignment.yAlign;
       properties = {
@@ -18609,7 +20422,7 @@ class Tooltip extends Element {
       this._resolveAnimations().update(this, properties);
     }
     if (changed && options.external) {
-      options.external.call(this, {chart: this._chart, tooltip: this, replay});
+      options.external.call(this, {chart: this.chart, tooltip: this, replay});
     }
   }
   drawCaret(tooltipPoint, ctx, size, options) {
@@ -18621,7 +20434,7 @@ class Tooltip extends Element {
   getCaretPosition(tooltipPoint, size, options) {
     const {xAlign, yAlign} = this;
     const {caretSize, cornerRadius} = options;
-    const {topLeft, topRight, bottomLeft, bottomRight} = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.at)(cornerRadius);
+    const {topLeft, topRight, bottomLeft, bottomRight} = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.au)(cornerRadius);
     const {x: ptX, y: ptY} = tooltipPoint;
     const {width, height} = size;
     let x1, x2, x3, y1, y2, y3;
@@ -18667,11 +20480,11 @@ class Tooltip extends Element {
     const length = title.length;
     let titleFont, titleSpacing, i;
     if (length) {
-      const rtlHelper = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aw)(options.rtl, this.x, this.width);
+      const rtlHelper = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ax)(options.rtl, this.x, this.width);
       pt.x = getAlignedX(this, options.titleAlign, options);
       ctx.textAlign = rtlHelper.textAlign(options.titleAlign);
       ctx.textBaseline = 'middle';
-      titleFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(options.titleFont);
+      titleFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(options.titleFont);
       titleSpacing = options.titleSpacing;
       ctx.fillStyle = options.titleColor;
       ctx.font = titleFont.string;
@@ -18688,7 +20501,7 @@ class Tooltip extends Element {
     const labelColors = this.labelColors[i];
     const labelPointStyle = this.labelPointStyles[i];
     const {boxHeight, boxWidth, boxPadding} = options;
-    const bodyFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(options.bodyFont);
+    const bodyFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(options.bodyFont);
     const colorX = getAlignedX(this, 'left', options);
     const rtlColorX = rtlHelper.x(colorX);
     const yOffSet = boxHeight < bodyFont.lineHeight ? (bodyFont.lineHeight - boxHeight) / 2 : 0;
@@ -18704,10 +20517,10 @@ class Tooltip extends Element {
       const centerY = colorY + boxHeight / 2;
       ctx.strokeStyle = options.multiKeyBackground;
       ctx.fillStyle = options.multiKeyBackground;
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aq)(ctx, drawOptions, centerX, centerY);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ar)(ctx, drawOptions, centerX, centerY);
       ctx.strokeStyle = labelColors.borderColor;
       ctx.fillStyle = labelColors.backgroundColor;
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aq)(ctx, drawOptions, centerX, centerY);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ar)(ctx, drawOptions, centerX, centerY);
     } else {
       ctx.lineWidth = labelColors.borderWidth || 1;
       ctx.strokeStyle = labelColors.borderColor;
@@ -18715,11 +20528,11 @@ class Tooltip extends Element {
       ctx.lineDashOffset = labelColors.borderDashOffset || 0;
       const outerX = rtlHelper.leftForLtr(rtlColorX, boxWidth - boxPadding);
       const innerX = rtlHelper.leftForLtr(rtlHelper.xPlus(rtlColorX, 1), boxWidth - boxPadding - 2);
-      const borderRadius = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.at)(labelColors.borderRadius);
+      const borderRadius = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.au)(labelColors.borderRadius);
       if (Object.values(borderRadius).some(v => v !== 0)) {
         ctx.beginPath();
         ctx.fillStyle = options.multiKeyBackground;
-        (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ar)(ctx, {
+        (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.as)(ctx, {
           x: outerX,
           y: colorY,
           w: boxWidth,
@@ -18730,7 +20543,7 @@ class Tooltip extends Element {
         ctx.stroke();
         ctx.fillStyle = labelColors.backgroundColor;
         ctx.beginPath();
-        (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ar)(ctx, {
+        (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.as)(ctx, {
           x: innerX,
           y: colorY + 1,
           w: boxWidth - 2,
@@ -18751,10 +20564,10 @@ class Tooltip extends Element {
   drawBody(pt, ctx, options) {
     const {body} = this;
     const {bodySpacing, bodyAlign, displayColors, boxHeight, boxWidth, boxPadding} = options;
-    const bodyFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(options.bodyFont);
+    const bodyFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(options.bodyFont);
     let bodyLineHeight = bodyFont.lineHeight;
     let xLinePadding = 0;
-    const rtlHelper = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aw)(options.rtl, this.x, this.width);
+    const rtlHelper = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ax)(options.rtl, this.x, this.width);
     const fillLineOfText = function(line) {
       ctx.fillText(line, rtlHelper.x(pt.x + xLinePadding), pt.y + bodyLineHeight / 2);
       pt.y += bodyLineHeight + bodySpacing;
@@ -18766,7 +20579,7 @@ class Tooltip extends Element {
     ctx.font = bodyFont.string;
     pt.x = getAlignedX(this, bodyAlignForCalculation, options);
     ctx.fillStyle = options.bodyColor;
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(this.beforeBody, fillLineOfText);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(this.beforeBody, fillLineOfText);
     xLinePadding = displayColors && bodyAlignForCalculation !== 'right'
       ? bodyAlign === 'center' ? (boxWidth / 2 + boxPadding) : (boxWidth + 2 + boxPadding)
       : 0;
@@ -18774,7 +20587,7 @@ class Tooltip extends Element {
       bodyItem = body[i];
       textColor = this.labelTextColors[i];
       ctx.fillStyle = textColor;
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(bodyItem.before, fillLineOfText);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(bodyItem.before, fillLineOfText);
       lines = bodyItem.lines;
       if (displayColors && lines.length) {
         this._drawColorBox(ctx, pt, i, rtlHelper, options);
@@ -18784,11 +20597,11 @@ class Tooltip extends Element {
         fillLineOfText(lines[j]);
         bodyLineHeight = bodyFont.lineHeight;
       }
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(bodyItem.after, fillLineOfText);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(bodyItem.after, fillLineOfText);
     }
     xLinePadding = 0;
     bodyLineHeight = bodyFont.lineHeight;
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(this.afterBody, fillLineOfText);
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.D)(this.afterBody, fillLineOfText);
     pt.y -= bodySpacing;
   }
   drawFooter(pt, ctx, options) {
@@ -18796,12 +20609,12 @@ class Tooltip extends Element {
     const length = footer.length;
     let footerFont, i;
     if (length) {
-      const rtlHelper = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aw)(options.rtl, this.x, this.width);
+      const rtlHelper = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ax)(options.rtl, this.x, this.width);
       pt.x = getAlignedX(this, options.footerAlign, options);
       pt.y += options.footerMarginTop;
       ctx.textAlign = rtlHelper.textAlign(options.footerAlign);
       ctx.textBaseline = 'middle';
-      footerFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(options.footerFont);
+      footerFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(options.footerFont);
       ctx.fillStyle = options.footerColor;
       ctx.font = footerFont.string;
       for (i = 0; i < length; ++i) {
@@ -18814,7 +20627,7 @@ class Tooltip extends Element {
     const {xAlign, yAlign} = this;
     const {x, y} = pt;
     const {width, height} = tooltipSize;
-    const {topLeft, topRight, bottomLeft, bottomRight} = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.at)(options.cornerRadius);
+    const {topLeft, topRight, bottomLeft, bottomRight} = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.au)(options.cornerRadius);
     ctx.fillStyle = options.backgroundColor;
     ctx.strokeStyle = options.borderColor;
     ctx.lineWidth = options.borderWidth;
@@ -18847,7 +20660,7 @@ class Tooltip extends Element {
     }
   }
   _updateAnimationTarget(options) {
-    const chart = this._chart;
+    const chart = this.chart;
     const anims = this.$animations;
     const animX = anims && anims.x;
     const animY = anims && anims.y;
@@ -18887,18 +20700,18 @@ class Tooltip extends Element {
       y: this.y
     };
     opacity = Math.abs(opacity) < 1e-3 ? 0 : opacity;
-    const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(options.padding);
+    const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(options.padding);
     const hasTooltipContent = this.title.length || this.beforeBody.length || this.body.length || this.afterBody.length || this.footer.length;
     if (options.enabled && hasTooltipContent) {
       ctx.save();
       ctx.globalAlpha = opacity;
       this.drawBackground(pt, ctx, tooltipSize, options);
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ax)(ctx, options.textDirection);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ay)(ctx, options.textDirection);
       pt.y += padding.top;
       this.drawTitle(pt, ctx, options);
       this.drawBody(pt, ctx, options);
       this.drawFooter(pt, ctx, options);
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.az)(ctx, options.textDirection);
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aA)(ctx, options.textDirection);
       ctx.restore();
     }
   }
@@ -18908,7 +20721,7 @@ class Tooltip extends Element {
   setActiveElements(activeElements, eventPosition) {
     const lastActive = this._active;
     const active = activeElements.map(({datasetIndex, index}) => {
-      const meta = this._chart.getDatasetMeta(datasetIndex);
+      const meta = this.chart.getDatasetMeta(datasetIndex);
       if (!meta) {
         throw new Error('Cannot find a dataset at index ' + datasetIndex);
       }
@@ -18918,27 +20731,25 @@ class Tooltip extends Element {
         index,
       };
     });
-    const changed = !(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ae)(lastActive, active);
+    const changed = !(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.af)(lastActive, active);
     const positionChanged = this._positionChanged(active, eventPosition);
     if (changed || positionChanged) {
       this._active = active;
       this._eventPosition = eventPosition;
+      this._ignoreReplayEvents = true;
       this.update(true);
     }
   }
-  handleEvent(e, replay) {
+  handleEvent(e, replay, inChartArea = true) {
+    if (replay && this._ignoreReplayEvents) {
+      return false;
+    }
+    this._ignoreReplayEvents = false;
     const options = this.options;
     const lastActive = this._active || [];
-    let changed = false;
-    let active = [];
-    if (e.type !== 'mouseout') {
-      active = this._chart.getElementsAtEventForMode(e, options.mode, options, replay);
-      if (options.reverse) {
-        active.reverse();
-      }
-    }
+    const active = this._getActiveElements(e, lastActive, replay, inChartArea);
     const positionChanged = this._positionChanged(active, e);
-    changed = replay || !(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.ae)(active, lastActive) || positionChanged;
+    const changed = replay || !(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.af)(active, lastActive) || positionChanged;
     if (changed) {
       this._active = active;
       if (options.enabled || options.external) {
@@ -18950,6 +20761,20 @@ class Tooltip extends Element {
       }
     }
     return changed;
+  }
+  _getActiveElements(e, lastActive, replay, inChartArea) {
+    const options = this.options;
+    if (e.type === 'mouseout') {
+      return [];
+    }
+    if (!inChartArea) {
+      return lastActive;
+    }
+    const active = this.chart.getElementsAtEventForMode(e, options.mode, options, replay);
+    if (options.reverse) {
+      active.reverse();
+    }
+    return active;
   }
   _positionChanged(active, e) {
     const {caretX, caretY, options} = this;
@@ -18964,7 +20789,7 @@ var plugin_tooltip = {
   positioners,
   afterInit(chart, _args, options) {
     if (options) {
-      chart.tooltip = new Tooltip({_chart: chart, options});
+      chart.tooltip = new Tooltip({chart, options});
     }
   },
   beforeUpdate(chart, _args, options) {
@@ -18993,7 +20818,7 @@ var plugin_tooltip = {
   afterEvent(chart, args) {
     if (chart.tooltip) {
       const useFinalPosition = args.replay;
-      if (chart.tooltip.handleEvent(args.event, useFinalPosition)) {
+      if (chart.tooltip.handleEvent(args.event, useFinalPosition, args.inChartArea)) {
         args.changed = true;
       }
     }
@@ -19048,7 +20873,7 @@ var plugin_tooltip = {
       }
     },
     callbacks: {
-      beforeTitle: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aA,
+      beforeTitle: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aB,
       title(tooltipItems) {
         if (tooltipItems.length > 0) {
           const item = tooltipItems[0];
@@ -19064,9 +20889,9 @@ var plugin_tooltip = {
         }
         return '';
       },
-      afterTitle: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aA,
-      beforeBody: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aA,
-      beforeLabel: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aA,
+      afterTitle: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aB,
+      beforeBody: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aB,
+      beforeLabel: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aB,
       label(tooltipItem) {
         if (this && this.options && this.options.mode === 'dataset') {
           return tooltipItem.label + ': ' + tooltipItem.formattedValue || tooltipItem.formattedValue;
@@ -19104,11 +20929,11 @@ var plugin_tooltip = {
           rotation: options.rotation,
         };
       },
-      afterLabel: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aA,
-      afterBody: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aA,
-      beforeFooter: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aA,
-      footer: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aA,
-      afterFooter: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aA
+      afterLabel: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aB,
+      afterBody: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aB,
+      beforeFooter: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aB,
+      footer: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aB,
+      afterFooter: _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aB
     }
   },
   defaultRoutes: {
@@ -19269,14 +21094,14 @@ function generateTicks$1(generationOptions, dataRange) {
   const maxDefined = !(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.k)(max);
   const countDefined = !(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.k)(count);
   const minSpacing = (rmax - rmin) / (maxDigits + 1);
-  let spacing = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aD)((rmax - rmin) / maxSpaces / unit) * unit;
+  let spacing = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aE)((rmax - rmin) / maxSpaces / unit) * unit;
   let factor, niceMin, niceMax, numSpaces;
   if (spacing < MIN_SPACING && !minDefined && !maxDefined) {
     return [{value: rmin}, {value: rmax}];
   }
   numSpaces = Math.ceil(rmax / spacing) - Math.floor(rmin / spacing);
   if (numSpaces > maxSpaces) {
-    spacing = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aD)(numSpaces * spacing / maxSpaces / unit) * unit;
+    spacing = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aE)(numSpaces * spacing / maxSpaces / unit) * unit;
   }
   if (!(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.k)(precision)) {
     factor = Math.pow(10, precision);
@@ -19289,7 +21114,7 @@ function generateTicks$1(generationOptions, dataRange) {
     niceMin = rmin;
     niceMax = rmax;
   }
-  if (minDefined && maxDefined && step && (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aE)((max - min) / step, spacing / 1000)) {
+  if (minDefined && maxDefined && step && (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aF)((max - min) / step, spacing / 1000)) {
     numSpaces = Math.round(Math.min((max - min) / spacing, maxTicks));
     spacing = (max - min) / numSpaces;
     niceMin = min;
@@ -19301,15 +21126,15 @@ function generateTicks$1(generationOptions, dataRange) {
     spacing = (niceMax - niceMin) / numSpaces;
   } else {
     numSpaces = (niceMax - niceMin) / spacing;
-    if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aF)(numSpaces, Math.round(numSpaces), spacing / 1000)) {
+    if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aG)(numSpaces, Math.round(numSpaces), spacing / 1000)) {
       numSpaces = Math.round(numSpaces);
     } else {
       numSpaces = Math.ceil(numSpaces);
     }
   }
   const decimalPlaces = Math.max(
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aG)(spacing),
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aG)(niceMin)
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aH)(spacing),
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aH)(niceMin)
   );
   factor = Math.pow(10, (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.k)(precision) ? decimalPlaces : precision);
   niceMin = Math.round(niceMin * factor) / factor;
@@ -19321,7 +21146,7 @@ function generateTicks$1(generationOptions, dataRange) {
       if (niceMin < min) {
         j++;
       }
-      if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aF)(Math.round((niceMin + j * spacing) * factor) / factor, min, relativeLabelSize(min, minSpacing, generationOptions))) {
+      if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aG)(Math.round((niceMin + j * spacing) * factor) / factor, min, relativeLabelSize(min, minSpacing, generationOptions))) {
         j++;
       }
     } else if (niceMin < min) {
@@ -19332,7 +21157,7 @@ function generateTicks$1(generationOptions, dataRange) {
     ticks.push({value: Math.round((niceMin + j * spacing) * factor) / factor});
   }
   if (maxDefined && includeBounds && niceMax !== max) {
-    if (ticks.length && (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aF)(ticks[ticks.length - 1].value, max, relativeLabelSize(max, minSpacing, generationOptions))) {
+    if (ticks.length && (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aG)(ticks[ticks.length - 1].value, max, relativeLabelSize(max, minSpacing, generationOptions))) {
       ticks[ticks.length - 1].value = max;
     } else {
       ticks.push({value: max});
@@ -19437,7 +21262,7 @@ class LinearScaleBase extends Scale {
     const dataRange = this._range || this;
     const ticks = generateTicks$1(numericGeneratorOptions, dataRange);
     if (opts.bounds === 'ticks') {
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aC)(ticks, this, 'value');
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aD)(ticks, this, 'value');
     }
     if (opts.reverse) {
       ticks.reverse();
@@ -19498,15 +21323,15 @@ LinearScale.defaults = {
 };
 
 function isMajor(tickVal) {
-  const remain = tickVal / (Math.pow(10, Math.floor((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.K)(tickVal))));
+  const remain = tickVal / (Math.pow(10, Math.floor((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.L)(tickVal))));
   return remain === 1;
 }
 function generateTicks(generationOptions, dataRange) {
-  const endExp = Math.floor((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.K)(dataRange.max));
+  const endExp = Math.floor((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.L)(dataRange.max));
   const endSignificand = Math.ceil(dataRange.max / Math.pow(10, endExp));
   const ticks = [];
-  let tickVal = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.M)(generationOptions.min, Math.pow(10, Math.floor((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.K)(dataRange.min))));
-  let exp = Math.floor((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.K)(tickVal));
+  let tickVal = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(generationOptions.min, Math.pow(10, Math.floor((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.L)(dataRange.min))));
+  let exp = Math.floor((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.L)(tickVal));
   let significand = Math.floor(tickVal / Math.pow(10, exp));
   let precision = exp < 0 ? Math.pow(10, Math.abs(exp)) : 1;
   do {
@@ -19519,7 +21344,7 @@ function generateTicks(generationOptions, dataRange) {
     }
     tickVal = Math.round(significand * Math.pow(10, exp) * precision) / precision;
   } while (exp < endExp || (exp === endExp && significand < endSignificand));
-  const lastTick = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.M)(generationOptions.max, tickVal);
+  const lastTick = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(generationOptions.max, tickVal);
   ticks.push({value: lastTick, major: isMajor(tickVal)});
   return ticks;
 }
@@ -19554,7 +21379,7 @@ class LogarithmicScale extends Scale {
     let max = this.max;
     const setMin = v => (min = minDefined ? min : v);
     const setMax = v => (max = maxDefined ? max : v);
-    const exp = (v, m) => Math.pow(10, Math.floor((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.K)(v)) + m);
+    const exp = (v, m) => Math.pow(10, Math.floor((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.L)(v)) + m);
     if (min === max) {
       if (min <= 0) {
         setMin(1);
@@ -19584,7 +21409,7 @@ class LogarithmicScale extends Scale {
     };
     const ticks = generateTicks(generationOptions, this);
     if (opts.bounds === 'ticks') {
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aC)(ticks, this, 'value');
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aD)(ticks, this, 'value');
     }
     if (opts.reverse) {
       ticks.reverse();
@@ -19604,8 +21429,8 @@ class LogarithmicScale extends Scale {
   configure() {
     const start = this.min;
     super.configure();
-    this._startValue = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.K)(start);
-    this._valueRange = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.K)(this.max) - (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.K)(start);
+    this._startValue = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.L)(start);
+    this._valueRange = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.L)(this.max) - (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.L)(start);
   }
   getPixelForValue(value) {
     if (value === undefined || value === 0) {
@@ -19616,7 +21441,7 @@ class LogarithmicScale extends Scale {
     }
     return this.getPixelForDecimal(value === this.min
       ? 0
-      : ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.K)(value) - this._startValue) / this._valueRange);
+      : ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.L)(value) - this._startValue) / this._valueRange);
   }
   getValueForPixel(pixel) {
     const decimal = this.getDecimalForPixel(pixel);
@@ -19636,7 +21461,7 @@ LogarithmicScale.defaults = {
 function getTickBackdropHeight(opts) {
   const tickOpts = opts.ticks;
   if (tickOpts.display && opts.display) {
-    const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(tickOpts.backdropPadding);
+    const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(tickOpts.backdropPadding);
     return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.v)(tickOpts.font && tickOpts.font.size, _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.d.font.size) + padding.height;
   }
   return 0;
@@ -19644,7 +21469,7 @@ function getTickBackdropHeight(opts) {
 function measureLabelSize(ctx, font, label) {
   label = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.b)(label) ? label : [label];
   return {
-    w: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aH)(ctx, font.string, label),
+    w: (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aI)(ctx, font.string, label),
     h: label.length * font.lineHeight
   };
 }
@@ -19666,57 +21491,69 @@ function determineLimits(angle, pos, size, min, max) {
   };
 }
 function fitWithPointLabels(scale) {
-  const furthestLimits = {
-    l: 0,
-    r: scale.width,
-    t: 0,
-    b: scale.height - scale.paddingTop
+  const orig = {
+    l: scale.left + scale._padding.left,
+    r: scale.right - scale._padding.right,
+    t: scale.top + scale._padding.top,
+    b: scale.bottom - scale._padding.bottom
   };
-  const furthestAngles = {};
+  const limits = Object.assign({}, orig);
   const labelSizes = [];
   const padding = [];
-  const valueCount = scale.getLabels().length;
+  const valueCount = scale._pointLabels.length;
+  const pointLabelOpts = scale.options.pointLabels;
+  const additionalAngle = pointLabelOpts.centerPointLabels ? _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.P / valueCount : 0;
   for (let i = 0; i < valueCount; i++) {
-    const opts = scale.options.pointLabels.setContext(scale.getPointLabelContext(i));
+    const opts = pointLabelOpts.setContext(scale.getPointLabelContext(i));
     padding[i] = opts.padding;
-    const pointPosition = scale.getPointPosition(i, scale.drawingArea + padding[i]);
-    const plFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(opts.font);
+    const pointPosition = scale.getPointPosition(i, scale.drawingArea + padding[i], additionalAngle);
+    const plFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(opts.font);
     const textSize = measureLabelSize(scale.ctx, plFont, scale._pointLabels[i]);
     labelSizes[i] = textSize;
-    const angleRadians = scale.getIndexAngle(i);
-    const angle = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Q)(angleRadians);
+    const angleRadians = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aw)(scale.getIndexAngle(i) + additionalAngle);
+    const angle = Math.round((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.R)(angleRadians));
     const hLimits = determineLimits(angle, pointPosition.x, textSize.w, 0, 180);
     const vLimits = determineLimits(angle, pointPosition.y, textSize.h, 90, 270);
-    if (hLimits.start < furthestLimits.l) {
-      furthestLimits.l = hLimits.start;
-      furthestAngles.l = angleRadians;
-    }
-    if (hLimits.end > furthestLimits.r) {
-      furthestLimits.r = hLimits.end;
-      furthestAngles.r = angleRadians;
-    }
-    if (vLimits.start < furthestLimits.t) {
-      furthestLimits.t = vLimits.start;
-      furthestAngles.t = angleRadians;
-    }
-    if (vLimits.end > furthestLimits.b) {
-      furthestLimits.b = vLimits.end;
-      furthestAngles.b = angleRadians;
-    }
+    updateLimits(limits, orig, angleRadians, hLimits, vLimits);
   }
-  scale._setReductions(scale.drawingArea, furthestLimits, furthestAngles);
+  scale.setCenterPoint(
+    orig.l - limits.l,
+    limits.r - orig.r,
+    orig.t - limits.t,
+    limits.b - orig.b
+  );
   scale._pointLabelItems = buildPointLabelItems(scale, labelSizes, padding);
+}
+function updateLimits(limits, orig, angle, hLimits, vLimits) {
+  const sin = Math.abs(Math.sin(angle));
+  const cos = Math.abs(Math.cos(angle));
+  let x = 0;
+  let y = 0;
+  if (hLimits.start < orig.l) {
+    x = (orig.l - hLimits.start) / sin;
+    limits.l = Math.min(limits.l, orig.l - x);
+  } else if (hLimits.end > orig.r) {
+    x = (hLimits.end - orig.r) / sin;
+    limits.r = Math.max(limits.r, orig.r + x);
+  }
+  if (vLimits.start < orig.t) {
+    y = (orig.t - vLimits.start) / cos;
+    limits.t = Math.min(limits.t, orig.t - y);
+  } else if (vLimits.end > orig.b) {
+    y = (vLimits.end - orig.b) / cos;
+    limits.b = Math.max(limits.b, orig.b + y);
+  }
 }
 function buildPointLabelItems(scale, labelSizes, padding) {
   const items = [];
-  const valueCount = scale.getLabels().length;
+  const valueCount = scale._pointLabels.length;
   const opts = scale.options;
-  const tickBackdropHeight = getTickBackdropHeight(opts);
-  const outerDistance = scale.getDistanceFromCenterForValue(opts.ticks.reverse ? scale.min : scale.max);
+  const extra = getTickBackdropHeight(opts) / 2;
+  const outerDistance = scale.drawingArea;
+  const additionalAngle = opts.pointLabels.centerPointLabels ? _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.P / valueCount : 0;
   for (let i = 0; i < valueCount; i++) {
-    const extra = (i === 0 ? tickBackdropHeight / 2 : 0);
-    const pointLabelPosition = scale.getPointPosition(i, outerDistance + extra + padding[i]);
-    const angle = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Q)(scale.getIndexAngle(i));
+    const pointLabelPosition = scale.getPointPosition(i, outerDistance + extra + padding[i], additionalAngle);
+    const angle = Math.round((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.R)((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aw)(pointLabelPosition.angle + _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.H)));
     const size = labelSizes[i];
     const y = yForAngle(pointLabelPosition.y, size.h, angle);
     const textAlign = getTextAlignForAngle(angle);
@@ -19761,15 +21598,15 @@ function drawPointLabels(scale, labelCount) {
   const {ctx, options: {pointLabels}} = scale;
   for (let i = labelCount - 1; i >= 0; i--) {
     const optsAtIndex = pointLabels.setContext(scale.getPointLabelContext(i));
-    const plFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(optsAtIndex.font);
+    const plFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(optsAtIndex.font);
     const {x, y, textAlign, left, top, right, bottom} = scale._pointLabelItems[i];
     const {backdropColor} = optsAtIndex;
     if (!(0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.k)(backdropColor)) {
-      const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(optsAtIndex.backdropPadding);
+      const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(optsAtIndex.backdropPadding);
       ctx.fillStyle = backdropColor;
       ctx.fillRect(left - padding.left, top - padding.top, right - left + padding.width, bottom - top + padding.height);
     }
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.W)(
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.X)(
       ctx,
       scale._pointLabels[i],
       x,
@@ -19814,9 +21651,6 @@ function drawRadiusLine(scale, gridLineOpts, radius, labelCount) {
   ctx.stroke();
   ctx.restore();
 }
-function numberOrZero(param) {
-  return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.q)(param) ? param : 0;
-}
 function createPointLabelContext(parent, index, label) {
   return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.h)(parent, {
     label,
@@ -19834,12 +21668,12 @@ class RadialLinearScale extends LinearScaleBase {
     this._pointLabelItems = [];
   }
   setDimensions() {
-    this.width = this.maxWidth;
-    this.height = this.maxHeight;
-    this.paddingTop = getTickBackdropHeight(this.options) / 2;
-    this.xCenter = Math.floor(this.width / 2);
-    this.yCenter = Math.floor((this.height - this.paddingTop) / 2);
-    this.drawingArea = Math.min(this.height - this.paddingTop, this.width) / 2;
+    const padding = this._padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(getTickBackdropHeight(this.options) / 2);
+    const w = this.width = this.maxWidth - padding.width;
+    const h = this.height = this.maxHeight - padding.height;
+    this.xCenter = Math.floor(this.left + w / 2 + padding.left);
+    this.yCenter = Math.floor(this.top + h / 2 + padding.top);
+    this.drawingArea = Math.floor(Math.min(w, h) / 2);
   }
   determineDataLimits() {
     const {min, max} = this.getMinMax(false);
@@ -19852,10 +21686,12 @@ class RadialLinearScale extends LinearScaleBase {
   }
   generateTickLabels(ticks) {
     LinearScaleBase.prototype.generateTickLabels.call(this, ticks);
-    this._pointLabels = this.getLabels().map((value, index) => {
-      const label = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(this.options.pointLabels.callback, [value, index], this);
-      return label || label === 0 ? label : '';
-    });
+    this._pointLabels = this.getLabels()
+      .map((value, index) => {
+        const label = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(this.options.pointLabels.callback, [value, index], this);
+        return label || label === 0 ? label : '';
+      })
+      .filter((v, i) => this.chart.getDataVisibility(i));
   }
   fit() {
     const opts = this.options;
@@ -19865,32 +21701,15 @@ class RadialLinearScale extends LinearScaleBase {
       this.setCenterPoint(0, 0, 0, 0);
     }
   }
-  _setReductions(largestPossibleRadius, furthestLimits, furthestAngles) {
-    let radiusReductionLeft = furthestLimits.l / Math.sin(furthestAngles.l);
-    let radiusReductionRight = Math.max(furthestLimits.r - this.width, 0) / Math.sin(furthestAngles.r);
-    let radiusReductionTop = -furthestLimits.t / Math.cos(furthestAngles.t);
-    let radiusReductionBottom = -Math.max(furthestLimits.b - (this.height - this.paddingTop), 0) / Math.cos(furthestAngles.b);
-    radiusReductionLeft = numberOrZero(radiusReductionLeft);
-    radiusReductionRight = numberOrZero(radiusReductionRight);
-    radiusReductionTop = numberOrZero(radiusReductionTop);
-    radiusReductionBottom = numberOrZero(radiusReductionBottom);
-    this.drawingArea = Math.max(largestPossibleRadius / 2, Math.min(
-      Math.floor(largestPossibleRadius - (radiusReductionLeft + radiusReductionRight) / 2),
-      Math.floor(largestPossibleRadius - (radiusReductionTop + radiusReductionBottom) / 2)));
-    this.setCenterPoint(radiusReductionLeft, radiusReductionRight, radiusReductionTop, radiusReductionBottom);
-  }
   setCenterPoint(leftMovement, rightMovement, topMovement, bottomMovement) {
-    const maxRight = this.width - rightMovement - this.drawingArea;
-    const maxLeft = leftMovement + this.drawingArea;
-    const maxTop = topMovement + this.drawingArea;
-    const maxBottom = (this.height - this.paddingTop) - bottomMovement - this.drawingArea;
-    this.xCenter = Math.floor(((maxLeft + maxRight) / 2) + this.left);
-    this.yCenter = Math.floor(((maxTop + maxBottom) / 2) + this.top + this.paddingTop);
+    this.xCenter += Math.floor((leftMovement - rightMovement) / 2);
+    this.yCenter += Math.floor((topMovement - bottomMovement) / 2);
+    this.drawingArea -= Math.min(this.drawingArea / 2, Math.max(leftMovement, rightMovement, topMovement, bottomMovement));
   }
   getIndexAngle(index) {
-    const angleMultiplier = _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.T / this.getLabels().length;
+    const angleMultiplier = _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.T / (this._pointLabels.length || 1);
     const startAngle = this.options.startAngle || 0;
-    return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.av)(index * angleMultiplier + (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.t)(startAngle));
+    return (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aw)(index * angleMultiplier + (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.t)(startAngle));
   }
   getDistanceFromCenterForValue(value) {
     if ((0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.k)(value)) {
@@ -19916,8 +21735,8 @@ class RadialLinearScale extends LinearScaleBase {
       return createPointLabelContext(this.getContext(), index, pointLabel);
     }
   }
-  getPointPosition(index, distanceFromCenter) {
-    const angle = this.getIndexAngle(index) - _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.H;
+  getPointPosition(index, distanceFromCenter, additionalAngle = 0) {
+    const angle = this.getIndexAngle(index) - _chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.H + additionalAngle;
     return {
       x: Math.cos(angle) * distanceFromCenter + this.xCenter,
       y: Math.sin(angle) * distanceFromCenter + this.yCenter,
@@ -19945,7 +21764,7 @@ class RadialLinearScale extends LinearScaleBase {
       const ctx = this.ctx;
       ctx.save();
       ctx.beginPath();
-      pathRadiusLine(this, this.getDistanceFromCenterForValue(this._endValue), circular, this.getLabels().length);
+      pathRadiusLine(this, this.getDistanceFromCenterForValue(this._endValue), circular, this._pointLabels.length);
       ctx.closePath();
       ctx.fillStyle = backgroundColor;
       ctx.fill();
@@ -19956,7 +21775,7 @@ class RadialLinearScale extends LinearScaleBase {
     const ctx = this.ctx;
     const opts = this.options;
     const {angleLines, grid} = opts;
-    const labelCount = this.getLabels().length;
+    const labelCount = this._pointLabels.length;
     let i, offset, position;
     if (opts.pointLabels.display) {
       drawPointLabels(this, labelCount);
@@ -19972,7 +21791,7 @@ class RadialLinearScale extends LinearScaleBase {
     }
     if (angleLines.display) {
       ctx.save();
-      for (i = this.getLabels().length - 1; i >= 0; i--) {
+      for (i = labelCount - 1; i >= 0; i--) {
         const optsAtIndex = angleLines.setContext(this.getPointLabelContext(i));
         const {color, lineWidth} = optsAtIndex;
         if (!lineWidth || !color) {
@@ -20012,13 +21831,13 @@ class RadialLinearScale extends LinearScaleBase {
         return;
       }
       const optsAtIndex = tickOpts.setContext(this.getContext(index));
-      const tickFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Y)(optsAtIndex.font);
+      const tickFont = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.Z)(optsAtIndex.font);
       offset = this.getDistanceFromCenterForValue(this.ticks[index].value);
       if (optsAtIndex.showLabelBackdrop) {
         ctx.font = tickFont.string;
         width = ctx.measureText(tick.label).width;
         ctx.fillStyle = optsAtIndex.backdropColor;
-        const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.B)(optsAtIndex.backdropPadding);
+        const padding = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.C)(optsAtIndex.backdropPadding);
         ctx.fillRect(
           -width / 2 - padding.left,
           -offset - tickFont.size / 2 - padding.top,
@@ -20026,7 +21845,7 @@ class RadialLinearScale extends LinearScaleBase {
           tickFont.size + padding.height
         );
       }
-      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.W)(ctx, tick.label, 0, -offset, tickFont, {
+      (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.X)(ctx, tick.label, 0, -offset, tickFont, {
         color: optsAtIndex.color,
       });
     });
@@ -20063,7 +21882,8 @@ RadialLinearScale.defaults = {
     callback(label) {
       return label;
     },
-    padding: 5
+    padding: 5,
+    centerPointLabels: false
   }
 };
 RadialLinearScale.defaultRoutes = {
@@ -20148,7 +21968,7 @@ function addTick(ticks, time, timestamps) {
   if (!timestamps) {
     ticks[time] = true;
   } else if (timestamps.length) {
-    const {lo, hi} = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aJ)(timestamps, time);
+    const {lo, hi} = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aK)(timestamps, time);
     const timestamp = timestamps[lo] >= time ? timestamps[lo] : timestamps[hi];
     ticks[timestamp] = true;
   }
@@ -20198,7 +22018,7 @@ class TimeScale extends Scale {
   init(scaleOpts, opts) {
     const time = scaleOpts.time || (scaleOpts.time = {});
     const adapter = this._adapter = new adapters._date(scaleOpts.adapters.date);
-    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a8)(time.displayFormats, adapter.formats());
+    (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.a9)(time.displayFormats, adapter.formats());
     this._parseOpts = {
       parser: time.parser,
       round: time.round,
@@ -20266,7 +22086,7 @@ class TimeScale extends Scale {
     }
     const min = this.min;
     const max = this.max;
-    const ticks = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aI)(timestamps, min, max);
+    const ticks = (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.aJ)(timestamps, min, max);
     this._unit = timeOpts.unit || (tickOpts.autoSkip
       ? determineUnitForAutoTicks(timeOpts.minUnit, this.min, this.max, this._getLabelCapacity(min))
       : determineUnitForFormatting(this, ticks.length, timeOpts.minUnit, this.min, this.max));
@@ -20349,7 +22169,7 @@ class TimeScale extends Scale {
     const major = majorUnit && majorFormat && tick && tick.major;
     const label = this._adapter.format(time, format || (major ? majorFormat : minorFormat));
     const formatter = options.ticks.callback;
-    return formatter ? (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.N)(formatter, [label, index, ticks], this) : label;
+    return formatter ? (0,_chunks_helpers_segment_js__WEBPACK_IMPORTED_MODULE_0__.O)(formatter, [label, index, ticks], this) : label;
   }
   generateTickLabels(ticks) {
     let i, ilen, tick;
@@ -20562,98 +22382,99 @@ const registerables = [
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "$": () => (/* binding */ _alignStartEnd),
+/* harmony export */   "$": () => (/* binding */ _toLeftRightCenter),
 /* harmony export */   "A": () => (/* binding */ _rlookupByKey),
-/* harmony export */   "B": () => (/* binding */ toPadding),
-/* harmony export */   "C": () => (/* binding */ each),
-/* harmony export */   "D": () => (/* binding */ getMaximumSize),
-/* harmony export */   "E": () => (/* binding */ _getParentNode),
-/* harmony export */   "F": () => (/* binding */ readUsedSize),
-/* harmony export */   "G": () => (/* binding */ throttled),
+/* harmony export */   "B": () => (/* binding */ getAngleFromPoint),
+/* harmony export */   "C": () => (/* binding */ toPadding),
+/* harmony export */   "D": () => (/* binding */ each),
+/* harmony export */   "E": () => (/* binding */ getMaximumSize),
+/* harmony export */   "F": () => (/* binding */ _getParentNode),
+/* harmony export */   "G": () => (/* binding */ readUsedSize),
 /* harmony export */   "H": () => (/* binding */ HALF_PI),
-/* harmony export */   "I": () => (/* binding */ supportsEventListenerOptions),
-/* harmony export */   "J": () => (/* binding */ _isDomSupported),
-/* harmony export */   "K": () => (/* binding */ log10),
-/* harmony export */   "L": () => (/* binding */ _factorize),
-/* harmony export */   "M": () => (/* binding */ finiteOrDefault),
-/* harmony export */   "N": () => (/* binding */ callback),
-/* harmony export */   "O": () => (/* binding */ _addGrace),
+/* harmony export */   "I": () => (/* binding */ throttled),
+/* harmony export */   "J": () => (/* binding */ supportsEventListenerOptions),
+/* harmony export */   "K": () => (/* binding */ _isDomSupported),
+/* harmony export */   "L": () => (/* binding */ log10),
+/* harmony export */   "M": () => (/* binding */ _factorize),
+/* harmony export */   "N": () => (/* binding */ finiteOrDefault),
+/* harmony export */   "O": () => (/* binding */ callback),
 /* harmony export */   "P": () => (/* binding */ PI),
-/* harmony export */   "Q": () => (/* binding */ toDegrees),
-/* harmony export */   "R": () => (/* binding */ _measureText),
-/* harmony export */   "S": () => (/* binding */ _int16Range),
+/* harmony export */   "Q": () => (/* binding */ _addGrace),
+/* harmony export */   "R": () => (/* binding */ toDegrees),
+/* harmony export */   "S": () => (/* binding */ _measureText),
 /* harmony export */   "T": () => (/* binding */ TAU),
-/* harmony export */   "U": () => (/* binding */ _alignPixel),
-/* harmony export */   "V": () => (/* binding */ clipArea),
-/* harmony export */   "W": () => (/* binding */ renderText),
-/* harmony export */   "X": () => (/* binding */ unclipArea),
-/* harmony export */   "Y": () => (/* binding */ toFont),
-/* harmony export */   "Z": () => (/* binding */ _toLeftRightCenter),
+/* harmony export */   "U": () => (/* binding */ _int16Range),
+/* harmony export */   "V": () => (/* binding */ _alignPixel),
+/* harmony export */   "W": () => (/* binding */ clipArea),
+/* harmony export */   "X": () => (/* binding */ renderText),
+/* harmony export */   "Y": () => (/* binding */ unclipArea),
+/* harmony export */   "Z": () => (/* binding */ toFont),
 /* harmony export */   "_": () => (/* binding */ _arrayUnique),
 /* harmony export */   "a": () => (/* binding */ resolve),
-/* harmony export */   "a0": () => (/* binding */ overrides),
-/* harmony export */   "a1": () => (/* binding */ merge),
-/* harmony export */   "a2": () => (/* binding */ _capitalize),
-/* harmony export */   "a3": () => (/* binding */ descriptors),
-/* harmony export */   "a4": () => (/* binding */ isFunction),
-/* harmony export */   "a5": () => (/* binding */ _attachContext),
-/* harmony export */   "a6": () => (/* binding */ _createResolver),
-/* harmony export */   "a7": () => (/* binding */ _descriptors),
-/* harmony export */   "a8": () => (/* binding */ mergeIf),
-/* harmony export */   "a9": () => (/* binding */ uid),
-/* harmony export */   "aA": () => (/* binding */ noop),
-/* harmony export */   "aB": () => (/* binding */ distanceBetweenPoints),
-/* harmony export */   "aC": () => (/* binding */ _setMinAndMaxByKey),
-/* harmony export */   "aD": () => (/* binding */ niceNum),
-/* harmony export */   "aE": () => (/* binding */ almostWhole),
-/* harmony export */   "aF": () => (/* binding */ almostEquals),
-/* harmony export */   "aG": () => (/* binding */ _decimalPlaces),
-/* harmony export */   "aH": () => (/* binding */ _longestText),
-/* harmony export */   "aI": () => (/* binding */ _filterBetween),
-/* harmony export */   "aJ": () => (/* binding */ _lookup),
-/* harmony export */   "aK": () => (/* binding */ getHoverColor),
-/* harmony export */   "aL": () => (/* binding */ clone$1),
-/* harmony export */   "aM": () => (/* binding */ _merger),
-/* harmony export */   "aN": () => (/* binding */ _mergerIf),
-/* harmony export */   "aO": () => (/* binding */ _deprecated),
-/* harmony export */   "aP": () => (/* binding */ toFontString),
-/* harmony export */   "aQ": () => (/* binding */ splineCurve),
-/* harmony export */   "aR": () => (/* binding */ splineCurveMonotone),
-/* harmony export */   "aS": () => (/* binding */ getStyle),
-/* harmony export */   "aT": () => (/* binding */ fontString),
-/* harmony export */   "aU": () => (/* binding */ toLineHeight),
-/* harmony export */   "aV": () => (/* binding */ PITAU),
-/* harmony export */   "aW": () => (/* binding */ INFINITY),
-/* harmony export */   "aX": () => (/* binding */ RAD_PER_DEG),
-/* harmony export */   "aY": () => (/* binding */ QUARTER_PI),
-/* harmony export */   "aZ": () => (/* binding */ TWO_THIRDS_PI),
-/* harmony export */   "a_": () => (/* binding */ _angleDiff),
-/* harmony export */   "aa": () => (/* binding */ debounce),
-/* harmony export */   "ab": () => (/* binding */ retinaScale),
-/* harmony export */   "ac": () => (/* binding */ clearCanvas),
-/* harmony export */   "ad": () => (/* binding */ setsEqual),
-/* harmony export */   "ae": () => (/* binding */ _elementsEqual),
-/* harmony export */   "af": () => (/* binding */ getAngleFromPoint),
-/* harmony export */   "ag": () => (/* binding */ _isBetween),
-/* harmony export */   "ah": () => (/* binding */ _readValueToProps),
-/* harmony export */   "ai": () => (/* binding */ _updateBezierControlPoints),
-/* harmony export */   "aj": () => (/* binding */ _computeSegments),
-/* harmony export */   "ak": () => (/* binding */ _boundSegments),
-/* harmony export */   "al": () => (/* binding */ _steppedInterpolation),
-/* harmony export */   "am": () => (/* binding */ _bezierInterpolation),
-/* harmony export */   "an": () => (/* binding */ _pointInLine),
-/* harmony export */   "ao": () => (/* binding */ _steppedLineTo),
-/* harmony export */   "ap": () => (/* binding */ _bezierCurveTo),
-/* harmony export */   "aq": () => (/* binding */ drawPoint),
-/* harmony export */   "ar": () => (/* binding */ addRoundedRectPath),
-/* harmony export */   "as": () => (/* binding */ toTRBL),
-/* harmony export */   "at": () => (/* binding */ toTRBLCorners),
-/* harmony export */   "au": () => (/* binding */ _boundSegment),
-/* harmony export */   "av": () => (/* binding */ _normalizeAngle),
-/* harmony export */   "aw": () => (/* binding */ getRtlAdapter),
-/* harmony export */   "ax": () => (/* binding */ overrideTextDirection),
-/* harmony export */   "ay": () => (/* binding */ _textX),
-/* harmony export */   "az": () => (/* binding */ restoreTextDirection),
+/* harmony export */   "a$": () => (/* binding */ _angleDiff),
+/* harmony export */   "a0": () => (/* binding */ _alignStartEnd),
+/* harmony export */   "a1": () => (/* binding */ overrides),
+/* harmony export */   "a2": () => (/* binding */ merge),
+/* harmony export */   "a3": () => (/* binding */ _capitalize),
+/* harmony export */   "a4": () => (/* binding */ descriptors),
+/* harmony export */   "a5": () => (/* binding */ isFunction),
+/* harmony export */   "a6": () => (/* binding */ _attachContext),
+/* harmony export */   "a7": () => (/* binding */ _createResolver),
+/* harmony export */   "a8": () => (/* binding */ _descriptors),
+/* harmony export */   "a9": () => (/* binding */ mergeIf),
+/* harmony export */   "aA": () => (/* binding */ restoreTextDirection),
+/* harmony export */   "aB": () => (/* binding */ noop),
+/* harmony export */   "aC": () => (/* binding */ distanceBetweenPoints),
+/* harmony export */   "aD": () => (/* binding */ _setMinAndMaxByKey),
+/* harmony export */   "aE": () => (/* binding */ niceNum),
+/* harmony export */   "aF": () => (/* binding */ almostWhole),
+/* harmony export */   "aG": () => (/* binding */ almostEquals),
+/* harmony export */   "aH": () => (/* binding */ _decimalPlaces),
+/* harmony export */   "aI": () => (/* binding */ _longestText),
+/* harmony export */   "aJ": () => (/* binding */ _filterBetween),
+/* harmony export */   "aK": () => (/* binding */ _lookup),
+/* harmony export */   "aL": () => (/* binding */ getHoverColor),
+/* harmony export */   "aM": () => (/* binding */ clone$1),
+/* harmony export */   "aN": () => (/* binding */ _merger),
+/* harmony export */   "aO": () => (/* binding */ _mergerIf),
+/* harmony export */   "aP": () => (/* binding */ _deprecated),
+/* harmony export */   "aQ": () => (/* binding */ toFontString),
+/* harmony export */   "aR": () => (/* binding */ splineCurve),
+/* harmony export */   "aS": () => (/* binding */ splineCurveMonotone),
+/* harmony export */   "aT": () => (/* binding */ getStyle),
+/* harmony export */   "aU": () => (/* binding */ fontString),
+/* harmony export */   "aV": () => (/* binding */ toLineHeight),
+/* harmony export */   "aW": () => (/* binding */ PITAU),
+/* harmony export */   "aX": () => (/* binding */ INFINITY),
+/* harmony export */   "aY": () => (/* binding */ RAD_PER_DEG),
+/* harmony export */   "aZ": () => (/* binding */ QUARTER_PI),
+/* harmony export */   "a_": () => (/* binding */ TWO_THIRDS_PI),
+/* harmony export */   "aa": () => (/* binding */ uid),
+/* harmony export */   "ab": () => (/* binding */ debounce),
+/* harmony export */   "ac": () => (/* binding */ retinaScale),
+/* harmony export */   "ad": () => (/* binding */ clearCanvas),
+/* harmony export */   "ae": () => (/* binding */ setsEqual),
+/* harmony export */   "af": () => (/* binding */ _elementsEqual),
+/* harmony export */   "ag": () => (/* binding */ _isClickEvent),
+/* harmony export */   "ah": () => (/* binding */ _isBetween),
+/* harmony export */   "ai": () => (/* binding */ _readValueToProps),
+/* harmony export */   "aj": () => (/* binding */ _updateBezierControlPoints),
+/* harmony export */   "ak": () => (/* binding */ _computeSegments),
+/* harmony export */   "al": () => (/* binding */ _boundSegments),
+/* harmony export */   "am": () => (/* binding */ _steppedInterpolation),
+/* harmony export */   "an": () => (/* binding */ _bezierInterpolation),
+/* harmony export */   "ao": () => (/* binding */ _pointInLine),
+/* harmony export */   "ap": () => (/* binding */ _steppedLineTo),
+/* harmony export */   "aq": () => (/* binding */ _bezierCurveTo),
+/* harmony export */   "ar": () => (/* binding */ drawPoint),
+/* harmony export */   "as": () => (/* binding */ addRoundedRectPath),
+/* harmony export */   "at": () => (/* binding */ toTRBL),
+/* harmony export */   "au": () => (/* binding */ toTRBLCorners),
+/* harmony export */   "av": () => (/* binding */ _boundSegment),
+/* harmony export */   "aw": () => (/* binding */ _normalizeAngle),
+/* harmony export */   "ax": () => (/* binding */ getRtlAdapter),
+/* harmony export */   "ay": () => (/* binding */ overrideTextDirection),
+/* harmony export */   "az": () => (/* binding */ _textX),
 /* harmony export */   "b": () => (/* binding */ isArray),
 /* harmony export */   "c": () => (/* binding */ color),
 /* harmony export */   "d": () => (/* binding */ defaults),
@@ -20681,7 +22502,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "z": () => (/* binding */ _isPointInArea)
 /* harmony export */ });
 /*!
- * Chart.js v3.6.2
+ * Chart.js v3.7.0
  * https://www.chartjs.org
  * (c) 2021 Chart.js Contributors
  * Released under the MIT License
@@ -20916,6 +22737,9 @@ const setsEqual = (a, b) => {
   }
   return true;
 };
+function _isClickEvent(e) {
+  return e.type === 'mouseup' || e.type === 'click' || e.type === 'contextmenu';
+}
 
 const PI = Math.PI;
 const TAU = 2 * PI;
@@ -21740,6 +23564,7 @@ class Defaults {
     this.scale = undefined;
     this.scales = {};
     this.showLine = true;
+    this.drawActiveElementsOnTop = true;
     this.describe(_descriptors);
   }
   set(scope, values) {
@@ -22424,12 +24249,12 @@ function resolveFallback(fallback, prop, value) {
 }
 const getScope = (key, parent) => key === true ? parent
   : typeof key === 'string' ? resolveObjectKey(parent, key) : undefined;
-function addScopes(set, parentScopes, key, parentFallback) {
+function addScopes(set, parentScopes, key, parentFallback, value) {
   for (const parent of parentScopes) {
     const scope = getScope(key, parent);
     if (scope) {
       set.add(scope);
-      const fallback = resolveFallback(scope._fallback, key, scope);
+      const fallback = resolveFallback(scope._fallback, key, value);
       if (defined(fallback) && fallback !== key && fallback !== parentFallback) {
         return fallback;
       }
@@ -22445,12 +24270,12 @@ function createSubResolver(parentScopes, resolver, prop, value) {
   const allScopes = [...parentScopes, ...rootScopes];
   const set = new Set();
   set.add(value);
-  let key = addScopesFromKey(set, allScopes, prop, fallback || prop);
+  let key = addScopesFromKey(set, allScopes, prop, fallback || prop, value);
   if (key === null) {
     return false;
   }
   if (defined(fallback) && fallback !== prop) {
-    key = addScopesFromKey(set, allScopes, fallback, key);
+    key = addScopesFromKey(set, allScopes, fallback, key, value);
     if (key === null) {
       return false;
     }
@@ -22458,9 +24283,9 @@ function createSubResolver(parentScopes, resolver, prop, value) {
   return _createResolver(Array.from(set), [''], rootScopes, fallback,
     () => subGetTarget(resolver, prop, value));
 }
-function addScopesFromKey(set, allScopes, key, fallback) {
+function addScopesFromKey(set, allScopes, key, fallback, item) {
   while (key) {
-    key = addScopes(set, allScopes, key, fallback);
+    key = addScopes(set, allScopes, key, fallback, item);
   }
   return key;
 }
@@ -49948,6 +51773,87 @@ CloseButton.defaultProps = defaultProps;
 
 /***/ }),
 
+/***/ "./node_modules/react-bootstrap/esm/Col.js":
+/*!*************************************************!*\
+  !*** ./node_modules/react-bootstrap/esm/Col.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "useCol": () => (/* binding */ useCol),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+const DEVICE_SIZES = ['xxl', 'xl', 'lg', 'md', 'sm', 'xs'];
+function useCol({
+  as,
+  bsPrefix,
+  className,
+  ...props
+}) {
+  bsPrefix = (0,_ThemeProvider__WEBPACK_IMPORTED_MODULE_3__.useBootstrapPrefix)(bsPrefix, 'col');
+  const spans = [];
+  const classes = [];
+  DEVICE_SIZES.forEach(brkPoint => {
+    const propValue = props[brkPoint];
+    delete props[brkPoint];
+    let span;
+    let offset;
+    let order;
+
+    if (typeof propValue === 'object' && propValue != null) {
+      ({
+        span,
+        offset,
+        order
+      } = propValue);
+    } else {
+      span = propValue;
+    }
+
+    const infix = brkPoint !== 'xs' ? `-${brkPoint}` : '';
+    if (span) spans.push(span === true ? `${bsPrefix}${infix}` : `${bsPrefix}${infix}-${span}`);
+    if (order != null) classes.push(`order${infix}-${order}`);
+    if (offset != null) classes.push(`offset${infix}-${offset}`);
+  });
+  return [{ ...props,
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, ...spans, ...classes)
+  }, {
+    as,
+    bsPrefix,
+    spans
+  }];
+}
+const Col = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.forwardRef( // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595
+(props, ref) => {
+  const [{
+    className,
+    ...colProps
+  }, {
+    as: Component = 'div',
+    bsPrefix,
+    spans
+  }] = useCol(props);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Component, { ...colProps,
+    ref: ref,
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, !spans.length && bsPrefix)
+  });
+});
+Col.displayName = 'Col';
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Col);
+
+/***/ }),
+
 /***/ "./node_modules/react-bootstrap/esm/Collapse.js":
 /*!******************************************************!*\
   !*** ./node_modules/react-bootstrap/esm/Collapse.js ***!
@@ -50608,6 +52514,64 @@ const DivStyledAsH4 = (0,_divWithClassName__WEBPACK_IMPORTED_MODULE_0__["default
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_1__["default"])('modal-title', {
   Component: DivStyledAsH4
 }));
+
+/***/ }),
+
+/***/ "./node_modules/react-bootstrap/esm/Row.js":
+/*!*************************************************!*\
+  !*** ./node_modules/react-bootstrap/esm/Row.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+const DEVICE_SIZES = ['xxl', 'xl', 'lg', 'md', 'sm', 'xs'];
+const Row = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.forwardRef(({
+  bsPrefix,
+  className,
+  // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595
+  as: Component = 'div',
+  ...props
+}, ref) => {
+  const decoratedBsPrefix = (0,_ThemeProvider__WEBPACK_IMPORTED_MODULE_3__.useBootstrapPrefix)(bsPrefix, 'row');
+  const sizePrefix = `${decoratedBsPrefix}-cols`;
+  const classes = [];
+  DEVICE_SIZES.forEach(brkPoint => {
+    const propValue = props[brkPoint];
+    delete props[brkPoint];
+    let cols;
+
+    if (propValue != null && typeof propValue === 'object') {
+      ({
+        cols
+      } = propValue);
+    } else {
+      cols = propValue;
+    }
+
+    const infix = brkPoint !== 'xs' ? `-${brkPoint}` : '';
+    if (cols != null) classes.push(`${sizePrefix}${infix}-${cols}`);
+  });
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Component, {
+    ref: ref,
+    ...props,
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, decoratedBsPrefix, ...classes)
+  });
+});
+Row.displayName = 'Row';
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Row);
 
 /***/ }),
 
@@ -85768,8 +87732,6 @@ var map = {
 	"./EmployeeManagement.js": "./resources/js/Pages/EmployeeManagement.js",
 	"./Inventory": "./resources/js/Pages/Inventory.js",
 	"./Inventory.js": "./resources/js/Pages/Inventory.js",
-	"./OrderManagement": "./resources/js/Pages/OrderManagement.js",
-	"./OrderManagement.js": "./resources/js/Pages/OrderManagement.js",
 	"./Pos": "./resources/js/Pages/Pos.js",
 	"./Pos.js": "./resources/js/Pages/Pos.js",
 	"./Welcome": "./resources/js/Pages/Welcome.js",
@@ -85784,6 +87746,8 @@ var map = {
 	"./components/Ingredients.js": "./resources/js/Pages/components/Ingredients.js",
 	"./components/Inputprofile": "./resources/js/Pages/components/Inputprofile.js",
 	"./components/Inputprofile.js": "./resources/js/Pages/components/Inputprofile.js",
+	"./components/OrderManagement": "./resources/js/Pages/components/OrderManagement.js",
+	"./components/OrderManagement.js": "./resources/js/Pages/components/OrderManagement.js",
 	"./components/OrderRecord": "./resources/js/Pages/components/OrderRecord.js",
 	"./components/OrderRecord.js": "./resources/js/Pages/components/OrderRecord.js",
 	"./components/OrderTable": "./resources/js/Pages/components/OrderTable.js",
@@ -85904,7 +87868,7 @@ function _setPrototypeOf(o, p) {
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\Users\\\\User\\\\Documents\\\\GitHub\\\\restaurant-ms"]],"_development":true,"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"axios@0.21.4","name":"axios","escapedName":"axios","rawSpec":"0.21.4","saveSpec":null,"fetchSpec":"0.21.4"},"_requiredBy":["#DEV:/","/@inertiajs/inertia"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_spec":"0.21.4","_where":"C:\\\\Users\\\\User\\\\Documents\\\\GitHub\\\\restaurant-ms","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
+module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\Users\\\\PrincessAi\\\\Desktop\\\\xampp\\\\htdocs\\\\AppDev\\\\restaurant-management-system"]],"_development":true,"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"axios@0.21.4","name":"axios","escapedName":"axios","rawSpec":"0.21.4","saveSpec":null,"fetchSpec":"0.21.4"},"_requiredBy":["#DEV:/","/@inertiajs/inertia"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_spec":"0.21.4","_where":"C:\\\\Users\\\\PrincessAi\\\\Desktop\\\\xampp\\\\htdocs\\\\AppDev\\\\restaurant-management-system","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
 
 /***/ })
 

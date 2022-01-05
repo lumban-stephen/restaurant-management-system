@@ -83,11 +83,15 @@ export default function Login({ status, canResetPassword }) {
                             Forgot your password?
                         </Link>
                     )}
-
+                    
                     <Button className="ml-4" processing={processing}>
                         Log in
                     </Button>
+
+                    
                 </div>
+                <a href="/register" className="underline text-sm text-gray-600 hover:text-gray-900">Create Account?</a>
+                    
             </form>
         </Guest>
     );

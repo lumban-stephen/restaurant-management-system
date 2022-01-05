@@ -11,7 +11,7 @@ const ProductSalesChart = () =>{
     labels: [
       'Herb Roasted Chicken',
       'Coffee Roasted Spare Rib',
-      'Masala dosa',
+      'Sisig',
       'Ohmi-gyu beef steak'
     ],
     datasets: [{

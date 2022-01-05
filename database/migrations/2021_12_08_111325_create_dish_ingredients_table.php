@@ -16,11 +16,6 @@ class CreateDishIngredientsTable extends Migration
     {
         Schema::create('dish_ingredients', function (Blueprint $table) {
             $table->id();
-            //$table->integer('dish_id')->unsigned();
-            //$table->foreign('dish_id')->references('id')->on('dishes');
-            //$table->integer('ingredient_id')->unsigned();
-            //$table->foreign('ingredient_id')->references('id')->on('inventories');
-            
 
             $table->unsignedBigInteger('dish_id')->nullable();
             $table->foreign('dish_id')->references('id')->on('dishes');

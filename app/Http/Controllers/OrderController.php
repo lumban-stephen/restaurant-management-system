@@ -7,31 +7,61 @@ use Illuminate\Http\Request;
 class OrderController extends Controller
 {
     //
-    public function index(){
-        $orders = DB::table('orders')->get();
-        return $orders;
+    public function orderIndex() {
+        
+        $order = DB::table('orders')->get();
+
+        return $order;
+    }
+
+    public function orderDetailIndex() {
+        
+        $order_detail = DB::table('order_detail')->get();
+
+        return $order_detail;
     }
 
     public function store( Request $request)
     {
-        DB::insert('insert into orders (user_id, unit, quantity) values (?, ?,?)', 
-        [$request->input('food_name'), $request->input('unit'),$request->input('quantity')]);
+        // DB::insert('insert into bill (total_bill) values (?)', [1]);
+        // $bill_id = DB::getPdo()->lastInsertId();
+
+        DB::insert('insert into orders (receiver,location,order_date,note,total_bill) values (?,?,?,?,?)', [$request->input('receiver'),$request->input('location'),$request->input('order_date'),$request->input('receiver'),$request->input('total')]);
+
+        $order_id = DB::getPdo()->lastInsertId();
+
+        DB::update('update order_detail set order_id = ? where order_id = ?',[$order_id,1]);
+
+        
+
     }
 
-    public function update( Request $request, $id)
+    public function storeNewDish( Request $request)
     {
-        $name = $request->input('food_name');
-        $unit = $request->input('unit');
-        $quantity = $request->input('quantity');
-        $restocked_date = $request->input('restocked_date');
-        $expiry_date = $request->input('expiry_date');
+        DB::insert('insert into order_detail (dish_id, quantity,order_id,dish_name) values (?,?,?,?)', [$request->input('id'),$request->input('quantity'),1,$request->input('dish_name')]);
 
-
-        DB::update('update orders set food_name = ?,unit=?,quantity=?, restocked_date=?, expiry_date=? where id = ?',[$name, $unit, $quantity, $restocked_date, $expiry_date, $id]);
     }
 
-    public function delete( $id )
+    public function updateNewDish( Request $request)
     {
-        DB::delete('delete from orders where id=?',[$id]);
+        DB::insert('insert into order_detail (dish_id, quantity,order_id,dish_name) values (?,?,?,?)', [$request->input('id'),$request->input('quantity'),2,$request->input('dish_name')]);
+
     }
+
+    public function updateOrder( Request $request)
+    {
+        DB::update('update orders set receiver = ?,location = ?,order_date = ?,note = ? where order_id = ?',[$request->input('receiver'),$request->input('location'),$request->input('order_date'),$request->input('note'),$request->input('order_id')]);
+
+        DB::update('update order_detail set order_id = ? where order_id = ?',[$request->input('order_id'),2]);
+    }
+
+    public function delete( Request $request)
+    {
+        
+        DB::delete('delete from order_detail where id=?',[$request->input('order_id')]);
+    }
+
+
+
+    
 }

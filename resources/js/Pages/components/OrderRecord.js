@@ -7,7 +7,7 @@ const OrderRecord = () =>{
   //fetching data from database. Data is stored in "orderRecord" as array
   const[orderRecord, setOrderRecord]=useState([]);
   useEffect(()=>{
-    fetch('/orderrecord')
+    fetch('/order')
     .then(response=>response.json())
     .then(response=>{
       console.log(response);
@@ -59,9 +59,8 @@ const OrderRecord = () =>{
     <Table striped bordered hover>
         <thead>
             <tr>
-            <th>Receipt</th>
-            <th>Customer</th>
             <th>Order Number</th>
+            <th>Customer</th>
             <th>Date</th>
             <th>Status</th>
             <th>Payment</th>
@@ -71,12 +70,15 @@ const OrderRecord = () =>{
         <tbody>
             {orderRecord.map((v) => (
                 <tr>
-                <td>{ v.id }</td>
-                <td>{ v.order_id.order_detail_id.receiver }</td>
                 <td>{ v.order_id }</td>
-                <td>{ v.order_id.order_detail_id.date }</td>
-                <td>{ v.order_id.order_detail_id.status }</td>
-                <td>{ v.order_id.order_detail_id.payment }</td>
+                <td>{ v.receiver }</td>
+                <td>{ v.order_date }</td>
+                <td>{ v.status }</td>
+                <td>{v.status === 'preparing' ? (
+                  <p>not yet</p>
+                  ) : (
+                  <p>done</p>
+                  )}</td>
                 <td>
                   <Button variant="success" onClick={() => hanldeClick1(v)}>View</Button>
                 </td>

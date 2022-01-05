@@ -44,23 +44,19 @@ Route::get('/inventorymanagement', function () {
     return Inertia::render('Inventory');
 })->name('inventorymanagement');
 
-Route::get('/pos', function () {
-    return Inertia::render('Pos');
-})->name('pos');
-
 Route::get('/dish', function () {
     return Inertia::render('DishManagement');
 })->name('dish');
 
-Route::get('/orders', function () {
-    return Inertia::render('OrderManagement');
-})->name('ordermanagement');
-
 require __DIR__.'/auth.php';
 
-// Route::get('/orders', function () {
-//     return view('Ordermanagement');
-// });
+Route::get('/orders', function () {
+    return view('Ordermanagement');
+});
+
+Route::get('/pos', function () {
+    return Inertia::render('Pos');
+})->name('pos');
 
 //return inventory info
 Route::get('/inventory',[App\Http\Controllers\InventoryController::class,'inventoryIndex']);
@@ -70,12 +66,30 @@ Route::get('/userinfo',[App\Http\Controllers\ProfileController::class,'userProfi
 
 //return all users info
 Route::get('/empinfo',[App\Http\Controllers\EmployeeController::class,'empInfo']);
+//update user info
+Route::post('/updateAccount',[App\Http\Controllers\ProfileController::class,'userUpdate']);
+
+//update employee info
+Route::post('/updateEmp',[App\Http\Controllers\EmployeeController::class,'updateEmp']);
+//delete employee info
+Route::post('/deleteEmp',[App\Http\Controllers\EmployeeController::class,'deleteEmp']);
+//add new employee info
+Route::post('/addNewEmp',[App\Http\Controllers\EmployeeController::class,'store']);
 
 //return all dish table info
-Route::get('/dishindex',[App\Http\Controllers\DishController::class,'index']);
+Route::get('/dishindex',[App\Http\Controllers\DishController::class,'dishIndex']);
 
 //return all dish ingredients info
 Route::get('/dishingredientindex',[App\Http\Controllers\DishIngredientController::class,'dishIngredientIndex']);
+
+//return all bill info
+Route::get('/bill',[App\Http\Controllers\BillController::class,'billIndex']);
+
+//return all order info
+Route::get('/order',[App\Http\Controllers\OrderController::class,'orderIndex']);
+
+//return all order info
+Route::get('/orderDetail',[App\Http\Controllers\OrderController::class,'orderDetailIndex']);
 
 //save dish info
 Route::post('/dishsave',[App\Http\Controllers\DishController::class,'dishAdd']);
@@ -93,17 +107,23 @@ Route::post('/updateIngredients',[App\Http\Controllers\InventoryController::clas
 //delete ingredient in database
 Route::post('/deleteIngredients',[App\Http\Controllers\InventoryController::class,'delete']);
 
-//Order Records
-Route::get('/orderrecord',[App\Http\Controllers\OrderRecordController::class,'index']);
 
-//Order Management
-Route::get('/orderindex',[App\Http\Controllers\OrderController::class,'index']);
-Route::post('/addorder',[App\Http\Controllers\OrderController::class,'store']);
-Route::get('//updateorder/{$id}',[App\Http\Controllers\OrderController::class,'update']);
-Route::get('/deleteorder/{$id}',[App\Http\Controllers\OrderController::class,'delete']);
+//add dish to database
+Route::post('/adddishes',[App\Http\Controllers\DishController::class,'store']);
+//update ingredient to database
+Route::post('/adddnewIng',[App\Http\Controllers\DishIngredientController::class,'store']);
+//delete dish to database
+Route::post('/deletedishes',[App\Http\Controllers\DishController::class,'delete']);
+//delete dish to database
+Route::post('/updatedishes',[App\Http\Controllers\DishController::class,'update']);
 
-//Order Details
-Route::get('/orderdetails',[App\Http\Controllers\OrderController::class,'index']);
-Route::post('/adddetails',[App\Http\Controllers\OrderController::class,'store']);
-Route::get('//updatedetails/{$id}',[App\Http\Controllers\OrderController::class,'update']);
-Route::get('/deleteorderdetail/{$id}',[App\Http\Controllers\OrderController::class,'delete']);
+//add new order to database
+Route::post('/addOrderInfo',[App\Http\Controllers\OrderController::class,'store']);
+//add new dish order to database
+Route::post('/adddNewDish',[App\Http\Controllers\OrderController::class,'storeNewDish']);
+//update new dish to database
+Route::post('/adddNewDishUpdate',[App\Http\Controllers\OrderController::class,'updateNewDish']);
+//update new order to database
+Route::post('/updateOrder',[App\Http\Controllers\OrderController::class,'updateOrder']);
+//delete order to database
+Route::post('/deleteOrder',[App\Http\Controllers\OrderController::class,'delete']);
